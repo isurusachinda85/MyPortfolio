@@ -6,8 +6,89 @@
     <link rel="stylesheet" href="../../../asset/css/normalize.css">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <style>
+        div{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+        div:nth-child(1){
+            background: red;
+        }
+        div:nth-child(2){
+            background: green;
+            right: 0;
+        }
+        div:nth-child(3){
+            background: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+        div:nth-child(4){
+            background: orange;
+            left: 0;
+            bottom: 0;
+        }
+        section:nth-child(2)>div:nth-child(1){
+            height: 150px;
+            width: 150px;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            z-index:1;
+        }
+        section:nth-child(2)>div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            background: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            z-index:1;
+        }
+        section:nth-child(4)>div:nth-child(1){
+            height: 100px;
+            width: 100px;
+            background: white;
+            border-bottom-right-radius: 150px;
 
-
+        }
+        section:nth-child(4)>div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background: white;
+            border-bottom-left-radius: 150px;
+            z-index: 1;
+        }
+        section:nth-child(4)>div:nth-child(3){
+            height: 100px;
+            width: 100px;
+            background: white;
+            border-top-left-radius: 150px;
+        }
+        section:nth-child(4)>div:nth-child(4){
+            height: 100px;
+            width: 100px;
+            background: white;
+            border-top-right-radius: 150px;
+        }
+        section:nth-child(5)>div:nth-child(1){
+            height: 150px;
+            width: 150px;
+            background: white;
+            border-radius: 150px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
     </style>
 
 </head>
@@ -30,7 +111,15 @@
     <div></div>
     <div></div>
 </section>
-<section></section>
-<section></section>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section>
+    <div></div>
+    <div></div>
+</section>
 </body>
 </html>
