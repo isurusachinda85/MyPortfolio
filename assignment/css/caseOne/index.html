@@ -13,6 +13,7 @@
         }
         div:nth-child(1){
             background: red;
+            position: absolute;
         }
         div:nth-child(2){
             background: green;
@@ -28,7 +29,7 @@
             left: 0;
             bottom: 0;
         }
-        section:nth-child(2)>div:nth-child(1){
+        section:nth-child(5)>div:nth-child(1){
             height: 150px;
             width: 150px;
             background: white;
@@ -40,7 +41,7 @@
             margin: auto;
             z-index:1;
         }
-        section:nth-child(2)>div:nth-child(2){
+        section:nth-child(5)>div:nth-child(2){
             height: 100px;
             width: 100px;
             border-radius: 100px;
@@ -53,33 +54,36 @@
             margin: auto;
             z-index:1;
         }
-        section:nth-child(4)>div:nth-child(1){
+        section:nth-child(6)>div:nth-child(1){
             height: 100px;
             width: 100px;
             background: white;
             border-bottom-right-radius: 150px;
+            z-index: 1;
 
         }
-        section:nth-child(4)>div:nth-child(2){
+        section:nth-child(6)>div:nth-child(2){
             height: 100px;
             width: 100px;
             background: white;
             border-bottom-left-radius: 150px;
             z-index: 1;
         }
-        section:nth-child(4)>div:nth-child(3){
+        section:nth-child(6)>div:nth-child(3){
             height: 100px;
             width: 100px;
             background: white;
             border-top-left-radius: 150px;
+            z-index: 1;
         }
-        section:nth-child(4)>div:nth-child(4){
+        section:nth-child(6)>div:nth-child(4){
             height: 100px;
             width: 100px;
             background: white;
-            border-top-right-radius: 150px;
+            border-top-right-radius: 200px;
+            z-index: 1;
         }
-        section:nth-child(5)>div:nth-child(1){
+        section:nth-child(8)>div:nth-child(1){
             background: white;
             left: 0;
             right: 0;
@@ -87,17 +91,119 @@
             margin: auto;
             height: 100px;
             width: 200px;
+            z-index: 1;
             border-top-left-radius: 100px;
             border-top-right-radius: 100px;
         }
-        section:nth-child(5)>div:nth-child(2){
+        section:nth-child(8)>div:nth-child(2){
             background: white;
             left: 0;
             margin: auto;
             height: 100px;
             width: 200px;
+            position: relative;
             border-bottom-left-radius: 100px;
             border-bottom-right-radius: 100px;
+        }
+        #rgp>.red>.circle1{
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            background: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        #rgp>.red>.circle1>.squ1{
+            height: 50px;
+            width: 50px;
+            background: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        #rgp>.green>.circle2{
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            background: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        #rgp>.green>.circle2>.squ2{
+            height: 50px;
+            width: 50px;
+            background: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        #rgp>.orange>.circle3{
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            background: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        #rgp>.orange>.circle3>.squ3{
+            height: 50px;
+            width: 50px;
+            background: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        #rgp>.deeppink>.circle4{
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            background: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        #rgp>.deeppink>.circle4>.squ4{
+            height: 50px;
+            width: 50px;
+            background: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
         }
     </style>
 
@@ -105,31 +211,56 @@
 <body>
 <section>
     <div></div>
+</section>
+<section>
+    <div></div>
+</section>
+<section>
+    <div></div>
+</section>
+<section>
+    <div></div>
+</section>
+<!--==================================-->
+<section>
+    <div></div>
+    <div></div>
+</section>
+<!--=====================================-->
+<section>
     <div></div>
     <div></div>
     <div></div>
+    <div></div>
+</section>
+<!--=====================================-->
+<section id="rgp">
+    <div class="red">
+        <div class="circle1">
+            <div class="squ1"></div>
+        </div>
+    </div>
+    <div class="green">
+        <div class="circle2">
+            <div class="squ2"></div>
+        </div>
+    </div>
+    <div class="orange">
+        <div class="circle3">
+            <div class="squ3"></div>
+        </div>
+    </div>
+    <div class="deeppink">
+        <div class="circle4">
+            <div class="squ4"></div>
+        </div>
+    </div>
+</section>
+<!--=====================================-->
+<section>
+    <div></div>
+    <div></div>
+</section>
 
-</section>
-
-<section>
-    <div></div>
-    <div></div>
-</section>
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</section>
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</section>
-<section>
-    <div></div>
-    <div></div>
-</section>
 </body>
 </html>
