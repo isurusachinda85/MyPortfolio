@@ -3,13 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 02</title>
-
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="assest/css/normalize.css">
     <style>
-        header{
+        header {
             border: 1px solid black;
+            position: relative;
         }
-        header>img{
+
+        header > img {
             width: 180px;
+            position: relative;
+        }
+
+        header > nav {
+            position: absolute;
+            right: 40px;
+            top: 0;
+        }
+
+        header > nav > ul > li {
+            display: inline-block;
+            padding-right: 20px;
+        }
+        main{
+            position: relative;
+        }
+        main>nav{
+            background-color: purple;
+            color: white;
+            position: absolute;
+            width: 250px;
+            top: 0;
+            bottom: 0;
+        }
+        main>nav>ul{
+            list-style: none;
+            font-size: 25px;
+            margin-top: 40px;
+        }
+        main>nav>ul>li{
+            padding-bottom: 40px;
+        }
+        main>section{
+            margin-left: 250px;
+            padding: 10px;
+        }
+        main>section>section:first-child {
+            position: relative;
+            border: 2px solid crimson;
+            height: 280px;
+        }
+        main>section>section:nth-child(1)>div {
+            position: absolute;
+            width: calc(100%/3);
+            height: 280px;
+        }
+        main>section>section:first-child>div:nth-child(1){
+            left: 0;
+        }
+
+        main>section>section:first-child>div:nth-child(2){
+            left: calc(100%/3);
+        }
+
+        main>section>section:first-child>div:nth-child(3){
+            right: 0;
         }
     </style>
 </head>
@@ -27,13 +86,15 @@
 </header>
 
 <main>
+    <nav>
     <ul>
         <li>Home</li>
         <li>Service</li>
         <li>Contact</li>
         <li>About Us</li>
     </ul>
-
+    </nav>
+    <section>
     <section>
         <div></div>
         <div></div>
@@ -71,6 +132,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, enim esse. Atque beatae debitis esse eum,
             exercitationem facere harum iste magnam minima molestiae nemo neque placeat quae ratione unde
             voluptatem?</p>
+
+    </section>
 
     </section>
 </main>
