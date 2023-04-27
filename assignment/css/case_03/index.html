@@ -3,8 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 03</title>
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="../../../asset/css/normalize.css">
+
+    <style>
+        section {
+            height: 100vh;
+            position: relative;
+        }
+
+        section > div {
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(1) > div {
+            background: purple;
+        }
+
+        section:nth-child(2) > div {
+            background: dodgerblue;
+        }
+
+        section:nth-child(3) > div {
+            background: orange;
+        }
+
+        div:nth-child(4) {
+            width: 290px;
+            height: 290px;
+            border-radius: 100%;
+            border: 20px solid gray;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            position: fixed;
+        }
+
+        div:nth-child(5) {
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            border: 20px solid red;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            position: fixed;
+        }
+    </style>
 </head>
 <body>
+<main>
+    <section>
+        <div>
+            <h1>Hello</h1>
+        </div>
+    </section>
 
+    <section>
+        <div>
+            <h1>Welcome To</h1>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h1>Institute of Software Engineering</h1>
+        </div>
+    </section>
+
+    <div></div>
+    <div></div>
+</main>
 </body>
 </html>
