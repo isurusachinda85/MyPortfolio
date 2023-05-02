@@ -14,49 +14,71 @@
     <meta name="robots" content="Index">
     <meta name="theme-color" content="blue">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <style>
+        header {
+            background: white;
+            width: 100%;
+            position: fixed;
+        }
+
+        header > nav {
+            position: absolute;
+            right: 40px;
+            top: 0;
+        }
+
+        header > nav > menu > ul > li {
+            display: inline-block;
+            padding-right: 20px;
+        }
+    </style>
 
 <body>
 <header>
     <h1>My Portfolio</h1>
     <nav>
         <menu>
-            <li>Home</li>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#project">Project</a></li>
-            <li>Assignment</li>
-            <li><a href="#contact">Contact Me</a></li>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li>Assignment</li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
         </menu>
     </nav>
 
 </header>
 <main>
     <section>
-        <article>
-            <h1>Hello I'm Isuru Sachinda Lakshan Ranaweera</h1>
-            <h3>Full stack developer</h3>
-            <button>Hire Me</button>
-            <h4></h4>
-            <figure>
-                <aside><img src="asset/img/IMG_20220523_000321_899.jpg" alt="frofile pic" width="300"></aside>
-            </figure>
-            <h2>Follow me</h2>
-            <div>
+        <dfn id="home">
+            <article>
+                <h1>Hello I'm Isuru Sachinda Lakshan Ranaweera</h1>
+                <h3>Full stack developer</h3>
+                <button>Hire Me</button>
+                <h4></h4>
                 <figure>
-                    <a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
-                                                  width="40"></a>
-                    <a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
-                                                                    width="40"></a>
-                    <a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
-                            src="asset/img/facebook%20.png" alt="facebook img" width="38"></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
-                                                                                  alt="linklin img" width="38"></a>
-                    <a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
-                            src="asset/img/github-logo.png" alt="git hub img" width="38"></a>
+                    <aside><img src="asset/img/IMG_20220523_000321_899.jpg" alt="frofile pic" width="300"></aside>
                 </figure>
-            </div>
-        </article>
+                <h2>Follow me</h2>
+                <div>
+                    <figure>
+                        <a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
+                                                      width="40"></a>
+                        <a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
+                                                                        width="40"></a>
+                        <a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
+                                src="asset/img/facebook%20.png" alt="facebook img" width="38"></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
+                                                                                      alt="linklin img" width="38"></a>
+                        <a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
+                                src="asset/img/github-logo.png" alt="git hub img" width="38"></a>
+                    </figure>
+                </div>
+            </article>
     </section>
     <section>
 
@@ -192,7 +214,7 @@
                 <input type="tel" name="txtName" placeholder="Phone No" required>
                 <br>
                 <br>
-                <textarea name="massage"cols="20" rows="8" placeholder="Massage"></textarea>
+                <textarea name="massage" cols="20" rows="8" placeholder="Massage"></textarea>
                 <br>
                 <button formaction="sendmassage">Send</button>
             </fieldset>
