@@ -16,6 +16,10 @@
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="asset/css/normalize.css">
     <style>
+        * {
+            font-style: normal;
+        }
+
         header {
             background: white;
             width: 100%;
@@ -31,6 +35,42 @@
         header > nav > menu > ul > li {
             display: inline-block;
             padding-right: 20px;
+        }
+
+        body > main > section:nth-child(1) {
+            padding-left: 52px;
+            padding-top: 60px;
+        }
+
+        #name {
+            font-family: "Arial Black";
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        #dev {
+            color: rgba(113, 104, 104, 0.85);
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .bttn {
+            background-color: rgba(35, 35, 236, 0.99);
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            font-size: 30px;
+            font-family: "Bell MT", sans-serif;
+            border-radius: 20px;
+            transition-duration: 0.4s;
+        }
+
+        .bttn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        #img{
+            position: relative;
+            left: 50px;
         }
     </style>
 
@@ -55,33 +95,32 @@
 <main>
     <section>
         <dfn id="home">
-            <article>
-                <h1>Hello I'm Isuru Sachinda Lakshan Ranaweera</h1>
-                <h3>Full stack developer</h3>
-                <button>Hire Me</button>
-                <h4></h4>
+            <h1 id="name">Hello I'm Isuru Sachinda Lakshan Ranaweera</h1>
+            <h3 id="dev">Full stack developer</h3>
+            <button class="bttn">Hire Me</button>
+            <h4></h4>
+            <figure>
+                <aside><img id="img" src="asset/img/IMG_20220523_000321_899.jpg" alt="frofile pic" width="300"></aside>
+            </figure>
+            <h2>Follow me</h2>
+            <div>
                 <figure>
-                    <aside><img src="asset/img/IMG_20220523_000321_899.jpg" alt="frofile pic" width="300"></aside>
+                    <a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
+                                                  width="40"></a>
+                    <a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
+                                                                    width="40"></a>
+                    <a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
+                            src="asset/img/facebook%20.png" alt="facebook img" width="38"></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
+                                                                                  alt="linklin img" width="38"></a>
+                    <a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
+                            src="asset/img/github-logo.png" alt="git hub img" width="38"></a>
                 </figure>
-                <h2>Follow me</h2>
-                <div>
-                    <figure>
-                        <a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
-                                                      width="40"></a>
-                        <a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
-                                                                        width="40"></a>
-                        <a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
-                                src="asset/img/facebook%20.png" alt="facebook img" width="38"></a>
-                        <a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
-                                                                                      alt="linklin img" width="38"></a>
-                        <a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
-                                src="asset/img/github-logo.png" alt="git hub img" width="38"></a>
-                    </figure>
-                </div>
-            </article>
+            </div>
+        </dfn>
     </section>
-    <section>
 
+    <section>
         <article>
             <dfn id="aboutme">
                 <h1>About Me</h1>
@@ -104,11 +143,10 @@
             </pre>
 
             <p><a href="asset/Layerd%20Architecture%20Questions.pdf" download="cv.pdf">
-                <button>Download Cv</button>
+                <button class="bttn">Download Cv</button>
             </a></p>
 
         </article>
-
     </section>
 
     <section>
@@ -150,6 +188,7 @@
         G/Ampegama Primary School
         </pre>
     </section>
+
     <section>
         <dfn id="skills">
             <h1>My Skills</h1>
@@ -170,6 +209,7 @@
             <img src="asset/img/netbeen.png" width="200">
         </figure>
     </section>
+
     <section>
         <dfn id="project">
             <h1>My Project</h1>
@@ -183,6 +223,7 @@
         </figure>
     </section>
 </main>
+
 <footer>
     <dfn id="contact">
         <h1>Contact Me</h1>
@@ -216,7 +257,7 @@
                 <br>
                 <textarea name="massage" cols="20" rows="8" placeholder="Massage"></textarea>
                 <br>
-                <button formaction="sendmassage">Send</button>
+                <button formaction="sendmassage" class="bttn">Send</button>
             </fieldset>
         </form>
         <aside>
