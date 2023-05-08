@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Animation Assignment 01</title>
+    <link rel="stylesheet" href="../../../asset/css/normalize.css">
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        section> div{
+            width: 180px;
+            height: 80px;
+            background: red;
+            border-radius: 50px;
+
+            animation-name: rotate;
+            animation-duration: 7s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            position: relative;
+        }
+
+        @keyframes rotate{
+            0%{
+                left: 0;
+                top: 0;
+                background: red;
+            }
+            25% {
+                left: 90vw;
+                top: 0;
+                transform: rotate(90deg);
+                background: green;
+            }
+            50% {
+                left: 90vw;
+                top: 600px;
+                transform: rotate(180deg);
+                background: #ffff00;
+            }
+            75% {
+                left: 0;
+                top: 600px;
+                transform: rotate(270deg);
+                background: deeppink;
+            }
+            100% {
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+                background: #095fc0;
+            }
+        }
+    </style>
 </head>
 <body>
-
+<section>
+    <div></div>
+</section>
 </body>
 </html>
