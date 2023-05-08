@@ -18,7 +18,29 @@
             width: 400px;
             height: 400px;
             border-radius: 100%;
-            background-color: limegreen;
+            background-color: #4a5a74;
+        }
+        section>div::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 20px solid white;
+            border-top: 20px solid red;
+            border-radius: 100%;
+        }
+        section>div:hover::before{
+            cursor: pointer;
+            transform: rotate(360deg);
+            transition: all 1s;
+        }
+        section>div>h1{
+            position: relative;
+            color: white;
+            text-align: center;
+            top: 160px;
         }
     </style>
 </head>
