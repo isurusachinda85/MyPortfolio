@@ -5,17 +5,56 @@
     <title>Assignment 01</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="../../../asset/fonts-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../../../asset/css/normalize.css">
     <style>
-        section{
+        section {
             width: 300px;
             height: 400px;
-            border: 2px solid;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             position: relative;
             top: 130px;
-            /*right: 230px;*/
+            right: 230px;
+        }
+
+        section > div {
+            position: relative;
+            height: 50px;
+            left: 0;
+            transition: all 2s;
+            background: blue;
+            box-shadow: 0px 1px 4px 2px #282424;
+        }
+
+        section > div:hover {
+            left: 230px;
+            transition: all 1s;
+            background: red;
+        }
+
+        div > h1 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            margin: auto;
+            height: max-content;
+            width: max-content;
+            color: white;
+            font-size: 25px;
+        }
+
+        div > i {
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            height: max-content;
+            width: max-content;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            margin: auto;
         }
     </style>
 </head>
