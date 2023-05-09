@@ -4,7 +4,70 @@
     <meta charset="UTF-8">
     <title>Animation Assignment 03</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
-<!--    <link rel="stylesheet" href="../../../asset/css/normalize.css">-->
+    <link rel="stylesheet" href="../../../asset/css/normalize.css">
+    <style>
+        main{
+            width: 900px;
+            height: 480px;
+            position: absolute;
+            box-shadow: 4px 4px 4px 1px #736060;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow-x: hidden;
+        }
+        main>section{
+            height: 100%;
+            width: 400%;
+            display: flex;
+
+            animation-name: slider;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        main>section>div{
+            height: 100%;
+            width: 100%;
+        }
+        .img1{
+            background: url("assest/01.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .img2{
+            background: url("assest/02.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .img3{
+            background: url("assest/03.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .img4{
+            background: url("assest/04.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        @keyframes slider {
+            0%,20%{
+                transform: translateX(0);
+            }
+            25%,40%{
+                transform: translateX(-25%);
+            }
+            50%,70%{
+                transform: translateX(-50%);
+            }
+            80%,100%{
+                transform: translateX(-75%);
+            }
+        }
+    </style>
 </head>
 <body>
 <main>
