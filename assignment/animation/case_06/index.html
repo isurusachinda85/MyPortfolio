@@ -31,7 +31,44 @@
         }
         .road{
             display: flex;
+            position: absolute;
+            bottom: 0;
+
+            animation-name: road;
+            animation-duration: 10s;
         }
+        .road>img{
+            height: 13vw;
+        }
+        @keyframes road {
+            from{
+                left: 0;
+            }
+            to{
+                left: -200%;
+            }
+        }
+        .car{
+            position: absolute;
+            height: 30%;
+            width: 100%;
+            bottom: 0;
+        }
+        .car>img{
+            position: absolute;
+            width: 30%;
+            left: 0;
+            right: 0;
+            bottom: 15vh;
+            margin: auto;
+        }
+        .wheel{
+            position: absolute;
+            height: 30%;
+            width: 100%;
+            bottom: 0;
+        }
+
     </style>
 </head>
 <body>
