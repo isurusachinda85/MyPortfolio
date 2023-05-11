@@ -23,55 +23,101 @@
         header {
             background: white;
             width: 100%;
+            position: relative;
             position: fixed;
+            box-shadow: 4px 1px 4px 0px black;
+            top: 0;
+            z-index: 1;
         }
 
         header > nav {
             position: absolute;
-            right: 40px;
-            top: 0;
+            right: 0;
+            top: 15px;
         }
 
         header > nav > menu > ul > li {
             display: inline-block;
             padding-right: 20px;
+            font-weight: bold;
         }
 
-        body > main > section:nth-child(1) {
-            padding-left: 52px;
-            padding-top: 60px;
+        body > main > section{
+            margin-top: 81px;
+            margin-left: 100px;
+            margin-right: 70px;
+            margin-bottom: 30px;
+            border: 2px solid;
+            padding-top: 10px;
+            position: relative;
+        }
+        header>h1{
+            margin-left: 25px;
+            color: #095fc0;
         }
 
-        #name {
+        main>section:nth-child(1)>dfn>h1{
             font-family: "Arial Black";
             font-weight: bold;
             font-size: 50px;
+            margin-top: 60px;
         }
-
-        #dev {
+        main>section:nth-child(1)>dfn>h3{
             color: rgba(113, 104, 104, 0.85);
             font-weight: bold;
             font-size: 30px;
+            margin-top: 40px;
         }
 
-        .bttn {
+
+        #bttn1 {
             background-color: rgba(35, 35, 236, 0.99);
             border: none;
             color: white;
             padding: 8px 20px;
             font-size: 30px;
             font-family: "Bell MT", sans-serif;
+            font-weight: bold;
             border-radius: 20px;
             transition-duration: 0.4s;
+            position: relative;
+            left: 135px;
+            top: 41px;
         }
 
-        .bttn:hover {
+        #bttn1:hover {
             box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         }
-        #img{
+        main>section:nth-child(1)>dfn>figure:nth-child(4){
             position: relative;
-            left: 50px;
+            left: 820px;
+            bottom: 80px;
         }
+        #img{
+            border-radius: 50px;
+        }
+        main>section:nth-child(1)>dfn>h2{
+            position: absolute;
+            color: #095fc0;
+            font-family: "Arial Black";
+            text-shadow: 2px 2px 8px #4a5a74;
+            font-weight: bold;
+            bottom:260px;
+            left: 82px;
+        }
+        main>section:nth-child(1)>dfn>figure>div{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 100%;
+        }
+        main>section:nth-child(1)>dfn>figure:nth-child(6){
+            position: absolute;
+            bottom: 148px;
+            left: 90px;
+        }
+
     </style>
 
 <body>
@@ -95,17 +141,26 @@
 <main>
     <section>
         <dfn id="home">
-            <h1 id="name">Hello I'm Isuru Sachinda Lakshan Ranaweera</h1>
-            <h3 id="dev">Full stack developer</h3>
-            <button class="bttn">Hire Me</button>
-            <h4></h4>
+            <h1>Hello I'm Isuru Sachinda Lakshan Ranaweera</h1>
+            <h3>Full stack developer</h3>
+            <button id="bttn1">Hire Me</button>
+
             <figure>
                 <aside><img id="img" src="asset/img/IMG_20220523_000321_899.jpg" alt="frofile pic" width="300"></aside>
             </figure>
             <h2>Follow me</h2>
-            <div>
                 <figure>
-                    <a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
+                    <div><a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
+                                                                  width="40"></a></div>
+                    <div><a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
+                                                                         width="40"></a></div>
+                    <div><a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
+                            src="asset/img/facebook%20.png" alt="facebook img" width="38"></a></div>
+                    <div><a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
+                                                                                       alt="linklin img" width="38"></a></div>
+                    <div><a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
+                            src="asset/img/github-logo.png" alt="git hub img" width="38"></a></div>
+                    <!--<a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
                                                   width="40"></a>
                     <a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
                                                                     width="40"></a>
@@ -114,9 +169,8 @@
                     <a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
                                                                                   alt="linklin img" width="38"></a>
                     <a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
-                            src="asset/img/github-logo.png" alt="git hub img" width="38"></a>
+                            src="asset/img/github-logo.png" alt="git hub img" width="38"></a>-->
                 </figure>
-            </div>
         </dfn>
     </section>
 
@@ -143,7 +197,7 @@
             </pre>
 
             <p><a href="asset/Layerd%20Architecture%20Questions.pdf" download="cv.pdf">
-                <button class="bttn">Download Cv</button>
+                <button>Download Cv</button>
             </a></p>
 
         </article>
@@ -257,7 +311,7 @@
                 <br>
                 <textarea name="massage" cols="20" rows="8" placeholder="Massage"></textarea>
                 <br>
-                <button formaction="sendmassage" class="bttn">Send</button>
+                <button formaction="sendmassage">Send</button>
             </fieldset>
         </form>
         <aside>
