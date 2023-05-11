@@ -15,6 +15,7 @@
     <meta name="theme-color" content="blue">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="stylesheet" href="asset/fonts-awesome/css/all.min.css">
     <style>
         * {
             font-style: normal;
@@ -42,27 +43,30 @@
             font-weight: bold;
         }
 
-        body > main > section{
+        body > main > section {
             margin-top: 81px;
             margin-left: 100px;
             margin-right: 70px;
             margin-bottom: 30px;
-            border: 2px solid;
+            /*border: 2px solid;*/
             padding-top: 10px;
             position: relative;
+            height: 950px;
         }
-        header>h1{
+
+        header > h1 {
             margin-left: 25px;
             color: #095fc0;
         }
 
-        main>section:nth-child(1)>dfn>h1{
+        main > section:nth-child(1) > dfn > h1 {
             font-family: "Arial Black";
             font-weight: bold;
             font-size: 50px;
             margin-top: 60px;
         }
-        main>section:nth-child(1)>dfn>h3{
+
+        main > section:nth-child(1) > dfn > h3 {
             color: rgba(113, 104, 104, 0.85);
             font-weight: bold;
             font-size: 30px;
@@ -88,34 +92,114 @@
         #bttn1:hover {
             box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         }
-        main>section:nth-child(1)>dfn>figure:nth-child(4){
+
+        main > section:nth-child(1) > dfn > div:nth-child(4) {
+            background: url("asset/img/IMG_20220523_000321_899.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 300px;
+            height: 400px;
             position: relative;
             left: 820px;
             bottom: 80px;
-        }
-        #img{
+            box-shadow: 1px 2px 4px 0px #2e2b34;
             border-radius: 50px;
         }
-        main>section:nth-child(1)>dfn>h2{
+
+
+        main > section:nth-child(1) > dfn > h2 {
             position: absolute;
             color: #095fc0;
             font-family: "Arial Black";
             text-shadow: 2px 2px 8px #4a5a74;
             font-weight: bold;
-            bottom:260px;
+            bottom: 260px;
             left: 82px;
         }
-        main>section:nth-child(1)>dfn>figure>div{
+
+        main > section:nth-child(1) > dfn > figure > div {
             width: 40px;
             height: 40px;
             display: inline-block;
             margin: 10px;
             border-radius: 100%;
         }
-        main>section:nth-child(1)>dfn>figure:nth-child(6){
+
+        main > section:nth-child(1) > dfn > figure:nth-child(6) {
             position: absolute;
             bottom: 148px;
             left: 90px;
+        }
+
+        main > section:nth-child(2) > dfn > h1 {
+            font-family: "Arial Black";
+            color: greenyellow;
+            font-size: 50px;
+            position: absolute;
+            left: 40%;
+            display: inline-block;
+        }
+
+        main > section:nth-child(2) > div:nth-child(2) {
+            background: url("asset/img/about.jpg");
+            background-size: cover;
+            background-position: center;
+            box-shadow: 1px 2px 4px 0px #2e2b34;
+            height: 670px;
+            width: 300px;
+            position: relative;
+            top: 210px;
+            left: 54px;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 50vw;
+            position: relative;
+            left: 373px;
+            bottom: 525px;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > p:nth-child(1) {
+            padding-top: 50px;
+            color: black;
+            font-size: 2.25rem;
+            font-weight: bold;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 50vw;
+            position: relative;
+            left: 3px;
+            bottom: 25px;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > h4 {
+            font-size: 1.25rem;
+            margin: 5px;
+        }
+        #bttn2 {
+            background-color: rgba(35, 35, 236, 0.99);
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            font-size: 30px;
+            font-family: "Bell MT", sans-serif;
+            font-weight: bold;
+            border-radius: 20px;
+            transition-duration: 0.4s;
+            position: absolute;
+            left: 648px;
+            top: 820px;
+        }
+
+        #bttn2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         }
 
     </style>
@@ -145,62 +229,57 @@
             <h3>Full stack developer</h3>
             <button id="bttn1">Hire Me</button>
 
-            <figure>
-                <aside><img id="img" src="asset/img/IMG_20220523_000321_899.jpg" alt="frofile pic" width="300"></aside>
-            </figure>
+            <div></div>
             <h2>Follow me</h2>
-                <figure>
-                    <div><a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
-                                                                  width="40"></a></div>
-                    <div><a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
-                                                                         width="40"></a></div>
-                    <div><a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
-                            src="asset/img/facebook%20.png" alt="facebook img" width="38"></a></div>
-                    <div><a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
-                                                                                       alt="linklin img" width="38"></a></div>
-                    <div><a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
-                            src="asset/img/github-logo.png" alt="git hub img" width="38"></a></div>
-                    <!--<a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
-                                                  width="40"></a>
-                    <a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
-                                                                    width="40"></a>
-                    <a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
-                            src="asset/img/facebook%20.png" alt="facebook img" width="38"></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
-                                                                                  alt="linklin img" width="38"></a>
-                    <a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
-                            src="asset/img/github-logo.png" alt="git hub img" width="38"></a>-->
-                </figure>
+            <figure>
+                <div><a href="tel:0763880467"><img src="asset/img/whatsapp.png" alt="whatsapp img"
+                                                   width="40"></a></div>
+                <div><a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
+                                                                     width="40"></a></div>
+                <div><a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
+                        src="asset/img/facebook%20.png" alt="facebook img" width="38"></a></div>
+                <div><a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
+                                                                                   alt="linklin img" width="38"></a>
+                </div>
+                <div><a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
+                        src="asset/img/github-logo.png" alt="git hub img" width="38"></a></div>
+            </figure>
         </dfn>
     </section>
 
     <section>
-        <article>
-            <dfn id="aboutme">
-                <h1>About Me</h1>
-            </dfn>
-
-            <aside><img src="asset/img/about.jpg" alt="about me pic" width="300"></aside>
-            <pre>
-                I am a software engineering student at <abbr title="Institute of Java Software Engineering">IJSE</abbr> and
-                currently completing my second semester.I’m skilled with Java, MySQL  and I am trying to learn other programming
-                languages, step by step.An easy-going person with appositive attitude and the ability to work in good teams.
-
-                <b>Name</b>       :     Isuru Sachinda Lakshan Ranaweera
-                <b>Age</b>        :   23
-                <b>Birthday</b>   :    1999/11/23
-                <b>Address</b>    :    Batalanda,Gurusinhagoda,Ampegama
-                <b>City</b>       :   Galle
-                <b>Country</b>    :   Sri Lanka
-                <b>Contact</b>    :    (+94) 763880467
-                <b>Email</b>      :   isurusachintha8@gmail.com
-            </pre>
-
-            <p><a href="asset/Layerd%20Architecture%20Questions.pdf" download="cv.pdf">
-                <button>Download Cv</button>
-            </a></p>
-
-        </article>
+        <dfn id="aboutme">
+            <h1>About Me</h1>
+        </dfn>
+        <div></div>
+        <div>
+            <p>
+                I am a software engineering student at <abbr title="Institute of Java Software Engineering">IJSE</abbr>
+                and
+                currently completing my second semester.I am skilled with Java, MySQL and I am trying to learn other
+                programming
+                languages, step by step.An easy-going person with appositive attitude and the ability to work in good
+                teams.
+            </p>
+            <div>
+                <h4><b>Name</b> : Isuru Sachinda Lakshan Ranaweera</h4>
+                <h4><b>Age</b> : 23</h4>
+                <h4><b>Birthday</b> : 1999/11/23</h4>
+                <h4><b>Address</b> : Batalanda,Gurusinhagoda,Ampegama</h4>
+                <h4><b>City</b> : Galle</h4>
+                <h4><b>Country</b> : Sri Lanka</h4>
+                <h4><b>Contact</b> : (+94) 763880467</h4>
+                <h4><b>Email</b> : isurusachintha8@gmail.com</h4>
+            </div>
+        </div>
+        <p>
+        </p>
+        <p><a href="asset/Layerd%20Architecture%20Questions.pdf" download="cv.pdf">
+            <button id="bttn2">
+                Download Cv
+                <i class="fa fa-download" aria-hidden="true"></i>
+            </button>
+        </a></p>
     </section>
 
     <section>
