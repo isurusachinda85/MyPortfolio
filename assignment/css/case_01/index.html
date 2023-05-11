@@ -6,204 +6,216 @@
     <link rel="stylesheet" href="../../../asset/css/normalize.css">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <style>
-        div{
+        section {
             width: 50vw;
             height: 50vh;
             position: absolute;
         }
-        div:nth-child(1){
+
+        section:nth-child(1) {
             background: red;
-            position: absolute;
+            top: 0;
+            left: 0;
         }
-        div:nth-child(2){
+
+        section:nth-child(2) {
             background: green;
+            top: 0;
             right: 0;
         }
-        div:nth-child(3){
-            background: deeppink;
-            right: 0;
-            bottom: 0;
-        }
-        div:nth-child(4){
+
+        section:nth-child(3) {
             background: orange;
             left: 0;
             bottom: 0;
         }
-        section:nth-child(5)>div:nth-child(1){
-            height: 150px;
-            width: 150px;
-            background: white;
-            position: absolute;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-            z-index:1;
-        }
-        section:nth-child(5)>div:nth-child(2){
-            height: 100px;
-            width: 100px;
-            border-radius: 100px;
-            background: red;
-            position: absolute;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-            z-index:1;
-        }
-        section:nth-child(6)>div:nth-child(1){
-            height: 100px;
-            width: 100px;
-            background: white;
-            border-bottom-right-radius: 150px;
-            z-index: 1;
 
+        section:nth-child(4) {
+            background: deeppink;
+            right: 0;
+            bottom: 0;
         }
-        section:nth-child(6)>div:nth-child(2){
+
+        div:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        div:nth-child(6) {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(1) > div:nth-child(1) {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(1) > div:nth-child(2) {
             height: 100px;
             width: 100px;
+            background: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(2) > div:nth-child(1) {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
             background: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(2) > div:nth-child(2) {
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(3) > div:nth-child(1) {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(3) > div:nth-child(2) {
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(4) > div:nth-child(1) {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(4) > div:nth-child(2) {
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        div:nth-child(7){
+            width: 100px;
+            height: 100px;
+            background: white;
+            position: absolute;
+            border-bottom-right-radius: 150px;
+        }
+        div:nth-child(8){
+            width: 100px;
+            height: 100px;
+            background: white;
+            position: absolute;
             border-bottom-left-radius: 150px;
-            z-index: 1;
+            right: 0;
         }
-        section:nth-child(6)>div:nth-child(3){
-            height: 100px;
+        div:nth-child(9){
             width: 100px;
+            height: 100px;
             background: white;
+            position: absolute;
+            border-top-right-radius: 150px;
+            bottom: 0;
+        }
+        div:nth-child(10){
+            width: 100px;
+            height: 100px;
+            background: white;
+            position: absolute;
             border-top-left-radius: 150px;
-            z-index: 1;
+            right: 0;
+            bottom: 0;
         }
-        section:nth-child(6)>div:nth-child(4){
+        div:nth-child(11){
+            width: 200px;
             height: 100px;
-            width: 100px;
             background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-top-left-radius: 200px;
             border-top-right-radius: 200px;
-            z-index: 1;
         }
-        section:nth-child(8)>div:nth-child(1){
-            background: white;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            height: 100px;
+        div:nth-child(12){
             width: 200px;
-            z-index: 1;
-            border-top-left-radius: 100px;
-            border-top-right-radius: 100px;
-        }
-        section:nth-child(8)>div:nth-child(2){
-            background: white;
-            left: 0;
-            margin: auto;
             height: 100px;
-            width: 200px;
-            position: relative;
-            border-bottom-left-radius: 100px;
-            border-bottom-right-radius: 100px;
-        }
-        #rgp>.red>.circle1{
-            height: 150px;
-            width: 150px;
-            border-radius: 100px;
             background: white;
             position: absolute;
-            margin: auto;
-            left: 0;
             right: 0;
             top: 0;
-            bottom: 0;
-            z-index: 10;
-        }
-        #rgp>.red>.circle1>.squ1{
-            height: 50px;
-            width: 50px;
-            background: red;
-            position: absolute;
-            margin: auto;
             left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 10;
-        }
-        #rgp>.green>.circle2{
-            height: 150px;
-            width: 150px;
-            border-radius: 100px;
-            background: white;
-            position: absolute;
             margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 10;
-        }
-        #rgp>.green>.circle2>.squ2{
-            height: 50px;
-            width: 50px;
-            background: red;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 10;
-        }
-        #rgp>.orange>.circle3{
-            height: 150px;
-            width: 150px;
-            border-radius: 100px;
-            background: white;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 10;
-        }
-        #rgp>.orange>.circle3>.squ3{
-            height: 50px;
-            width: 50px;
-            background: red;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 10;
-        }
-        #rgp>.deeppink>.circle4{
-            height: 150px;
-            width: 150px;
-            border-radius: 100px;
-            background: white;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 10;
-        }
-        #rgp>.deeppink>.circle4>.squ4{
-            height: 50px;
-            width: 50px;
-            background: red;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 10;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
         }
     </style>
 
@@ -211,14 +223,6 @@
 <body>
 <section>
     <div></div>
-</section>
-<section>
-    <div></div>
-</section>
-<section>
-    <div></div>
-</section>
-<section>
     <div></div>
 </section>
 <section>
@@ -228,35 +232,21 @@
 <section>
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
-</section>
-<section id="rgp">
-    <div class="red">
-        <div class="circle1">
-            <div class="squ1"></div>
-        </div>
-    </div>
-    <div class="green">
-        <div class="circle2">
-            <div class="squ2"></div>
-        </div>
-    </div>
-    <div class="orange">
-        <div class="circle3">
-            <div class="squ3"></div>
-        </div>
-    </div>
-    <div class="deeppink">
-        <div class="circle4">
-            <div class="squ4"></div>
-        </div>
-    </div>
 </section>
 <section>
     <div></div>
     <div></div>
 </section>
 
+<div></div>
+<div></div>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<div></div>
+<div></div>
 </body>
 </html>
