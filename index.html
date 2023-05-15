@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -21,12 +21,13 @@
             font-style: normal;
         }
 
+        /*=================Header============================*/
         header {
             background: white;
             width: 100%;
-            position: relative;
+            /*position: relative;*/
             position: fixed;
-            box-shadow: 4px 1px 4px 0px black;
+            box-shadow: 4px 1px 4px 0px #2582e5;
             top: 0;
             z-index: 1;
         }
@@ -43,12 +44,13 @@
             font-weight: bold;
         }
 
+        /*===============All Section=============*/
         body > main > section {
             margin-top: 81px;
             margin-left: 100px;
             margin-right: 70px;
             margin-bottom: 30px;
-            /*border: 2px solid;*/
+            border: 2px solid;
             padding-top: 10px;
             position: relative;
             /*height: 950px;*/
@@ -59,6 +61,7 @@
             color: #095fc0;
         }
 
+        /*==========Home========================*/
         main > section:nth-child(1) > dfn > h1 {
             font-family: "Arial Black";
             font-weight: bold;
@@ -132,6 +135,7 @@
             left: 90px;
         }
 
+        /*==================About Me==============*/
         main > section:nth-child(2) > dfn > h1 {
             font-family: "Arial Black";
             color: greenyellow;
@@ -183,7 +187,7 @@
             margin: 7px;
         }
 
-        main>section:nth-child(2)>a>#bttn2 {
+        main > section:nth-child(2) > a > #bttn2 {
             background-color: rgba(35, 35, 236, 0.99);
             border: none;
             color: white;
@@ -199,11 +203,83 @@
 
         }
 
-        main>section:nth-child(2)>a>#bttn2:hover {
+        main > section:nth-child(2) > a > #bttn2:hover {
             box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
             cursor: inherit;
         }
 
+        /*=========My Education=================*/
+        main > section:nth-child(3) > dfn > h1 {
+            font-family: "Arial Black";
+            color: greenyellow;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        main > section:nth-child(3) > div {
+            border: 2px solid;
+            display: inline-block;
+            width: 20%;
+        }
+
+        main > section:nth-child(3) > div > h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: "Arial Black";
+        }
+
+        main > section:nth-child(3) > div > h4 {
+            color: blue;
+            font-family: "Arial Black";
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+        main > section:nth-child(3) > div > p{
+            text-align: center;
+        }
+        main > section:nth-child(3)>#img1{
+            position: relative;
+            left: 110px;
+            bottom: 100px;
+        }
+        main > section:nth-child(3) > div:nth-child(3){
+            position: relative;
+            left: 150px;
+            bottom: 20px;
+        }
+        main > section:nth-child(3)>#img2{
+            position: relative;
+            left: 410px;
+            bottom: 100px;
+        }
+        main > section:nth-child(3) > div:nth-child(5){
+            position: relative;
+            left: 450px;
+            bottom: 30px;
+        }
+        main > section:nth-child(3)>#img3{
+            position: relative;
+            right: 590px;
+            top: 150px;
+
+        }
+        main > section:nth-child(3) > div:nth-child(7){
+            position: relative;
+            right: 550px;
+            top: 220px;
+        }
+        main > section:nth-child(3)>#img4{
+            position: relative;
+            right: 290px;
+            top: 150px;
+        }
+        main > section:nth-child(3) > div:nth-child(9){
+            position: relative;
+            left: 870px;
+            top: 50px;
+        }
     </style>
 
 <body>
@@ -258,7 +334,8 @@
             <p>
                 I am a software engineering student at <abbr title="Institute of Java Software Engineering">IJSE</abbr>
                 and
-                currently completing my second semester.I am skilled with Java, MySQL and I am trying to learn other
+                currently completing my second semester.I am skilled with Java, MySQL,HTML,CSS and I am trying to learn
+                other
                 programming
                 languages, step by step.An easy-going person with appositive attitude and the ability to work in good
                 teams.
@@ -289,39 +366,51 @@
             <h1>My Education</h1>
         </dfn>
 
-        <img src="asset/img/edu.png" alt="education" width="70">
-        <h5>2022-Present</h5>
-        <pre>
-               <b>Student Of IJSE</b>
+        <img id="img1" src="asset/img/edu.png" alt="education" width="70">
 
+        <div>
+            <h4>2022-Present</h4>
+            <h2>Student Of IJSE</h2>
+            <p>
             BSc (Hons) In Computer Science.
-            IJSE - Institute Of Software Engineering
+            IJSE| Institute Of Software Engineering|
             GDSE-62 Batch
-        </pre>
-        <img src="asset/img/edu.png" alt="education" width="70">
-        <h5>2017-2019</h5>
-        <pre>
-            <b>Advanced Level</b>
+            </p>
+        </div>
 
-        2017 - 2019 A/L Batch | tec Stream |
+        <img id="img2"src="asset/img/edu.png" alt="education" width="70">
+
+        <div>
+            <h4>2017-2019</h4>
+            <h2>Advanced Level</h2>
+            <p>
+            2017 - 2019 A/L Batch | tec Stream |
             G/Batapola central college
-        </pre>
-        <img src="asset/img/edu.png" alt="education" width="70">
-        <h5>2016</h5>
-        <pre>
-            <b>Ordinary Level</b>
+            </p>
+        </div>
 
-              2016/O/L | Sinhala Medium
+        <img id="img3"src="asset/img/edu.png" alt="education" width="70">
+
+        <div>
+            <h4>2016</h4>
+            <h2>Ordinary Level</h2>
+            <p>
+            2016/O/L | Sinhala Medium
             St.Anthony's college baddegama
-        </pre>
-        <img src="asset/img/edu.png" alt="education" width="70">
-        <h5>2005-2010</h5>
-        <pre>
-            <b>Primary Education</b>
+            </p>
+        </div>
 
-              2005-2010
-        G/Ampegama Primary School
-        </pre>
+        <img id="img4"src="asset/img/edu.png" alt="education" width="70">
+
+        <div>
+            <h4>2005-2010</h4>
+            <h2>Primary Education</h2>
+            <p>
+            2005-2010
+            G/Ampegama Primary School
+            </p>
+        </div>
+
     </section>
 
     <section>
