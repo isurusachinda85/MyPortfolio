@@ -27,7 +27,7 @@
             width: 100%;
             /*position: relative;*/
             position: fixed;
-            box-shadow: 4px 1px 4px 0px #2582e5;
+            box-shadow: 0 4px 5px #3A86FF;
             top: 0;
             z-index: 1;
         }
@@ -50,7 +50,9 @@
             margin-left: 100px;
             margin-right: 70px;
             margin-bottom: 30px;
+
             border: 2px solid;
+
             padding-top: 10px;
             position: relative;
             /*height: 950px;*/
@@ -106,7 +108,7 @@
             position: relative;
             left: 820px;
             bottom: 80px;
-            box-shadow: 1px 2px 4px 0px #2e2b34;
+            box-shadow: 4px 2px 10px 2px #1362ad;
             border-radius: 50px;
         }
 
@@ -141,13 +143,14 @@
             color: greenyellow;
             font-size: 50px;
             text-align: center;
+            text-shadow: 2px 2px 8px #151313;
         }
 
         main > section:nth-child(2) > div:nth-child(2) {
             background: url("asset/img/about.jpg");
             background-size: cover;
             background-position: center;
-            box-shadow: 1px 2px 4px 0px #2e2b34;
+            box-shadow: 4px 2px 10px 2px #1362ad;
             height: 497px;
             width: 300px;
             position: absolute;
@@ -214,10 +217,11 @@
             color: greenyellow;
             font-size: 50px;
             text-align: center;
+            text-shadow: 2px 2px 8px #151313;
         }
 
         main > section:nth-child(3) > div {
-            border: 2px solid;
+            /*border: 2px solid;*/
             display: inline-block;
             width: 20%;
         }
@@ -236,50 +240,102 @@
             font-size: 20px;
             text-align: center;
         }
-        main > section:nth-child(3) > div > p{
+
+        main > section:nth-child(3) > div > p {
             text-align: center;
         }
-        main > section:nth-child(3)>#img1{
+
+        main > section:nth-child(3) > #img1 {
             position: relative;
             left: 110px;
-            bottom: 100px;
+            bottom: 90px;
         }
-        main > section:nth-child(3) > div:nth-child(3){
+
+        main > section:nth-child(3) > div:nth-child(3) {
             position: relative;
             left: 150px;
-            bottom: 20px;
+            bottom: 10px;
         }
-        main > section:nth-child(3)>#img2{
+
+        main > section:nth-child(3) > #img2 {
             position: relative;
             left: 410px;
-            bottom: 100px;
+            bottom: 90px;
         }
-        main > section:nth-child(3) > div:nth-child(5){
+
+        main > section:nth-child(3) > div:nth-child(5) {
             position: relative;
             left: 450px;
-            bottom: 30px;
+            bottom: 20px;
         }
-        main > section:nth-child(3)>#img3{
+
+        main > section:nth-child(3) > #img3 {
             position: relative;
             right: 590px;
-            top: 150px;
+            top: 160px;
 
         }
-        main > section:nth-child(3) > div:nth-child(7){
+
+        main > section:nth-child(3) > div:nth-child(7) {
             position: relative;
             right: 550px;
-            top: 220px;
+            top: 230px;
         }
-        main > section:nth-child(3)>#img4{
+
+        main > section:nth-child(3) > #img4 {
             position: relative;
             right: 290px;
-            top: 150px;
+            top: 160px;
         }
-        main > section:nth-child(3) > div:nth-child(9){
+
+        main > section:nth-child(3) > div:nth-child(9) {
             position: relative;
             left: 870px;
-            top: 50px;
+            top: 60px;
         }
+
+        /*=============Skills======================*/
+        main > section:nth-child(4) > dfn > h1 {
+            font-family: "Arial Black";
+            color: greenyellow;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 2px 2px 8px #151313;
+        }
+
+        main > section:nth-child(4) > h3 {
+            color: blue;
+            font-family: "Arial Black";
+            font-size: 20px;
+            position: relative;
+            width: 150px;
+            left: 100px;
+        }
+        main > section:nth-child(4)>.lang{
+            height: 130px;
+            width: 130px;
+            box-shadow: 4px 2px 10px 2px #1362ad;
+            border-radius: 20px;
+            margin: 20px;
+            position: relative;
+            left: 220px;
+        }
+        .lang:hover{
+            background-color: #4a5a74;
+        }
+        main > section:nth-child(4)>.tool{
+            height: 130px;
+            width: 130px;
+            box-shadow: 4px 2px 10px 2px #1362ad;
+            border-radius: 20px;
+            margin: 20px;
+            position: relative;
+            left: 50px;
+        }
+        .tool:hover{
+            background-color: #4a5a74;
+        }
+
     </style>
 
 <body>
@@ -361,7 +417,7 @@
         </a>
     </section>
 
-    <section>
+    <section style="height: 550px">
         <dfn id="education">
             <h1>My Education</h1>
         </dfn>
@@ -372,42 +428,42 @@
             <h4>2022-Present</h4>
             <h2>Student Of IJSE</h2>
             <p>
-            BSc (Hons) In Computer Science.
-            IJSE| Institute Of Software Engineering|
-            GDSE-62 Batch
+                BSc (Hons) In Computer Science.
+                IJSE| Institute Of Software Engineering|
+                GDSE-62 Batch
             </p>
         </div>
 
-        <img id="img2"src="asset/img/edu.png" alt="education" width="70">
+        <img id="img2" src="asset/img/edu.png" alt="education" width="70">
 
         <div>
             <h4>2017-2019</h4>
             <h2>Advanced Level</h2>
             <p>
-            2017 - 2019 A/L Batch | tec Stream |
-            G/Batapola central college
+                2017 - 2019 A/L Batch | tec Stream |
+                G/Batapola central college
             </p>
         </div>
 
-        <img id="img3"src="asset/img/edu.png" alt="education" width="70">
+        <img id="img3" src="asset/img/edu.png" alt="education" width="70">
 
         <div>
             <h4>2016</h4>
             <h2>Ordinary Level</h2>
             <p>
-            2016/O/L | Sinhala Medium
-            St.Anthony's college baddegama
+                2016/O/L | Sinhala Medium
+                St.Anthony's college baddegama
             </p>
         </div>
 
-        <img id="img4"src="asset/img/edu.png" alt="education" width="70">
+        <img id="img4" src="asset/img/edu.png" alt="education" width="70">
 
         <div>
             <h4>2005-2010</h4>
             <h2>Primary Education</h2>
             <p>
-            2005-2010
-            G/Ampegama Primary School
+                2005-2010
+                G/Ampegama Primary School
             </p>
         </div>
 
@@ -418,20 +474,29 @@
             <h1>My Skills</h1>
         </dfn>
         <h3>Languages :-</h3>
-        <figure>
-            <img src="asset/img/java.png" width="300">
-            <img src="asset/img/mysql.png" width="300">
-            <img src="asset/img/fx.png" width="300">
-        </figure>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <img class="lang" src="asset/img/imageTool/java.png" width="200">
+        <img class="lang" src="asset/img/imageTool/mysql.png" width="200">
+        <img class="lang" src="asset/img/imageTool/fx.png" width="200">
+        <img class="lang" src="asset/img/imageTool/html.png" width="200">
+        <img class="lang" src="asset/img/imageTool/css.png" width="200">
+
         <h3>Tool :-</h3>
-        <figure>
-            <img src="asset/img/intelij.png" width="200">
-            <img src="asset/img/vcode.png" width="200">
-            <img src="asset/img/netbeen.png" width="200">
-            <img src="asset/img/figma.png" width="200">
-            <img src="asset/img/seanbiulder.png" width="200">
-            <img src="asset/img/netbeen.png" width="200">
-        </figure>
+
+        <img class="tool" src="asset/img/imageTool/intelij.png" width="150">
+        <img class="tool" src="asset/img/imageTool/vcode.png" width="150">
+        <img class="tool" src="asset/img/imageTool/netbeen.png" width="150">
+        <img class="tool" src="asset/img/imageTool/figma.png" width="150">
+        <img class="tool" src="asset/img/imageTool/scene.png" width="150">
+        <img class="tool" src="asset/img/imageTool/hibernate.png" width="150">
+        <img class="tool" src="asset/img/imageTool/boostrap.png" width="150">
+
     </section>
 
     <section>
