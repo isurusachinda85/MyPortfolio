@@ -414,12 +414,84 @@
         footer {
             border: 2px solid;
         }
-        footer>dfn>h1{
+
+        footer > dfn > h1 {
             font-family: "Arial Black";
             color: greenyellow;
             font-size: 50px;
             text-align: center;
             text-shadow: 2px 2px 8px #151313;
+        }
+
+        footer > address > figure {
+            border: 2px solid;
+            width: 600px;
+            height: 400px;
+        }
+
+        footer > address > figure > #user {
+            border: 2px solid;
+            position: relative;
+            left: 50px;
+            top: 30px;
+        }
+
+        footer > address > figure > #uh2 {
+            border: 2px solid;
+            position: relative;
+            left: 150px;
+            bottom: 33px;
+            width: 400px;
+        }
+
+        footer > address > figure > #call {
+            border: 2px solid;
+            position: relative;
+            left: 50px;
+            bottom: 20px;
+        }
+
+        footer > address > figure > #ch2 {
+            border: 2px solid;
+            position: relative;
+            left: 150px;
+            bottom: 85px;
+            width: 400px;
+        }
+
+        footer > address > figure > #mail {
+            border: 2px solid;
+            position: relative;
+            left: 50px;
+            bottom: 70px;
+        }
+
+        footer > address > figure > #mh2 {
+            border: 2px solid;
+            position: relative;
+            left: 150px;
+            bottom: 129px;
+            width: 400px;
+        }
+
+        footer > address > figure > #loc {
+            border: 2px solid;
+            position: relative;
+            left: 50px;
+            bottom: 120px;
+        }
+
+        footer > address > figure > #lh2 {
+            border: 2px solid;
+            position: relative;
+            left: 150px;
+            bottom: 180px;
+            width: 400px;
+        }
+
+        footer > address:nth-child(3) > form {
+            border: 2px solid;
+            width: 500px;
         }
     </style>
 
@@ -609,24 +681,24 @@
     <dfn id="contact">
         <h1>Contact Me</h1>
     </dfn>
-    <address>
+    <address style="border: 2px solid">
         <figure>
-            <img src="asset/img/user.png" width="40">
-            <h2>Isuru Sachinda Lakshan</h2>
+            <img id="user" src="asset/img/user.png" width="50">
+            <h2 id="uh2">Isuru Sachinda Lakshan</h2>
             <br>
-            <img src="asset/img/call.png" width="40">
-            <h2>(+94) 763880467</h2>
+            <img id="call" src="asset/img/call.png" width="50">
+            <h2 id="ch2">(+94) 763880467</h2>
             <br>
-            <img src="asset/img/mail.png" width="40">
-            <h2>isurusachintha8@gmail.com</h2>
+            <img id="mail" src="asset/img/mail.png" width="50">
+            <h2 id="mh2">isurusachintha8@gmail.com</h2>
             <br>
-            <img src="asset/img/location.png" width="40">
-            <h2>Batalanda,Gurusinhagoda,Ampegama</h2></b>
+            <img id="loc" src="asset/img/location.png" width="50">
+            <h2 id="lh2">Batalanda,Gurusinhagoda,Ampegama</h2></b>
         </figure>
     </address>
+
     <address>
         <form method="post">
-            <fieldset>
                 <input type="text" name="txtName" placeholder="Name" required>
                 <br>
                 <br>
@@ -639,7 +711,6 @@
                 <textarea name="massage" cols="20" rows="8" placeholder="Massage"></textarea>
                 <br>
                 <button formaction="sendmassage">Send</button>
-            </fieldset>
         </form>
         <aside>
             <div>
