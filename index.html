@@ -80,23 +80,24 @@
 
 
         #bttn1 {
-            background-color: rgba(35, 35, 236, 0.99);
             border: none;
-            color: white;
-            padding: 8px 20px;
+            background-color: #0048ff;
+            padding: 14px 28px;
             font-size: 30px;
+            cursor: pointer;
             font-family: "Bell MT", sans-serif;
             font-weight: bold;
-            border-radius: 20px;
-            transition-duration: 0.4s;
+            border-radius: 25px;
             position: relative;
             left: 135px;
             top: 41px;
+            opacity: 0.8;
+            transition: 0.3s;
         }
 
         #bttn1:hover {
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-            cursor: inherit;
+            color: white;
+            opacity: 1;
         }
 
         main > section:nth-child(1) > dfn > div:nth-child(4) {
@@ -191,15 +192,16 @@
         }
 
         main > section:nth-child(2) > a > #bttn2 {
-            background-color: rgba(35, 35, 236, 0.99);
             border: none;
-            color: white;
-            padding: 8px 20px;
-            font-size: 30px;
+            background-color: #0048ff;
+            cursor: pointer;
             font-family: "Bell MT", sans-serif;
             font-weight: bold;
             border-radius: 20px;
-            transition-duration: 0.4s;
+            opacity: 0.8;
+            transition: 0.3s;
+            padding: 10px 20px;
+            font-size: 30px;
             position: absolute;
             right: 68px;
             bottom: 28px;
@@ -207,8 +209,8 @@
         }
 
         main > section:nth-child(2) > a > #bttn2:hover {
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-            cursor: inherit;
+            color: white;
+            opacity: 1;
         }
 
         /*=========My Education=================*/
@@ -412,7 +414,7 @@
 
         /*============Contact==================*/
         footer {
-            border: 2px solid;
+            /*border: 2px solid red;*/
         }
 
         footer > dfn > h1 {
@@ -424,20 +426,21 @@
         }
 
         footer > address > figure {
-            border: 2px solid;
+            /*border: 2px solid;*/
             width: 600px;
             height: 400px;
+            margin-left: 100px;
         }
 
         footer > address > figure > #user {
-            border: 2px solid;
+            /*border: 2px solid;*/
             position: relative;
             left: 50px;
             top: 30px;
         }
 
         footer > address > figure > #uh2 {
-            border: 2px solid;
+            /*border: 2px solid;*/
             position: relative;
             left: 150px;
             bottom: 33px;
@@ -445,14 +448,14 @@
         }
 
         footer > address > figure > #call {
-            border: 2px solid;
+            /*border: 2px solid;*/
             position: relative;
             left: 50px;
             bottom: 20px;
         }
 
         footer > address > figure > #ch2 {
-            border: 2px solid;
+            /*border: 2px solid;*/
             position: relative;
             left: 150px;
             bottom: 85px;
@@ -460,14 +463,14 @@
         }
 
         footer > address > figure > #mail {
-            border: 2px solid;
+            /*border: 2px solid;*/
             position: relative;
             left: 50px;
             bottom: 70px;
         }
 
         footer > address > figure > #mh2 {
-            border: 2px solid;
+            /*border: 2px solid;*/
             position: relative;
             left: 150px;
             bottom: 129px;
@@ -475,23 +478,80 @@
         }
 
         footer > address > figure > #loc {
-            border: 2px solid;
+            /*border: 2px solid;*/
             position: relative;
             left: 50px;
             bottom: 120px;
         }
 
         footer > address > figure > #lh2 {
-            border: 2px solid;
+            /*border: 2px solid;*/
             position: relative;
             left: 150px;
             bottom: 180px;
             width: 400px;
         }
 
-        footer > address:nth-child(3) > form {
-            border: 2px solid;
+        footer > address > form {
+            /*border: 2px solid;*/
+            width: 600px;
+            height: 470px;
+            position: absolute;
+            top: 16px;
+            right: 150px;
+        }
+
+        footer > address {
+            position: relative;
+        }
+
+        .text {
+            border: none;
             width: 500px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 4px 2px 10px 2px #5d5f61;
+            font-weight: bold;
+            padding: 5px;
+            margin: 10px;
+            outline: none;
+        }
+
+        #text {
+            border: none;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 4px 2px 10px 2px #5d5f61;
+            resize: none;
+            padding: 5px;
+            margin: 10px;
+            font-weight: bold;
+            outline: none;
+        }
+        .text:hover{
+            box-shadow: 1px 1px 1px 1px #078cf6;
+        }
+        #text:hover{
+            box-shadow: 1px 1px 1px 1px #078cf6;
+        }
+        #send{
+            border: none;
+            background-color: #0048ff;
+            cursor: pointer;
+            font-family: "Bell MT", sans-serif;
+            font-weight: bold;
+            border-radius: 20px;
+            opacity: 0.8;
+            transition: 0.3s;
+            padding: 10px 20px;
+            font-size: 30px;
+            position: absolute;
+            right: 100px;
+            top: 400px;
+        }
+        #send:hover{
+            color: white;
+            opacity: 1;
         }
     </style>
 
@@ -681,7 +741,7 @@
     <dfn id="contact">
         <h1>Contact Me</h1>
     </dfn>
-    <address style="border: 2px solid">
+    <address>
         <figure>
             <img id="user" src="asset/img/user.png" width="50">
             <h2 id="uh2">Isuru Sachinda Lakshan</h2>
@@ -695,23 +755,22 @@
             <img id="loc" src="asset/img/location.png" width="50">
             <h2 id="lh2">Batalanda,Gurusinhagoda,Ampegama</h2></b>
         </figure>
-    </address>
 
-    <address>
+
         <form method="post">
-                <input type="text" name="txtName" placeholder="Name" required>
-                <br>
-                <br>
-                <input type="email" name="txtName" placeholder="Email" required>
-                <br>
-                <br>
-                <input type="tel" name="txtName" placeholder="Phone No" required>
-                <br>
-                <br>
-                <textarea name="massage" cols="20" rows="8" placeholder="Massage"></textarea>
-                <br>
-                <button formaction="sendmassage">Send</button>
+            <input class="text" type="text" name="txtName" placeholder="Name" required>
+
+            <input class="text" type="email" name="txtName" placeholder="Email" required>
+
+            <input class="text" type="tel" name="txtName" placeholder="Phone No" required>
+
+            <textarea id="text" name="massage" cols="20" rows="8" placeholder="Massage"></textarea>
+
+            <button id="send" formaction="sendmassage">Send
+                <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </form>
+
+
         <aside>
             <div>
                 <figure>
@@ -730,7 +789,6 @@
             </div>
         </aside>
     </address>
-
 </footer>
 </body>
 
