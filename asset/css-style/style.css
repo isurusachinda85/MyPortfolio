@@ -145,6 +145,7 @@ main > section:nth-child(2) > div:nth-child(2) {
     position: absolute;
     top: 121px;
     left: 70px;
+    border-radius: 20px;
 }
 
 main > section:nth-child(2) > div:nth-child(3) {
@@ -217,7 +218,6 @@ main > section:nth-child(3) > dfn > h1 {
 }
 
 main > section:nth-child(3) > div {
-    /*border: 2px solid;*/
     display: inline-block;
     width: 20%;
 }
@@ -235,6 +235,10 @@ main > section:nth-child(3) > div > h4 {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    border: 2px solid;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px #078cf6;
+    padding: 10px;
 }
 
 main > section:nth-child(3) > div > p {
