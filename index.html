@@ -25,7 +25,6 @@
         header {
             background: white;
             width: 100%;
-            /*position: relative;*/
             position: fixed;
             box-shadow: 0 4px 5px #3A86FF;
             top: 0;
@@ -42,6 +41,9 @@
             display: inline-block;
             padding-right: 20px;
             font-weight: bold;
+            font-size: 20px;
+            margin-left: 2px;
+            margin-right: 16px;
         }
 
         /*===============All Section=============*/
@@ -214,6 +216,9 @@
         }
 
         /*=========My Education=================*/
+        main>section:nth-child(3){
+            height: 550px;
+        }
         main > section:nth-child(3) > dfn > h1 {
             font-family: "Arial Black";
             color: greenyellow;
@@ -413,9 +418,6 @@
         }
 
         /*============Contact==================*/
-        footer {
-            /*border: 2px solid red;*/
-        }
 
         footer > dfn > h1 {
             font-family: "Arial Black";
@@ -426,21 +428,18 @@
         }
 
         footer > address > figure {
-            /*border: 2px solid;*/
             width: 600px;
             height: 400px;
             margin-left: 100px;
         }
 
         footer > address > figure > #user {
-            /*border: 2px solid;*/
             position: relative;
             left: 50px;
             top: 30px;
         }
 
         footer > address > figure > #uh2 {
-            /*border: 2px solid;*/
             position: relative;
             left: 150px;
             bottom: 33px;
@@ -448,14 +447,12 @@
         }
 
         footer > address > figure > #call {
-            /*border: 2px solid;*/
             position: relative;
             left: 50px;
             bottom: 20px;
         }
 
         footer > address > figure > #ch2 {
-            /*border: 2px solid;*/
             position: relative;
             left: 150px;
             bottom: 85px;
@@ -463,14 +460,12 @@
         }
 
         footer > address > figure > #mail {
-            /*border: 2px solid;*/
             position: relative;
             left: 50px;
             bottom: 70px;
         }
 
         footer > address > figure > #mh2 {
-            /*border: 2px solid;*/
             position: relative;
             left: 150px;
             bottom: 129px;
@@ -478,14 +473,12 @@
         }
 
         footer > address > figure > #loc {
-            /*border: 2px solid;*/
             position: relative;
             left: 50px;
             bottom: 120px;
         }
 
         footer > address > figure > #lh2 {
-            /*border: 2px solid;*/
             position: relative;
             left: 150px;
             bottom: 180px;
@@ -493,7 +486,6 @@
         }
 
         footer > address > form {
-            /*border: 2px solid;*/
             width: 600px;
             height: 470px;
             position: absolute;
@@ -528,13 +520,16 @@
             font-weight: bold;
             outline: none;
         }
-        .text:hover{
+
+        .text:hover {
             box-shadow: 1px 1px 1px 1px #078cf6;
         }
-        #text:hover{
+
+        #text:hover {
             box-shadow: 1px 1px 1px 1px #078cf6;
         }
-        #send{
+
+        #send {
             border: none;
             background-color: #0048ff;
             cursor: pointer;
@@ -549,9 +544,29 @@
             right: 100px;
             top: 400px;
         }
-        #send:hover{
+
+        #send:hover {
             color: white;
             opacity: 1;
+        }
+        footer >address> aside>figure>div {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 100%;
+            position: relative;
+            left: 200px;
+        }
+
+        #foot{
+            background-color: black;
+            height: 50px;
+        }
+        #foot>p{
+            color: white;
+            text-align: center;
+            padding: 15px;
         }
     </style>
 
@@ -639,7 +654,7 @@
     </section>
 
     <!--===============Education Section=====================-->
-    <section style="height: 550px">
+    <section>
         <dfn id="education">
             <h1>My Education</h1>
         </dfn>
@@ -772,23 +787,27 @@
 
 
         <aside>
-            <div>
-                <figure>
-                    <a href="https://wa.me/+94763880467?" target="_blank"><img src="asset/img/whatsapp.png"
-                                                                               alt="whatsapp img"
-                                                                               width="40"></a>
-                    <a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
-                                                                    width="40"></a>
-                    <a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
-                            src="asset/img/facebook%20.png" alt="facebook img" width="38"></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
-                                                                                  alt="linklin img" width="38"></a>
-                    <a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
-                            src="asset/img/github-logo.png" alt="git hub img" width="38"></a>
-                </figure>
-            </div>
+            <figure>
+
+                <div><a href="https://wa.me/+94763880467?" target="_blank"><img src="asset/img/whatsapp.png"
+                                                                                alt="whatsapp img"
+                                                                                width="40"></a></div>
+                <div><a href="mailto:isurusachintha8@gmail.com"><img src="asset/img/email.png" alt="email img"
+                                                                     width="40"></a></div>
+                <div><a href="https://web.facebook.com/lakshan.ranaweera.564" target="_blank"><img
+                        src="asset/img/facebook%20.png" alt="facebook img" width="38"></a></div>
+                <div><a href="https://www.linkedin.com/feed/" target="_blank"><img src="asset/img/linkedin.png"
+                                                                                   alt="linklin img" width="38"></a>
+                </div>
+                <div><a href="https://github.com/isurusachinda85?tab=repositories" target="_blank"><img
+                        src="asset/img/github-logo.png" alt="git hub img" width="38"></a></div>
+            </figure>
         </aside>
     </address>
+</footer>
+
+<footer id="foot">
+    <p>Copyright &copy;2023 All Right Reserved . Website Developed Isuru Sachinda.</p>
 </footer>
 </body>
 
