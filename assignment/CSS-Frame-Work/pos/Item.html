@@ -22,50 +22,59 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Customer</a>
+                        <a class="nav-link" href="Customer.html">Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Item</a>
+                        <a class="nav-link" href="Item.html">Item</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Place Order</a>
+                        <a class="nav-link" href="PlaceOrder.html">Place Order</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<main>
+<main class="container">
     <section class="row">
-        <div class="position-relative  mt-3 mt-lg-4 mt-md-4 ">
-            <h1 class="text-center">Item Manage</h1>
+        <div class="position-relative  mt-3 mt-lg-2  ">
+            <h1 class="text-center bg-info">Item Manage</h1>
         </div>
-        <form class="p-lg-5 col-5">
-            <div class="mb-3">
-                <label for="cusID" class="form-label">Item Code</label>
-                <input type="text" class="form-control shadow-sm p-2 mb-2 bg-white rounded" id="cusID">
-            </div>
-            <div class="mb-3">
-                <label for="cusName" class="form-label">Item Name</label>
-                <input type="text" class="form-control shadow-sm p-2 mb-2 bg-white rounded" id="cusName">
-            </div>
-            <div class="mb-3">
-                <label for="cusAddress" class="form-label"> Item Unit Price</label>
-                <input type="text" class="form-control shadow-sm p-2 mb-2 bg-white rounded" id="cusAddress">
-            </div>
-            <div class="mb-3">
-                <label for="cusPhone" class="form-label">Item Quantity </label>
-                <input type="number" class="form-control shadow-sm p-2 mb-2 bg-white rounded" id="cusPhone">
+        <form class="p-lg-5">
+            <div class="row ">
+                <div class="col-6 ">
+                    <input aria-label="Item Code" class="form-control" placeholder="Item Code" type="text">
+                </div>
+                <div class="col-6 ">
+                    <input aria-label="Item Name" class="form-control" placeholder="Item Name" type="text">
+                </div>
+                <div class="col-6 mt-5">
+                    <input aria-label="Unit Price" class="form-control" placeholder="Unit Price"
+                           type="text">
+                </div>
+                <div class="col-6 mt-5">
+                    <input aria-label="Item Quantity" class="form-control" placeholder="Item Quantity" type="number">
+                </div>
             </div>
         </form>
 
-        <section class="col-7">
+        <div class="col-10 d-flex justify-content-center">
+            <div class="offset-3">
+                <button class="btn btn-outline-primary" type="button">Save Item</button>
+                <button class="btn btn-outline-success" type="button">Update Item</button>
+                <button class="btn btn-outline-warning" type="button">Search Item</button>
+                <button class="btn btn-outline-danger" type="button">Delete Item</button>
+            </div>
+        </div>
+
+
+        <section>
             <table class="table table-striped mt-5">
                 <thead>
                 <tr>
                     <th scope="col">Item Code</th>
-                    <th scope="col">Item Name</th>
-                    <th scope="col">Item Unit Price</th>
+                    <th scope="col">Item Name Name</th>
+                    <th scope="col">Unit Price</th>
                     <th scope="col">Item Quantity</th>
                 </tr>
                 </thead>
@@ -92,14 +101,6 @@
             </table>
 
         </section>
-        <div class="row">
-            <div class="col-6 offset-5">
-                <button type="button" class="btn btn-outline-primary">Save Item</button>
-                <button type="button" class="btn btn-outline-success">Update Item</button>
-                <button type="button" class="btn btn-outline-warning">Search Item</button>
-                <button type="button" class="btn btn-outline-danger">Delete Item</button>
-            </div>
-        </div>
     </section>
 
 </main>

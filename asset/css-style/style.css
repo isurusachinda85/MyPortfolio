@@ -1,5 +1,6 @@
 * {
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 /*=================Header============================*/
@@ -410,6 +411,14 @@ main > section:nth-child(5) > figure {
     height: 500px;
 }
 
+/*============Assignment==================*/
+main > section:nth-child(6) > dfn > h1 {
+    font-family: "Arial Black";
+    color: greenyellow;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #151313;
+}
 /*============Contact==================*/
 
 footer > dfn > h1 {
