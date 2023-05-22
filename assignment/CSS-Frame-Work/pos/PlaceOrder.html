@@ -11,7 +11,8 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pos System</a>
-            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
                     data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,8 +40,147 @@
     </nav>
 </header>
 
-<section></section>
-<section></section>
-<section></section>
+<main class="container">
+
+    <section class="row">
+
+        <div class="position-relative m-4  ">
+            <h1 class="text-center bg-success text-white">Place Order Form</h1>
+        </div>
+
+        <form class="row">
+            <div class="mb-3 col-3">
+                <label class="form-label" for="orderId">Order ID</label>
+                <input class="form-control" id="orderId" type="text">
+            </div>
+            <div class="mb-3 col-3 ">
+                <label class="form-label" for="orderDate">Order Date</label>
+                <input class="form-control" id="orderDate" type="date">
+            </div>
+            <div class="mb-3 col-3">
+                <label class="form-label" for="orderTime">Order Time</label>
+                <input class="form-control" id="orderTime" type="time">
+            </div>
+        </form>
+
+
+        <form class="row">
+            <div class="mb-3 col-3">
+                <label class="form-label" for="cusID">Customer ID</label>
+                <select class="form-control" id="cusID"></select>
+            </div>
+            <div class="mb-3 col-3">
+                <label class="form-label" for="cusName">Customer Name</label>
+                <input class="form-control" id="cusName" type="text">
+            </div>
+            <div class="mb-3 col-3">
+                <label class="form-label" for="cusAddress">Customer Address</label>
+                <input class="form-control" id="cusAddress" type="text">
+            </div>
+            <div class="mb-3 col-3">
+                <label class="form-label" for="cusEmail">Customer Mobile</label>
+                <input class="form-control" id="cusEmail" type="tel">
+            </div>
+        </form>
+
+        <form class="row">
+            <div class="mb-3 col-2">
+                <label class="form-label" for="itemCode">Item Code</label>
+                <select class="form-control" id="itemCode"></select>
+            </div>
+            <div class="mb-3 col-2">
+                <label class="form-label" for="itemName">Item Name</label>
+                <input class="form-control" id="itemName" type="text">
+            </div>
+            <div class="mb-3 col-2">
+                <label class="form-label" for="unitPrice">Unit Price</label>
+                <input class="form-control" id="unitPrice" type="text">
+            </div>
+            <div class="mb-3 col-2">
+                <label class="form-label" for="category">Category</label>
+                <input class="form-control" id="category" type="text">
+            </div>
+            <div class="mb-3 col-1">
+                <label class="form-label" for="qtyOnHand">QtyOnH</label>
+                <input class="form-control" id="qtyOnHand" type="number">
+            </div>
+            <div class="mb-3 col-1">
+                <label class="form-label" for="orderQty">QTY </label>
+                <input class="form-control" id="orderQty" type="number">
+            </div>
+            <div class=" col-2 ">
+                <div class="offset-3 m-4 p-2">
+                    <button class="btn btn-outline-primary" type="button">Add To Cart</button>
+                </div>
+            </div>
+        </form>
+
+        <section class="col-8">
+            <table class="table table-striped mt-5 table table-bordered table-hover text-center">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Unit Price</th>
+                    <th>Category</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section class="col-4">
+            <form class="row">
+                <div class="mb-3 col-8 ">
+                    <label class="form-label" for="total">Sub Total</label>
+                    <input class="form-control" id="total" type="text">
+                </div>
+                <div class="mb-3 col-6 ">
+                    <label class="form-label" for="orderDate">Discount</label>
+                    <input class="form-control" id="discount" type="text">
+                </div>
+                <div class="mb-3 col-6 ">
+                    <label class="form-label" for="cash">Cash</label>
+                    <input class="form-control" id="cash" type="text">
+                </div>
+                <div class="mb-3 col-7 ">
+                    <label class="form-label" for="balance">Balance</label>
+                    <input class="form-control" id="balance" type="text">
+                </div>
+                <div class="col-5 mt-2">
+                    <div class="offset-3 mt-4 ">
+                        <button class="btn btn-outline-success" type="button">Place Order</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </section>
+
+</main>
 </body>
 </html>
