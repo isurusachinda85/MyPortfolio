@@ -94,7 +94,7 @@ main > section:nth-child(1) > dfn > h3 {
 }
 
 main > section:nth-child(1) > dfn > div:nth-child(4) {
-    background: url("../img/IMG_20220523_000321_899.jpg");
+    background: url("../img/frofileImg/IMG_20220523_000321_899.jpg");
     background-size: cover;
     background-position: center;
     width: 300px;
@@ -141,7 +141,7 @@ main > section:nth-child(2) > dfn > h1 {
 }
 
 main > section:nth-child(2) > div:nth-child(2) {
-    background: url("../img/about.jpg");
+    background: url("../img/frofileImg/about.jpg");
     background-size: cover;
     background-position: center;
     box-shadow: 4px 2px 10px 2px #1362ad;
@@ -453,28 +453,29 @@ main > section:nth-child(6) > dfn > h1 {
 }
 
 main > section:nth-child(6) > a > img {
-    width: 300px;
+    width: 400px;
     height: 200px;
     box-shadow: 4px 2px 10px 2px #1362ad;
     margin: 20px;
 }
 main > section:nth-child(6) > a > img:hover{
     box-shadow: 4px 2px 10px 2px black;
+    transition: 0.5s;
 }
 main > section:nth-child(6) > a > #cim1{
     position: relative;
-    top: 14px;
-    left: 50px;
+    top: 10px;
+    left: 10px;
 }
 main > section:nth-child(6) > a > #tim2{
     position: relative;
     bottom: 313px;
-    left: 500px;
+    left: 450px;
 }
 main > section:nth-child(6) > a > #aim3{
     position: relative;
-    bottom: 640px;
-    left: 950px;
+    bottom: 637px;
+    left: 890px;
 }
 main > section:nth-child(6) > a {
     text-decoration: none;
@@ -520,6 +521,7 @@ main > section:nth-child(6) >a> #ass:hover{
 }
 main > section:nth-child(6){
     height: 600px;
+    border: 2px solid;
 }
 
 /*============Contact==================*/
