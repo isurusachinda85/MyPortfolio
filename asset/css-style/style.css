@@ -27,17 +27,21 @@ header > nav > menu > ul > li {
     margin-left: 2px;
     margin-right: 16px;
 }
-header > nav > menu > ul > li>a{
+
+header > nav > menu > ul > li > a {
     text-decoration: none;
     color: black;
 }
-header > nav > menu > ul > li>a:hover{
+
+header > nav > menu > ul > li > a:hover {
     color: blue;
 }
+
 header > h1 {
     margin-left: 25px;
     color: blue;
 }
+
 /*===============All Section=============*/
 body > main > section {
     margin-top: 81px;
@@ -202,14 +206,16 @@ main > section:nth-child(2) > a > #bttn2:hover {
     color: white;
     opacity: 1;
 }
-#title{
+
+#title {
     text-decoration: none;
 }
 
 /*=========My Education=================*/
-main>section:nth-child(3){
+main > section:nth-child(3) {
     height: 550px;
 }
+
 main > section:nth-child(3) > dfn > h1 {
     font-family: "Arial Black";
     color: greenyellow;
@@ -321,10 +327,12 @@ main > section:nth-child(4) > .lang {
     margin: 20px;
     position: relative;
     left: 220px;
+    cursor: pointer;
 }
 
 .lang:hover {
     background-color: #4a5a74;
+    transition: 0.4s;
 }
 
 main > section:nth-child(4) > .tool {
@@ -335,10 +343,12 @@ main > section:nth-child(4) > .tool {
     margin: 20px;
     position: relative;
     left: 50px;
+    cursor: pointer;
 }
 
 .tool:hover {
     background-color: #4a5a74;
+    transition: 0.4s;
 }
 
 /*=============Project======================*/
@@ -352,7 +362,7 @@ main > section:nth-child(5) > dfn > h1 {
 
 main > section:nth-child(5) > figure > a > img {
     box-shadow: 4px 2px 10px 2px #5d5f61;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 main > section:nth-child(5) > figure > a > img:hover {
@@ -382,7 +392,7 @@ main > section:nth-child(5) > figure > figcaption:nth-child(2) {
     top: 100px;
     left: 60px;
     width: 400px;
-    color: blue;
+    color: black;
     font-weight: bold;
     font-size: 20px;
 }
@@ -392,7 +402,7 @@ main > section:nth-child(5) > figure > figcaption:nth-child(4) {
     bottom: 226px;
     left: 480px;
     width: 400px;
-    color: blue;
+    color: black;
     font-weight: bold;
     font-size: 20px;
 }
@@ -402,7 +412,7 @@ main > section:nth-child(5) > figure > figcaption:nth-child(6) {
     bottom: 550px;
     left: 950px;
     width: 400px;
-    color: blue;
+    color: black;
     font-weight: bold;
     font-size: 20px;
 }
@@ -411,7 +421,29 @@ main > section:nth-child(5) > figure {
     height: 500px;
 }
 
+main > section:nth-child(5) > a > #pro {
+    position: relative;
+    left: 790px;
+    bottom: 30px;
+    border: 2px solid blue;
+    color: blue;
+    cursor: pointer;
+    font-family: "Bell MT", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px 20px;
+    font-size: 25px;
+    background: white;
+}
+
+main > section:nth-child(5) > a > #pro:hover {
+    background: blue;
+    color: white;
+}
+
 /*============Assignment==================*/
+
 main > section:nth-child(6) > dfn > h1 {
     font-family: "Arial Black";
     color: greenyellow;
@@ -419,6 +451,77 @@ main > section:nth-child(6) > dfn > h1 {
     text-align: center;
     text-shadow: 2px 2px 8px #151313;
 }
+
+main > section:nth-child(6) > a > img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 4px 2px 10px 2px #1362ad;
+    margin: 20px;
+}
+main > section:nth-child(6) > a > img:hover{
+    box-shadow: 4px 2px 10px 2px black;
+}
+main > section:nth-child(6) > a > #cim1{
+    position: relative;
+    top: 14px;
+    left: 50px;
+}
+main > section:nth-child(6) > a > #tim2{
+    position: relative;
+    bottom: 313px;
+    left: 500px;
+}
+main > section:nth-child(6) > a > #aim3{
+    position: relative;
+    bottom: 640px;
+    left: 950px;
+}
+main > section:nth-child(6) > a {
+    text-decoration: none;
+}
+
+main > section:nth-child(6) > #css {
+    width: 100px;
+    position: relative;
+    left: 170px;
+}
+
+main > section:nth-child(6) > #tran {
+    width: 150px;
+    position: relative;
+    bottom: 325px;
+    left: 600px;
+}
+
+main > section:nth-child(6) > #ani {
+    width: 150px;
+    position: relative;
+    bottom: 655px;
+    left: 1050px;
+}
+main > section:nth-child(6) >a> #ass{
+    position: absolute;
+    top: 500px;
+    right: 90px;
+    border: 2px solid blue;
+    color: blue;
+    cursor: pointer;
+    font-family: "Bell MT", sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 0.5s;
+    padding: 10px 20px;
+    font-size: 25px;
+    background: white;
+}
+main > section:nth-child(6) >a> #ass:hover{
+    background: blue;
+    color: white;
+}
+main > section:nth-child(6){
+    height: 600px;
+}
+
 /*============Contact==================*/
 
 footer > dfn > h1 {
@@ -551,7 +654,8 @@ footer > address {
     color: white;
     opacity: 1;
 }
-footer >address> aside>figure>div {
+
+footer > address > aside > figure > div {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -561,11 +665,12 @@ footer >address> aside>figure>div {
     left: 200px;
 }
 
-#foot{
+#foot {
     background-color: black;
     height: 50px;
 }
-#foot>p{
+
+#foot > p {
     color: white;
     text-align: center;
     padding: 15px;
