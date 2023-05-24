@@ -1,0 +1,160 @@
+#assignment {
+    font-family: "Arial Black";
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #151313;
+}
+
+section > div > a > img {
+    width: 400px;
+    height: 200px;
+    box-shadow: 4px 2px 10px 2px #1362ad;
+}
+
+section > div > a > img:hover {
+    box-shadow: 4px 2px 10px 2px black;
+    transition: 0.5s;
+}
+
+.cs {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+section > div {
+    /*border: 2px solid;*/
+    width: 400px;
+    text-align: center;
+}
+
+section > div > h2 {
+    border: 2px solid;
+}
+
+#div1 {
+    position: relative;
+    left: 50px;
+    margin-left: 35px;
+}
+
+#div2 {
+    position: absolute;
+    left: 560px;
+    bottom: 167px;
+}
+
+#div3 {
+    position: absolute;
+    right: 50px;
+    bottom: 167px;
+    margin-right: 35px;
+}
+
+#div4 {
+    position: relative;
+    left: 50px;
+    top: 53px;
+    margin-left: 35px;
+}
+
+#div5 {
+    position: absolute;
+    left: 560px;
+    top: 607px;
+}
+
+#div6 {
+    position: absolute;
+    right: 50px;
+    top: 607px;
+    margin-right: 35px;
+}
+
+#title01 {
+    position: relative;
+    top: 70px;
+}
+
+#div7 {
+    position: relative;
+    left: 50px;
+    top: 100px;
+    margin-left: 35px;
+}
+
+#div8 {
+    position: absolute;
+    left: 560px;
+    top: 1029px;
+}
+
+#div9 {
+    position: absolute;
+    right: 50px;
+    top: 1029px;
+    margin-right: 35px;
+}
+
+#div10 {
+    position: relative;
+    left: 50px;
+    top: 150px;
+    margin-left: 35px;
+}
+
+#div11 {
+    position: absolute;
+    left: 560px;
+    top: 1390px;
+}
+
+#div12 {
+    position: absolute;
+    right: 50px;
+    top: 1390px;
+    margin-right: 35px;
+}
+
+#topic1 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+#div13 {
+    position: relative;
+    top: 230px;
+    left: 550px;
+}
+
+#topic2 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 290px;
+}
+
+#div14 {
+    position: relative;
+    top: 320px;
+    left: 550px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.click:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.click:active {
+    color: red;
+}

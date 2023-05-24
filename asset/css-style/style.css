@@ -523,7 +523,7 @@ main > section:nth-child(6) >a> #ass:hover{
 }
 main > section:nth-child(6){
     height: 600px;
-    border: 2px solid;
+    /*border: 2px solid;*/
 }
 
 /*============Contact==================*/
