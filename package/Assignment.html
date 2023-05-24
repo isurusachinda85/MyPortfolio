@@ -6,23 +6,156 @@
     <meta content="width=device-width initial-scale=1 user-scalable=no" name="viewport">
     <link href="../asset/css-style/normalize.css" rel="stylesheet">
     <style>
-        #assignment{
+        #assignment {
             font-family: "Arial Black";
             color: #000000;
             font-size: 50px;
             text-align: center;
             text-shadow: 2px 2px 8px #151313;
         }
-        section>a>img{
+
+        section > div > a > img {
             width: 400px;
             height: 200px;
             box-shadow: 4px 2px 10px 2px #1362ad;
-            margin: 20px;
         }
-        .cs{
+
+        section > div > a > img:hover {
+            box-shadow: 4px 2px 10px 2px black;
+            transition: 0.5s;
+        }
+
+        .cs {
             background-color: blue;
             color: white;
             text-align: center;
+        }
+
+        section > div {
+            /*border: 2px solid;*/
+            width: 400px;
+            text-align: center;
+        }
+
+        section > div > h2 {
+            border: 2px solid;
+        }
+
+        #div1 {
+            position: relative;
+            left: 50px;
+            margin-left: 35px;
+        }
+
+        #div2 {
+            position: absolute;
+            left: 560px;
+            bottom: 167px;
+        }
+
+        #div3 {
+            position: absolute;
+            right: 50px;
+            bottom: 167px;
+            margin-right: 35px;
+        }
+
+        #div4 {
+            position: relative;
+            left: 50px;
+            top: 53px;
+            margin-left: 35px;
+        }
+
+        #div5 {
+            position: absolute;
+            left: 560px;
+            top: 607px;
+        }
+
+        #div6 {
+            position: absolute;
+            right: 50px;
+            top: 607px;
+            margin-right: 35px;
+        }
+
+        #title01 {
+            position: relative;
+            top: 70px;
+        }
+
+        #div7 {
+            position: relative;
+            left: 50px;
+            top: 100px;
+            margin-left: 35px;
+        }
+
+        #div8 {
+            position: absolute;
+            left: 560px;
+            top: 1029px;
+        }
+
+        #div9 {
+            position: absolute;
+            right: 50px;
+            top: 1029px;
+            margin-right: 35px;
+        }
+
+        #div10 {
+            position: relative;
+            left: 50px;
+            top: 150px;
+            margin-left: 35px;
+        }
+
+        #div11 {
+            position: absolute;
+            left: 560px;
+            top: 1390px;
+        }
+
+        #div12 {
+            position: absolute;
+            right: 50px;
+            top: 1390px;
+            margin-right: 35px;
+        }
+
+        #topic1 {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 200px;
+        }
+
+        #div13 {
+            position: relative;
+            top: 230px;
+            left: 550px;
+        }
+        #topic2{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 290px;
+        }
+        #div14{
+            position: relative;
+            top: 320px;
+            left: 550px;
+        }
+        .click:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        .click:active{
+            color: red;
         }
     </style>
 </head>
@@ -33,27 +166,129 @@
     <h1 class="cs">CSS</h1>
     <h1 id="basic">CSS Basics</h1>
 
-    <a href="../assignment/css/case_01/index.html" target="_blank"><img src="../asset/img/assignmentImg/case01.PNG"></a>
-    <a href="../assignment/css/case_02/index.html" target="_blank"><img src="../asset/img/assignmentImg/case02.PNG"></a>
-    <a href="../assignment/css/case_03/index.html" target="_blank"><img src="../asset/img/assignmentImg/case03.gif"></a>
-    <a href="../assignment/css/case_04/index.html" target="_blank"><img src="../asset/img/assignmentImg/case04.PNG"></a>
-    <a href="../assignment/css/case_05/index.html" target="_blank"><img src="../asset/img/assignmentImg/case05.PNG"></a>
-    <a href="../assignment/css/case_06/index.html" target="_blank"><img src="../asset/img/assignmentImg/case06.PNG"></a>
+    <div id="div1"><a href="../assignment/css/case_01/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/case01.PNG"></a>
+        <div>
+            <h2>Position</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
 
-    <h1>CSS Animation and Transition</h1>
 
-    <a href="../assignment/transitions/case_01/index.html"target="_blank"><img src="../asset/img/assignmentImg/Transition1.gif"></a>
-    <a href="../assignment/transitions/case_02/index.html"target="_blank"><img src="../asset/img/assignmentImg/Transition2.PNG"></a>
-    <a href="../assignment/animation/case_03/index.html"target="_blank"><img src="../asset/img/assignmentImg/Animation1.gif"></a>
-    <a href="../assignment/animation/case_04/index.html"target="_blank"><img src="../asset/img/assignmentImg/Animation2.gif"></a>
-    <a href="../assignment/animation/case_05/index.html"target="_blank"><img src="../asset/img/assignmentImg/Animation3.PNG"></a>
-    <a href="../assignment/animation/case_06/index.html"target="_blank"><img src="../asset/img/assignmentImg/Animation4.gif"></a>
+    <div id="div2"><a href="../assignment/css/case_02/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/case02.PNG"></a>
+        <div>
+            <h2>Website Sample</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
 
-    <h1 class="cs">CSS Frameworks</h1>
-    <a href="../assignment/CSS-Frame-Work/pos/PlaceOrder.html"target="_blank"><img src="../asset/img/assignmentImg/FrameWork%20.PNG"></a>
 
-    <h1 class="cs">Java Script(JS)</h1>
-    <a href=""><img src=""></a>
+    <div id="div3"><a href="../assignment/css/case_03/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/case03.gif"></a>
+        <div>
+            <h2>Fixed Circle</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+    <div id="div4"><a href="../assignment/css/case_04/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/case04.PNG"></a>
+        <div>
+            <h2>Sticky Card</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+
+    <div id="div5"><a href="../assignment/css/case_05/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/case05.PNG"></a>
+        <div>
+            <h2>Grid Layout 01</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+
+    <div id="div6"><a href="../assignment/css/case_06/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/case06.PNG"></a>
+        <div>
+            <h2>Grid Layout 02</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+
+    <h1 id="title01">CSS Animation and Transition</h1>
+
+    <div id="div7"><a href="../assignment/transitions/case_01/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/Transition1.gif"></a>
+        <div>
+            <h2>Transition</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+    <div id="div8"><a href="../assignment/transitions/case_02/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/Transition2.PNG"></a>
+        <div>
+            <h2>Circle Transition</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+
+    <div id="div9"><a href="../assignment/animation/case_03/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/Animation1.gif"></a>
+        <div>
+            <h2>Animation</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+    <div id="div10"><a href="../assignment/animation/case_04/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/Animation2.gif"></a>
+        <div>
+            <h2>Water Drop Animation</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+    <div id="div11"><a href="../assignment/animation/case_05/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/Animation3.PNG"></a>
+        <div>
+            <h2>Image Slider</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+
+    <div id="div12"><a href="../assignment/animation/case_06/index.html" target="_blank"><img
+            src="../asset/img/assignmentImg/Animation4.gif"></a>
+        <div>
+            <h2>Car Animation</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+
+    <h1 id="topic1">CSS Frameworks</h1>
+
+    <div id="div13"><a href="../assignment/CSS-Frame-Work/pos/PlaceOrder.html" target="_blank"><img
+            src="../asset/img/assignmentImg/FrameWork%20.PNG"></a>
+        <div>
+            <h2>Pos System</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
+
+    <h1 id="topic2">Java Script(JS)</h1>
+    <div id="div14"><a href=""><img src="../asset/img/assignmentImg/FrameWork%20.PNG"></a>
+        <div>
+            <h2>Pos System</h2>
+            <h3 class="click">Click Here ! Get Source Code</h3>
+        </div>
+    </div>
 </section>
 </body>
 </html>

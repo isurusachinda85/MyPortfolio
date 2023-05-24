@@ -328,6 +328,7 @@ main > section:nth-child(4) > .lang {
     position: relative;
     left: 220px;
     cursor: pointer;
+    padding: 3px;
 }
 
 .lang:hover {
@@ -344,6 +345,7 @@ main > section:nth-child(4) > .tool {
     position: relative;
     left: 50px;
     cursor: pointer;
+    padding: 3px;
 }
 
 .tool:hover {
