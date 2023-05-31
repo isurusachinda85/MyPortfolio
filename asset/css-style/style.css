@@ -49,11 +49,10 @@ body > main > section {
     margin-right: 70px;
     margin-bottom: 30px;
 
-    /*border: 2px solid;*/
+    border: 2px solid;
 
     padding-top: 10px;
     position: relative;
-    /*height: 950px;*/
 }
 
 /*==========Home========================*/

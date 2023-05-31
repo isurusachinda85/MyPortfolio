@@ -1,0 +1,106 @@
+@media all and (max-width: 320px){
+   /*header nav menu ul{
+       display: none;
+   }
+
+    main > section:nth-child(1) > dfn > h1 {
+        font-family: "Arial Black";
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: 7px;
+        position: absolute;
+        !* left: 0; *!
+        right: -74px;
+    }
+
+    main > section:nth-child(1) > dfn > h3 {
+        font-size: 30px;
+        position: absolute;
+        top: 106px;
+    }*/
+}
+
+/*----------------------1440 px-----------------*/
+@media all and (max-width: 1440px){
+    main > section:nth-child(1) > dfn > div:nth-child(4) {
+        width: 350px;
+        height: 450px;
+        position: relative;
+        left: 820px;
+        bottom: 145px;
+    }
+
+    main > section:nth-child(4) > .tool {
+        position: relative;
+        left: 25px;
+        cursor: pointer;
+    }
+    main > section:nth-child(4) > .lang {
+        position: relative;
+        left: 206px;
+        cursor: pointer;
+    }
+    main > section:nth-child(4) > h3 {
+        position: relative;
+        width: 150px;
+        left: 60px;
+    }
+    main > section:nth-child(5) > figure > a:nth-child(1) > img:nth-child(1) {
+        position: relative;
+        left: -16px;
+        top: 55px;
+    }
+    main > section:nth-child(5) > figure > a:nth-child(3) > img:nth-child(1) {
+        position: relative;
+        left: 414px;
+        bottom: 275px;
+    }
+    main > section:nth-child(5) > figure > a:nth-child(5) > img:nth-child(1) {
+        position: relative;
+        left: 845px;
+    }
+    main > section:nth-child(5) > figure > figcaption:nth-child(2) {
+        width: 300px;
+    }
+
+    main > section:nth-child(5) > figure > figcaption:nth-child(4) {
+        width: 300px;
+    }
+
+    main > section:nth-child(5) > figure > figcaption:nth-child(6) {
+        width: 300px;
+    }
+    body > main > section {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    main > section:nth-child(5) > a > #pro {
+        position: relative;
+        left: 579px;
+    }
+    main > section:nth-child(6) > a > #aim3 {
+        position: relative;
+        left: 868px;
+    }
+    main > section:nth-child(6) > a > #tim2 {
+        position: relative;
+        left: 438px;
+    }
+    main > section:nth-child(6) > a > #cim1 {
+        position: relative;
+        left: 2px;
+    }
+
+    main > section:nth-child(6) > #ani {
+        position: relative;
+        left: 1015px;
+    }
+    main > section:nth-child(6) > #tran {
+        position: relative;
+        left: 586px;
+    }
+    main > section:nth-child(6) > #css {
+        position: relative;
+        left: 192px;
+    }
+}
