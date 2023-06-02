@@ -1,27 +1,27 @@
-@media all and (max-width: 320px){
-   /*header nav menu ul{
-       display: none;
-   }
-
-    main > section:nth-child(1) > dfn > h1 {
-        font-family: "Arial Black";
-        font-weight: bold;
-        font-size: 35px;
-        margin-top: 7px;
-        position: absolute;
-        !* left: 0; *!
-        right: -74px;
+@media all and (max-width: 320px) {
+    /*header nav menu ul{
+        display: none;
     }
 
-    main > section:nth-child(1) > dfn > h3 {
-        font-size: 30px;
-        position: absolute;
-        top: 106px;
-    }*/
+     main > section:nth-child(1) > dfn > h1 {
+         font-family: "Arial Black";
+         font-weight: bold;
+         font-size: 35px;
+         margin-top: 7px;
+         position: absolute;
+         !* left: 0; *!
+         right: -74px;
+     }
+
+     main > section:nth-child(1) > dfn > h3 {
+         font-size: 30px;
+         position: absolute;
+         top: 106px;
+     }*/
 }
 
 /*----------------------1440 px-----------------*/
-@media all and (max-width: 1440px){
+@media all and (max-width: 1440px) {
     main > section:nth-child(1) > dfn > div:nth-child(4) {
         width: 350px;
         height: 450px;
@@ -35,30 +35,37 @@
         left: 25px;
         cursor: pointer;
     }
+
     main > section:nth-child(4) > .lang {
         position: relative;
         left: 206px;
         cursor: pointer;
     }
+
     main > section:nth-child(4) > h3 {
         position: relative;
         width: 150px;
         left: 60px;
     }
+
     main > section:nth-child(5) > figure > a:nth-child(1) > img:nth-child(1) {
         position: relative;
         left: -16px;
         top: 55px;
     }
+
     main > section:nth-child(5) > figure > a:nth-child(3) > img:nth-child(1) {
         position: relative;
         left: 414px;
         bottom: 275px;
     }
+
     main > section:nth-child(5) > figure > a:nth-child(5) > img:nth-child(1) {
         position: relative;
         left: 845px;
+        bottom: 603px;
     }
+
     main > section:nth-child(5) > figure > figcaption:nth-child(2) {
         width: 300px;
     }
@@ -70,22 +77,27 @@
     main > section:nth-child(5) > figure > figcaption:nth-child(6) {
         width: 300px;
     }
+
     body > main > section {
         margin-left: 60px;
         margin-right: 60px;
     }
+
     main > section:nth-child(5) > a > #pro {
         position: relative;
         left: 579px;
     }
+
     main > section:nth-child(6) > a > #aim3 {
         position: relative;
         left: 868px;
     }
+
     main > section:nth-child(6) > a > #tim2 {
         position: relative;
         left: 438px;
     }
+
     main > section:nth-child(6) > a > #cim1 {
         position: relative;
         left: 2px;
@@ -95,12 +107,267 @@
         position: relative;
         left: 1015px;
     }
+
     main > section:nth-child(6) > #tran {
         position: relative;
         left: 586px;
     }
+
     main > section:nth-child(6) > #css {
         position: relative;
         left: 192px;
+    }
+
+    footer > address > form {
+        top: 28px;
+        right: 40px;
+    }
+
+    footer > address > figure {
+        margin-left: 50px;
+    }
+}
+
+/*-----------1024px--------------------*/
+@media all and (max-width: 1024px) {
+    header > nav > menu > ul > li {
+        display: inline-block;
+        padding-right: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: -6px;
+        margin-right: 15px;
+    }
+
+    main > section:nth-child(1) > dfn > div:nth-child(4) {
+        width: 300px;
+        height: 400px;
+        position: relative;
+        left: 531px;
+        bottom: 113px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) {
+        height: 456px;
+        width: 300px;
+        position: absolute;
+        top: 138px;
+        left: 43px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) {
+        left: 408px;
+        bottom: 50px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) > p:nth-child(1) {
+        padding-top: 30px;
+        color: black;
+        font-size: 22px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+        left: -4px;
+        bottom: 10px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > h4 {
+        font-size: 16px;
+        margin: 6px;
+    }
+
+    main > section:nth-child(2) > a > #bttn2 {
+        border-radius: 16px;
+        padding: 8px 10px;
+        font-size: 26px;
+        right: 32px;
+        bottom: 12px;
+    }
+
+    main > section:nth-child(3) > #img1 {
+        position: relative;
+        left: 40px;
+        bottom: 124px;
+    }
+
+    main > section:nth-child(3) > div:nth-child(3) {
+        position: relative;
+        left: 67px;
+        bottom: 10px;
+    }
+
+    main > section:nth-child(3) > #img2 {
+        position: relative;
+        left: 187px;
+        bottom: 122px;
+    }
+
+    main > section:nth-child(3) > div:nth-child(5) {
+        position: relative;
+        left: 230px;
+        bottom: 20px;
+    }
+
+    main > section:nth-child(3) > #img3 {
+        position: relative;
+        right: 476px;
+        top: 107px;
+    }
+
+    main > section:nth-child(3) > div:nth-child(7) {
+        position: relative;
+        right: 453px;
+        top: 205px;
+    }
+
+    main > section:nth-child(3) > #img4 {
+        position: relative;
+        right: 329px;
+        top: 102px;
+    }
+
+    main > section:nth-child(3) > div:nth-child(9) {
+        position: relative;
+        left: 577px;
+        top: -9px;
+    }
+
+    main > section:nth-child(3) > div {
+        display: inline-block;
+        width: 20%;
+    }
+
+    main > section:nth-child(4) > .lang {
+        position: relative;
+        left: 79px;
+        bottom: 19px;
+        width: 100px;
+        height: 100px;
+    }
+
+    main > section:nth-child(4) > .tool {
+        position: relative;
+        left: 80px;
+        bottom: 23px;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+    }
+
+    main > section:nth-child(4) > h3 {
+        position: relative;
+        width: 150px;
+        left: 60px;
+        bottom: 16px;
+    }
+
+    main > section:nth-child(4) > .tool:nth-child(15) {
+        position: relative;
+        left: 311px;
+    }
+
+    main > section:nth-child(4) > .tool:nth-child(14) {
+        position: relative;
+        top: 128px;
+        left: -285px;
+    }
+
+    main > section:nth-child(5) > figure > a:nth-child(1) > img:nth-child(1) {
+        position: relative;
+        left: 52px;
+        top: 55px;
+        width: 310px;
+    }
+
+    main > section:nth-child(5) > figure > a:nth-child(3) > img:nth-child(1) {
+        position: relative;
+        left: 460px;
+        bottom: 205px;
+        width: 310px;
+    }
+
+    main > section:nth-child(5) > figure > a:nth-child(5) > img:nth-child(1) {
+        position: relative;
+        left: 260px;
+        bottom: 156px;
+        width: 310px;
+    }
+
+    main > section:nth-child(5) > figure > figcaption:nth-child(2) {
+        width: 300px;
+        position: relative;
+        top: 68px;
+        left: 87px;
+    }
+
+    main > section:nth-child(5) > figure > figcaption:nth-child(4) {
+        width: 300px;
+        position: relative;
+        bottom: 191px;
+        left: 476px;
+    }
+
+    main > section:nth-child(5) > figure > figcaption:nth-child(6) {
+        width: 300px;
+        position: absolute;
+        top: 744px;
+        left: 343px;
+    }
+
+    main > section:nth-child(5) > figure {
+        height: 729px;
+    }
+
+    main > section:nth-child(5) > a > #pro {
+        position: absolute;
+        left: 357px;
+    }
+
+    main > section:nth-child(6) > a > #aim3 {
+        position: relative;
+        left: 219px;
+        bottom: 313px;
+    }
+    main > section:nth-child(6) {
+        height: 849px;
+    }
+    main > section:nth-child(6) > #ani {
+        position: absolute;
+        left: 376px;
+        bottom: 97px;
+    }
+    main > section:nth-child(6) > a > #ass {
+        top: 757px;
+        right: 316px;
+    }
+    footer > address > form {
+        top: 23px;
+        right: 40px;
+        width: 430px;
+    }
+    .text {
+        width: 400px;
+        height: 40px;
+    }
+    #text {
+        width: 400px;
+    }
+    #send {
+        padding: 8px 18px;
+        font-size: 26px;
+        right: 20px;
+        top: 400px;
+    }
+    footer > address > figure {
+        margin-left: -12px;
+    }
+    footer > address > aside > figure > div {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 100%;
+        position: relative;
+        left: 110px;
     }
 }
