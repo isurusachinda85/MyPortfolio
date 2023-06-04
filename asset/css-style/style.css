@@ -4,6 +4,14 @@
 }
 
 /*=================Header============================*/
+header>nav>menu>ul>#icon{
+    font-size: 30px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
 header {
     background: white;
     width: 100%;
@@ -49,7 +57,7 @@ body > main > section {
     margin-right: 70px;
     margin-bottom: 30px;
 
-    /*border: 2px solid;*/
+    border: 2px solid;
 
     padding-top: 10px;
     position: relative;
