@@ -18,6 +18,33 @@
             display: flex;
             align-items: center;
         }
+        div {
+            border: 2px solid;
+            height: 80px;
+            flex-grow: 1;
+            border-radius: 20px;
+            margin: 20px;
+            background-color: yellow;
+        }
+        section > div:nth-child(1) {
+            align-self: start;
+            margin: unset;
+        }
+
+        section > div:nth-child(6) {
+            align-self: end;
+            margin: unset;
+        }
+        #btn1 {
+            position: absolute;
+            bottom: 0;
+            left: 408px;
+        }
+        #btn2{
+            position: absolute;
+            bottom: 0;
+            left: 500px;
+        }
 
     </style>
 
@@ -30,6 +57,8 @@
     <div></div>
     <div></div>
     <div></div>
+    <button class="btn btn-primary" id="btn1">Start</button>
+    <button class="btn btn-danger" id="btn2">Stop</button>
 </section>
 </body>
 </html>
