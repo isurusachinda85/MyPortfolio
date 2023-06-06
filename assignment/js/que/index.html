@@ -5,8 +5,16 @@
     <title>Que</title>
     <link href="../../../asset/css/bootstrap.css" rel="stylesheet">
     <style>
+        body{
+            background: #7f8c8d;
+        }
+        p{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
         section {
-            border: 2px solid;
             width: 1000px;
             height: 320px;
             position: absolute;
@@ -18,14 +26,15 @@
             display: flex;
             align-items: center;
         }
+
         div {
-            border: 2px solid;
+            border: 2px solid white;
             height: 80px;
             flex-grow: 1;
             border-radius: 20px;
-            margin: 20px;
-            background-color: yellow;
+            margin: 10px;
         }
+
         section > div:nth-child(1) {
             align-self: start;
             margin: unset;
@@ -35,21 +44,36 @@
             align-self: end;
             margin: unset;
         }
+
         #btn1 {
             position: absolute;
             bottom: 0;
             left: 408px;
         }
-        #btn2{
+
+        #btn2 {
             position: absolute;
             bottom: 0;
             left: 500px;
+        }
+        section>div:nth-child(2):before{
+            content: " ";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-top: 2px solid rgb(255, 255, 255);
+            border-bottom: 2px solid rgb(255, 255, 255);
+            height: 105px;
         }
 
     </style>
 
 </head>
 <body>
+<p> Java Script Ques</p>
 <section>
     <div></div>
     <div></div>
@@ -60,5 +84,27 @@
     <button class="btn btn-primary" id="btn1">Start</button>
     <button class="btn btn-danger" id="btn2">Stop</button>
 </section>
+
+<script>
+    let id;
+    document.getElementById("btn1").addEventListener("click", function () {
+        let color = ["deeppink", "orange", "red", "yellow", "green", "blue"];
+        let divColor = document.querySelector("section").children;
+
+        clearInterval(id);
+        id = setInterval(function () {
+            for (let i = 0; i < divColor.length; i++) {
+                divColor[i].style.background = color[i];
+            }
+            let pop = color.pop();
+            color.unshift(pop);
+        }, 800);
+
+    });
+
+    document.getElementById("btn2").addEventListener("click", function () {
+        clearInterval(id);
+    });
+</script>
 </body>
 </html>
