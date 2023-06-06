@@ -1,26 +1,4 @@
-@media all and (max-width: 320px) {
-    /*header nav menu ul{
-        display: none;
-    }
-
-     main > section:nth-child(1) > dfn > h1 {
-         font-family: "Arial Black";
-         font-weight: bold;
-         font-size: 35px;
-         margin-top: 7px;
-         position: absolute;
-         !* left: 0; *!
-         right: -74px;
-     }
-
-     main > section:nth-child(1) > dfn > h3 {
-         font-size: 30px;
-         position: absolute;
-         top: 106px;
-     }*/
-}
-
-/*----------------------1440 px-----------------*/
+/*----------------------1440px-----------------*/
 @media all and (max-width: 1440px) {
     main > section:nth-child(1) > dfn > div:nth-child(4) {
         width: 350px;
@@ -128,7 +106,7 @@
     }
 }
 
-/*-----------1024px--------------------*/
+/*-----------1024px-----------------------------*/
 @media all and (max-width: 1024px) {
     header > nav > menu > ul > li {
         display: inline-block;
@@ -381,6 +359,7 @@
     }
 }
 
+/*-----------768px-----------------------------*/
 @media all and (max-width: 768px) {
     header > nav > menu > ul > #icon {
         font-size: 30px;
@@ -538,46 +517,57 @@
         left: 251px;
         bottom: 26px;
     }
+
     main > section:nth-child(4) > .tool:nth-child(14) {
         position: absolute;
         top: 666px;
         left: 406px;
     }
+
     main > section:nth-child(4) > .tool:nth-child(13) {
         position: relative;
         left: 101px;
     }
+
     main > section:nth-child(4) > .tool {
         left: 27px;
     }
+
     main > section:nth-child(5) > figure > a:nth-child(1) > img:nth-child(1) {
         left: -35px;
         top: 17px;
     }
+
     main > section:nth-child(5) > figure > a:nth-child(3) > img:nth-child(1) {
         left: 289px;
         bottom: 242px;
     }
+
     main > section:nth-child(5) > figure > figcaption:nth-child(2) {
         top: 34px;
         left: 3px;
     }
+
     main > section:nth-child(5) > figure > figcaption:nth-child(4) {
         bottom: 222px;
         left: 299px;
     }
+
     main > section:nth-child(5) > figure > a:nth-child(5) > img:nth-child(1) {
         left: 131px;
         bottom: 208px;
     }
+
     main > section:nth-child(5) > figure > figcaption:nth-child(6) {
         top: 698px;
         left: 200px;
     }
+
     main > section:nth-child(5) > a > #pro {
         left: 224px;
         bottom: 4px;
     }
+
     main > section:nth-child(5) > figure {
         height: 645px;
     }
@@ -587,65 +577,178 @@
         left: 103px;
         top: 138px;
     }
+
     main > section:nth-child(6) > #css {
         position: absolute;
         left: 290px;
         top: 358px;
     }
+
     main > section:nth-child(6) > a > #tim2 {
         position: absolute;
         left: 103px;
         top: 434px;
     }
+
     main > section:nth-child(6) > #tran {
         position: absolute;
         left: 242px;
         top: 645px;
     }
+
     main > section:nth-child(6) > a > #aim3 {
         position: absolute;
         left: 103px;
         top: 721px;
     }
+
     main > section:nth-child(6) > #ani {
         position: absolute;
         left: 243px;
         bottom: 74px;
     }
+
     main > section:nth-child(6) > a > #ass {
         top: 1022px;
         right: 187px;
     }
+
     main > section:nth-child(6) {
         height: 1073px;
     }
+
     footer > address > form {
         top: -51px;
         right: -128px;
         width: 526px;
         position: relative;
     }
+
     .text {
         width: 500px;
         height: 40px;
     }
+
     #text {
         width: 500px;
     }
+
     #send {
         padding: 10px 20px;
         font-size: 30px;
         right: 20px;
         top: 400px;
     }
+
     footer > address > figure {
         margin-left: 99px;
     }
 
-    footer>address>aside{
+    footer > address > aside {
         position: absolute;
         bottom: 10px;
         right: 368px;
     }
+}
 
+/*-----------425px-----------------------------*/
+
+
+/*-----------320px-----------------------------*/
+@media all and (max-width: 320px) {
+    body > main > section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    main > section:nth-child(1) > dfn > h1 {
+        font-size: 40px;
+        margin-top: 23px;
+    }
+
+    main > section:nth-child(1) > dfn > h3 {
+        font-size: 28px;
+        margin-top: -12px;
+    }
+
+    #bttn1 {
+        position: absolute;
+        left: 81px;
+        top: 491px;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 14px;
+    }
+
+    main > section:nth-child(1) > dfn > div:nth-child(4) {
+        width: 228px;
+        height: 242px;
+        position: relative;
+        left: 20px;
+        bottom: 21px;
+    }
+
+    main > section:nth-child(1) > dfn > h2 {
+        position: relative;
+        bottom: -61px;
+        left: 17px;
+        font-size: 17px;
+    }
+
+    header > nav > menu > ul > #icon {
+        font-size: 30px;
+        position: absolute;
+        top: 12px;
+        left: 33px;
+        cursor: pointer;
+        display: block;
+    }
+
+    main > section:nth-child(1) > dfn > figure > div {
+        margin: 7px;
+    }
+
+    main > section:nth-child(1) > dfn > figure:nth-child(6) {
+        position: relative;
+        bottom: -59px;
+        left: -42px;
+        text-align: center;
+        width: 287px;
+    }
+
+    main > section:nth-child(2) > dfn > h1 {
+        font-size: 40px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) {
+        height: 380px;
+        width: 250px;
+        top: 126px;
+        left: 13px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) {
+        left: 41px;
+        bottom: -364px;
+    }
+
+    main > section:nth-child(2) {
+        height: 1082px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) {
+        left: 10px;
+        bottom: -364px;
+        width: 92%;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) > p:nth-child(1) {
+        font-size: 19px;
+        text-align: center;
+    }
+    main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+        left: 20px;
+        bottom: 6px;
+        text-align: center;
+    }
 }
