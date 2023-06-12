@@ -387,22 +387,32 @@
 <script>
     let customerDB = [];
     $("#saveCustomer").click(function () {
-        let id = $("#cusIdText").val();
-        let name = $("#cusNameText").val();
-        let address = $("#cusAddressText").val();
-        let mobile = $("#cusMobileText").val();
-        let email = $("#cusEmailText").val();
+        let customerId = $("#cusIdText").val();
+        let customerName = $("#cusNameText").val();
+        let customerAddress = $("#cusAddressText").val();
+        let customerMobile = $("#cusMobileText").val();
+        let customerEmail = $("#cusEmailText").val();
 
-        let customer = [id, name, address, mobile, email];
-        customerDB.push(customer)
+        // let customer = [id, name, address, mobile, email];
+
+        let customerOB= {
+            id:customerId,
+            name:customerName,
+            address:customerAddress,
+            mobile:customerMobile,
+            email:customerEmail
+        }
+        customerDB.push(customerOB)
+
+        clearText();
 
         $("#tblCustomer").empty();
         for (let i = 0; i < customerDB.length; i++) {
-            let cusId = customerDB[i][0];
-            let cusName = customerDB[i][1];
-            let cusAdd = customerDB[i][2];
-            let cusMobile = customerDB[i][3];
-            let cusEmail = customerDB[i][4];
+            let cusId = customerDB[i].id;
+            let cusName = customerDB[i].name;
+            let cusAdd = customerDB[i].address;
+            let cusMobile = customerDB[i].mobile;
+            let cusEmail = customerDB[i].email;
 
             let row = `<tr>
            <td>${cusId}</td>
@@ -412,9 +422,17 @@
            <td>${cusEmail}</td>
            </tr>`
 
-
             $("#tblCustomer").append(row);
         }
+
+        function clearText() {
+            $("#cusIdText").val("");
+            $("#cusNameText").val("");
+            $("#cusAddressText").val("");
+            $("#cusMobileText").val("");
+            $("#cusEmailText").val("");
+        }
+
     });
 
 </script>
@@ -422,20 +440,27 @@
 <script>
     let itemDB = [];
     $("#saveItem").click(function () {
-        let code = $("#itemCodeText").val();
+        let itemCode = $("#itemCodeText").val();
         let itemName = $("#itemNameText").val();
         let unitPrice = $("#unitPriceText").val();
         let qty = $("#qtyText").val();
 
-        let item = [code,itemName,unitPrice,qty]
-        itemDB.push(item);
+        // let item = [code,itemName,unitPrice,qty]
+
+        let itemOB = {
+            code:itemCode,
+            name:itemName,
+            price:unitPrice,
+            qty:qty
+        }
+        itemDB.push(itemOB);
 
         $("#tblItem").empty();
         for (let i = 0; i < itemDB.length; i++) {
-            let itemCode = itemDB[i][0];
-            let name = itemDB[i][1];
-            let price = itemDB[i][2];
-            let qty = itemDB[i][3];
+            let itemCode = itemDB[i].code;
+            let name = itemDB[i].name;
+            let price = itemDB[i].price;
+            let qty = itemDB[i].qty;
 
             let row = `<tr>
                   <td>${itemCode}</td>
