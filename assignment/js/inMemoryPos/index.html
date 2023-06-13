@@ -425,6 +425,10 @@
             $("#tblCustomer").append(row);
         }
 
+        $.each(customerDB,function () {
+            $("#cusID").append(new Option(customerId))
+        });
+
         function clearText() {
             $("#cusIdText").val("");
             $("#cusNameText").val("");
@@ -434,6 +438,7 @@
         }
 
     });
+
 
 </script>
 
@@ -455,6 +460,8 @@
         }
         itemDB.push(itemOB);
 
+        clearText();
+
         $("#tblItem").empty();
         for (let i = 0; i < itemDB.length; i++) {
             let itemCode = itemDB[i].code;
@@ -471,7 +478,19 @@
 
             $("#tblItem").append(row);
         }
+
+        $.each(itemDB,function () {
+            $("#itemCode").append(new Option(itemCode))
+        });
+
+        function clearText() {
+            $("#itemCodeText").val("");
+            $("#itemNameText").val("");
+            $("#unitPriceText").val("");
+            $("#qtyText").val("");
+        }
     });
+
 </script>
 
 <script src="../../../asset/js/bootstrap.js"></script>
