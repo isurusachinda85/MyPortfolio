@@ -1500,7 +1500,6 @@
     }
     footer > address > figure {
         width: 281px;
-        border: 1px solid;
         height: 330px;
     }
     footer > address > figure > #lh2 {
@@ -1514,7 +1513,6 @@
     }
     footer > address > form {
         width: 282px;
-        border: 1px solid;
     }
     .text {
         width: 250px;
