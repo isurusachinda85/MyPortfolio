@@ -57,7 +57,7 @@ body > main > section {
     margin-right: 70px;
     margin-bottom: 30px;
 
-    /*border: 2px solid;*/
+    border: 2px solid;
 
     padding-top: 10px;
     position: relative;
@@ -606,7 +606,7 @@ footer > address > figure > #lh2 {
     position: relative;
     left: 150px;
     bottom: 180px;
-    width: 400px;
+    width: 100%;
 }
 
 footer > address > form {

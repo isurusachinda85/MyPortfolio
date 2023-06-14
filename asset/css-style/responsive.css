@@ -601,7 +601,12 @@
         left: 103px;
         top: 721px;
     }
-
+    footer > address > figure > #lh2 {
+        position: relative;
+        left: 150px;
+        bottom: 180px;
+        width: 69%;
+    }
     main > section:nth-child(6) > #ani {
         position: absolute;
         left: 243px;
@@ -653,6 +658,7 @@
 
 /*-----------425px-----------------------------*/
 @media all and (max-width: 424px) {
+
     body > main > section {
         margin-left: 15px;
         margin-right: 15px;
@@ -924,7 +930,7 @@
 
     footer > address > figure > #lh2 {
         left: 52px;
-        width: 330px;
+        width: 90%;
         font-size: 20px;
     }
 
@@ -946,7 +952,6 @@
 
     footer > address > figure {
         width: 384px;
-        /*border: 1px solid;*/
         position: relative;
         left: -82px;
     }
@@ -956,7 +961,6 @@
         right: -17px;
         width: 384px;
         position: relative;
-        /*border: 1px solid;*/
     }
 
     .text {
@@ -972,12 +976,10 @@
         bottom: 10px;
         right: -9px;
         width: 311px;
-        /*border: 1px solid;*/
     }
 
     footer > address > aside > figure {
         width: 311px;
-        /*border: 1px solid;*/
         position: relative;
         left: -41px;
     }
@@ -998,6 +1000,9 @@
 
 /*-----------375px-----------------------------*/
 @media all and (max-width: 376px) {
+    header > nav > menu > ul > #icon {
+        left: 26px;
+    }
     main > section:nth-child(1) > dfn > h1 {
         font-size: 42px;
     }
@@ -1224,7 +1229,7 @@
     footer > address > figure > #lh2 {
         left: 53px;
         font-size: 16px;
-        width: 274px;
+        width: 82%;
         bottom: 169px;
     }
 
@@ -1238,9 +1243,11 @@
     footer > address > form {
         width: 338px;
     }
+
     .text {
         width: 307px;
     }
+
     #text {
         width: 307px;
     }
@@ -1249,8 +1256,8 @@
 /*-----------320px-----------------------------*/
 @media all and (max-width: 320px) {
     body > main > section {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     main > section:nth-child(1) > dfn > h1 {
@@ -1315,8 +1322,8 @@
     main > section:nth-child(2) > div:nth-child(2) {
         height: 380px;
         width: 250px;
-        top: 126px;
-        left: 13px;
+        top: 3px;
+        left: 18px;
     }
 
     main > section:nth-child(2) > div:nth-child(3) {
@@ -1325,7 +1332,7 @@
     }
 
     main > section:nth-child(2) {
-        height: 1082px;
+        height: 1095px;
     }
 
     main > section:nth-child(2) > div:nth-child(3) {
@@ -1340,8 +1347,182 @@
     }
 
     main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
-        left: 20px;
+        left: 11px;
         bottom: 6px;
         text-align: center;
+    }
+    main > section:nth-child(2) > a > #bttn2 {
+        left: 45px;
+    }
+    main > section:nth-child(3) > dfn > h1 {
+        font-size: 38px;
+    }
+    main > section:nth-child(3) > #img1 {
+        bottom: 152px;
+    }
+    main > section:nth-child(3) > div:nth-child(3) {
+        left: 13px;
+        bottom: 8px;
+        width: 60%;
+    }
+    main > section:nth-child(3) > #img3 {
+        right: 205px;
+        top: 552px;
+    }
+    main > section:nth-child(3) > div:nth-child(7) {
+        right: 25px;
+        top: 537px;
+        width: 60%;
+    }
+    main > section:nth-child(3) > #img4 {
+        right: 204px;
+        top: 741px;
+    }
+    main > section:nth-child(3) > div:nth-child(9) {
+        left: 93px;
+        top: 135px;
+        width: 60%;
+    }
+    main > section:nth-child(4) > dfn > h1 {
+        font-size: 40px;
+    }
+    main > section:nth-child(4) > .lang {
+        left: 1px;
+        width: 95px;
+        height: 95px;
+    }
+    main > section:nth-child(4) > .lang:nth-child(7) {
+        left: 145px;
+        bottom: 151px;
+    }
+    main > section:nth-child(4) > .lang:nth-child(6) {
+        left: -73px;
+        top: 134px;
+    }
+    main > section:nth-child(4) > .tool {
+        left: 1px;
+        bottom: 16px;
+        width: 95px;
+        height: 95px;
+    }
+    main > section:nth-child(4) > .tool:nth-child(13) {
+        left: 1px;
+    }
+    main > section:nth-child(4) > .tool:nth-child(15) {
+        left: 148px;
+        bottom: 160px;
+    }
+    main > section:nth-child(4) > .tool:nth-child(14) {
+        left: 74px;
+        top: 1068px;
+    }
+    main > section:nth-child(4) {
+        height: 1219px;
+    }
+    main > section:nth-child(5) > dfn > h1 {
+        font-size: 40px;
+    }
+    main > section:nth-child(5) > figure > a:nth-child(1) > img:nth-child(1) {
+        left: -35px;
+        width: 275px;
+    }
+    main > section:nth-child(5) > figure > figcaption:nth-child(2) {
+        top: 30px;
+        left: -13px;
+        width: 248px;
+    }
+    main > section:nth-child(5) > figure > a:nth-child(3) > img:nth-child(1) {
+        left: -35px;
+        width: 275px;
+    }
+    main > section:nth-child(5) > figure > figcaption:nth-child(4) {
+        left: -38px;
+        width: 285px;
+    }
+    main > section:nth-child(5) > figure > a:nth-child(5) > img:nth-child(1) {
+        left: -35px;
+        width: 275px;
+    }
+    main > section:nth-child(5) > figure > figcaption:nth-child(6) {
+        left: 19px;
+        top: 913px;
+    }
+    main > section:nth-child(5) > a > #pro {
+        left: 47px;
+    }
+    main > section:nth-child(5) > figure {
+        height: 906px;
+    }
+    main > section:nth-child(6) > dfn > h1 {
+        font-size: 34px;
+    }
+    main > section:nth-child(6) > a > #cim1 {
+        width: 285px;
+        height: 178px;
+        left: -20px;
+        top: 109px;
+    }
+    main > section:nth-child(6) > #css {
+        left: 112px;
+        top: 299px;
+    }
+    main > section:nth-child(6) > a > #tim2 {
+        width: 285px;
+        height: 178px;
+        left: -20px;
+        top: 368px;
+    }
+    main > section:nth-child(6) > #tran {
+        left: 77px;
+        top: 561px;
+    }
+    main > section:nth-child(6) > a > #aim3 {
+        width: 285px;
+        height: 178px;
+        left: -20px;
+        top: 628px;
+    }
+    main > section:nth-child(6) > #ani {
+        left: 73px;
+        bottom: 106px;
+    }
+    main > section:nth-child(6) > a > #ass {
+        top: 915px;
+        right: 28px;
+        font-size: 21px;
+        padding: 8px 16px;
+    }
+    main > section:nth-child(6) {
+        height: 992px;
+    }
+    footer > dfn > h1 {
+        font-size: 40px;
+    }
+    footer > address > figure {
+        width: 281px;
+        border: 1px solid;
+        height: 330px;
+    }
+    footer > address > figure > #lh2 {
+        left: 53px;
+        font-size: 16px;
+        width: 76%;
+        bottom: 198px;
+    }
+    footer > address > figure > #loc {
+        bottom: 141px;
+    }
+    footer > address > form {
+        width: 282px;
+        border: 1px solid;
+    }
+    .text {
+        width: 250px;
+    }
+    #text {
+        width: 250px;
+    }
+    footer > address > aside > figure {
+        left: -50px;
     }
 }
