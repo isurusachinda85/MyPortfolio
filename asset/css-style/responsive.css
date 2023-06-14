@@ -652,7 +652,326 @@
 }
 
 /*-----------425px-----------------------------*/
+@media all and (max-width: 424px) {
+    body > main > section {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
+    #bttn1 {
+        position: relative;
+        left: 20px;
+        top: -10px;
+        padding: 12px 24px;
+        font-size: 27px;
+        border-radius: 22px;
+    }
+
+    main > section:nth-child(1) > dfn > div:nth-child(4) {
+        width: 263px;
+        height: 349px;
+        position: relative;
+        left: 66px;
+        bottom: -14px;
+    }
+
+    main > section:nth-child(1) > dfn > h2 {
+        position: relative;
+        bottom: -18px;
+        left: 30px;
+    }
+
+    main > section:nth-child(1) > dfn > figure:nth-child(6) {
+        position: relative;
+        bottom: -11px;
+        left: -2px;
+    }
+
+    main > section:nth-child(1) > dfn > figure > div {
+        margin: 9px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) {
+        left: 47px;
+        top: 361px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) {
+        height: 400px;
+        width: 286px;
+        position: relative;
+        top: 2px;
+        left: 51px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) {
+        left: 10px;
+        top: -12px;
+        width: 97%;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) > p:nth-child(1) {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+        left: -6px;
+        bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > h4 {
+        font-size: 15px;
+        margin: 6px;
+    }
+
+    main > section:nth-child(2) > a > #bttn2 {
+        border-radius: 17px;
+        padding: 10px 10px;
+        font-size: 28px;
+        left: 86px;
+        bottom: 12px;
+        position: relative;
+    }
+
+    main > section:nth-child(3) > #img1 {
+        left: 27px;
+        bottom: 131px;
+    }
+
+    main > section:nth-child(3) > div:nth-child(3) {
+        left: 48px;
+        bottom: 7px;
+        width: 45%;
+    }
+
+    main > section:nth-child(3) > #img2 {
+        position: absolute;
+        left: 27px;
+        bottom: 517px;
+    }
+
+    main > section:nth-child(3) > div:nth-child(5) {
+        position: relative;
+        left: 118px;
+        bottom: 27px;
+        width: 45%;
+    }
+
+    main > section:nth-child(3) > #img3 {
+        position: absolute;
+        right: 293px;
+        top: 545px;
+    }
+
+    main > section:nth-child(3) > div:nth-child(7) {
+        position: absolute;
+        right: 98px;
+        top: 533px;
+        width: 45%;
+    }
+
+    main > section:nth-child(3) > #img4 {
+        position: absolute;
+        right: 293px;
+        top: 751px;
+    }
+
+    main > section:nth-child(3) > div:nth-child(9) {
+        position: relative;
+        left: -63px;
+        top: 373px;
+        width: 45%;
+    }
+
+    main > section:nth-child(3) {
+        height: 929px;
+    }
+
+    main > section:nth-child(4) > .lang {
+        left: 46px;
+    }
+
+    main > section:nth-child(4) > .lang:nth-child(7) {
+        left: 197px;
+        bottom: 156px;
+    }
+
+    main > section:nth-child(4) > .lang:nth-child(6) {
+        left: -26px;
+    }
+
+    main > section:nth-child(4) > .tool {
+        left: 52px;
+        bottom: 16px;
+    }
+
+    main > section:nth-child(4) > .tool:nth-child(15) {
+        position: absolute;
+        left: 203px;
+        bottom: 146px;
+    }
+
+    main > section:nth-child(4) > .tool:nth-child(13) {
+        position: relative;
+        left: 53px;
+    }
+
+    main > section:nth-child(4) > .tool:nth-child(14) {
+        position: absolute;
+        top: 1120px;
+        left: 127px;
+    }
+
+    main > section:nth-child(4) {
+        height: 1256px;
+    }
+
+    main > section:nth-child(5) > figure {
+        height: 1003px;
+    }
+
+    main > section:nth-child(5) > figure > a:nth-child(1) > img:nth-child(1) {
+        left: -2px;
+        top: 13px;
+    }
+
+    main > section:nth-child(5) > figure > figcaption:nth-child(2) {
+        top: 35px;
+        left: 35px;
+    }
+
+    main > section:nth-child(5) > figure > a:nth-child(3) > img:nth-child(1) {
+        left: -2px;
+        bottom: -65px;
+    }
+
+    main > section:nth-child(5) > figure > figcaption:nth-child(4) {
+        bottom: -79px;
+        left: 6px;
+    }
+
+    main > section:nth-child(5) > figure > a:nth-child(5) > img:nth-child(1) {
+        left: -2px;
+        bottom: -110px;
+    }
+
+    main > section:nth-child(5) > figure > figcaption:nth-child(6) {
+        top: 1013px;
+        left: 74px;
+    }
+
+    main > section:nth-child(5) > a > #pro {
+        left: 101px;
+        bottom: 20px;
+    }
+
+    main > section:nth-child(6) > dfn > h1 {
+        font-size: 46px;
+    }
+    main > section:nth-child(6) > a > #cim1 {
+        width: 382px;
+        height: 193px;
+        left: -15px;
+    }
+    main > section:nth-child(6) > #css {
+        left: 162px;
+    }
+    main > section:nth-child(6) > a > #tim2 {
+        width: 382px;
+        height: 193px;
+        left: -15px;
+    }
+    main > section:nth-child(6) > #tran {
+        left: 129px;
+    }
+    main > section:nth-child(6) > a > #aim3 {
+        width: 382px;
+        height: 193px;
+        left: -15px;
+    }
+    main > section:nth-child(6) > #ani {
+        left: 121px;
+    }
+    main > section:nth-child(6) > a > #ass {
+        top: 1016px;
+        right: 58px;
+    }
+    footer > address > figure > #uh2 {
+        left: 72px;
+        width: 261px;
+    }
+    footer > address > figure > #ch2 {
+        left: 72px;
+        width: 261px;
+    }
+    footer > address > figure > #mh2 {
+        left: 72px;
+        width: 301px;
+    }
+    footer > address > figure > #lh2 {
+        left: 52px;
+        width: 330px;
+        font-size: 20px;
+    }
+    footer > address > figure > #user {
+        left: 6px;
+    }
+    footer > address > figure > #call {
+        left: 6px;
+    }
+    footer > address > figure > #mail {
+        left: 6px;
+    }
+    footer > address > figure > #loc {
+        left: 6px;
+    }
+    footer > address > figure {
+        width: 384px;
+        /*border: 1px solid;*/
+        position: relative;
+        left: -82px;
+    }
+    footer > address > form {
+        top: -8px;
+        right: -17px;
+        width: 384px;
+        position: relative;
+        /*border: 1px solid;*/
+    }
+
+    .text {
+        width: 350px;
+    }
+    #text {
+        width: 350px;
+    }
+    footer > address > aside {
+        position: relative;
+        bottom: 10px;
+        right: -9px;
+        width: 311px;
+        /*border: 1px solid;*/
+    }
+    footer > address > aside>figure {
+        width: 311px;
+        /*border: 1px solid;*/
+        position: relative;
+        left: -41px;
+    }
+    footer > address > aside > figure > div {
+        margin: 6px;
+        left: 21px;
+    }
+    main{
+        overflow: hidden;
+    }
+    #foot > p {
+        padding: 6px;
+    }
+}
 
 /*-----------320px-----------------------------*/
 @media all and (max-width: 320px) {
@@ -746,6 +1065,7 @@
         font-size: 19px;
         text-align: center;
     }
+
     main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
         left: 20px;
         bottom: 6px;
