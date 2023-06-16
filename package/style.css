@@ -142,7 +142,25 @@ section > div > h2 {
 #div14 {
     position: relative;
     top: 320px;
+    left: 50px;
+    margin-left: 35px;
+}
+
+#div15{
+    position: relative;
+    top: 8px;
     left: 550px;
+}
+#div16{
+    position: relative;
+    left: 1035px;
+    bottom: 305px;
+}
+
+#div17{
+    position: absolute;
+    left: 550px;
+    top: 2650px;
 }
 
 a {
