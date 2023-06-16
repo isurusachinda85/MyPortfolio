@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta content="width=device-width initial-scale=1 user-scalable=no" name="viewport">
+    <link href="../../../asset/css-style/normalize.css" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        section {
+            border-radius: 30px;
+            height: 550px;
+            width: 310px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 1px 1px 5px 0px black;
+            padding: 25px;
+        }
+
+        #textArea {
+            width: 100%;
+            height: 90px;
+            box-shadow: inset 1px 1px 5px 0px black;
+            border: none;
+            border-radius: 20px;
+            font-size: 40px;
+            text-align: right;
+        }
+
+        button {
+            border: none;
+            width: 60px;
+            height: 60px;
+            margin: 7px;
+            margin-top: 25px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px 0px black;
+            background: white;
+        }
+
+        button:hover {
+            border: none;
+            background: #3A86FF;
+            color: white;
+        }
+
+        #equal {
+            width: 138px;
+            border-radius: 20px;
+        }
+
+        #ac:hover {
+            background: red;
+        }
+
+        #del:hover {
+            background: green;
+        }
+
+        #percentage:hover {
+            background: orange;
+        }
+
+        #division:hover {
+            background: #0e2cc4;
+        }
+
+        #multiple:hover {
+            background: #0e2cc4;
+        }
+
+        #mines:hover {
+            background: #0e2cc4;
+        }
+
+        #plus:hover {
+            background: #0e2cc4;
+        }
+
+        #equal:hover {
+            background: #24f00d;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <input id="textArea" placeholder="0" type="text">
+    <div>
+        <button onclick="Clear()" id="ac">AC</button>
+        <button onclick="del()" id="del">DEL</button>
+        <button onclick="display('%')" id="percentage">%</button>
+        <button onclick="display('/')" id="division">/</button>
+    </div>
+    <div>
+        <button onclick="display('7')" id="seven">7</button>
+        <button onclick="display('8')" id="eight">8</button>
+        <button onclick="display('9')" id="nine">9</button>
+        <button onclick="display('*')" id="multiple">*</button>
+    </div>
+    <div>
+        <button onclick="display('4')" id="four">4</button>
+        <button onclick="display('5')" id="five">5</button>
+        <button onclick="display('6')" id="six">6</button>
+        <button onclick="display('-')" id="mines">-</button>
+    </div>
+    <div>
+        <button onclick="display('1')" id="one">1</button>
+        <button onclick="display('2')" id="two">2</button>
+        <button onclick="display('3')" id="three">3</button>
+        <button onclick="display('+')" id="plus">+</button>
+    </div>
+    <div>
+        <button onclick="display('0')" id="zero">0</button>
+        <button onclick="display('.')" id="decimal">.</button>
+        <button onclick="Calculate()" id="equal">=</button>
+    </div>
+</section>
+
+
+<script>
+    let outPutScreen = document.getElementById("textArea");
+
+    function display(num) {
+        outPutScreen.value += num;
+    }
+
+    function Calculate() {
+        try {
+            outPutScreen.value = eval(outPutScreen.value);
+        }catch (err){
+
+        }
+    }
+
+    function Clear() {
+        outPutScreen.value = "";
+    }
+    function del() {
+        outPutScreen.value = outPutScreen.value.slice(0,-1);
+    }
+</script>
+</body>
+</html>
