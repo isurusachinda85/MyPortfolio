@@ -385,7 +385,85 @@
 </script>
 
 <script>
-    let customerDB = [];
+    $("#saveCustomer").click(function () {
+        saveCustomer();
+        clearText();
+        getAllCustomer();
+    })
+
+
+    let customerDB = [
+        // {id: "C001", name: "Isuru", address: "Galle", mobile: "0763880467",email:"isuru@gmail.com"},
+        // {id: "C002", name: "Sachinda", address: "Panadura", mobile: "0770580467",email:"sachinda@gmail.com"},
+        // {id: "C003", name: "Lakshan", address: "Galle", mobile: "0725880467",email:"lakshan@gmail.com"}
+    ];
+
+    getAllCustomer();
+    function saveCustomer() {
+        let customerId = $("#cusIdText").val();
+        let customerName = $("#cusNameText").val();
+        let customerAddress = $("#cusAddressText").val();
+        let customerMobile = $("#cusMobileText").val();
+        let customerEmail = $("#cusEmailText").val();
+
+        let customerOB = {
+            id: customerId,
+            name: customerName,
+            address: customerAddress,
+            mobile: customerMobile,
+            email: customerEmail
+        }
+        customerDB.push(customerOB);
+    }
+
+    function getAllCustomer() {
+
+        $("#tblCustomer").empty();
+
+        for (let i = 0; i < customerDB.length; i++) {
+            let cusId = customerDB[i].id;
+            let cusName = customerDB[i].name;
+            let cusAdd = customerDB[i].address;
+            let cusMobile = customerDB[i].mobile;
+            let cusEmail = customerDB[i].email;
+
+            let row = `<tr>
+           <td>${cusId}</td>
+           <td>${cusName}</td>
+           <td>${cusAdd}</td>
+           <td>${cusMobile}</td>
+           <td>${cusEmail}</td>
+           </tr>`
+
+            $("#tblCustomer").append(row);
+        }
+        trTextAddTextCustomer();
+    }
+
+
+    function trTextAddTextCustomer() {
+        $("#tblCustomer>tr").click(function () {
+            let id = $(this).children().eq(0).text();
+            let name = $(this).children().eq(1).text();
+            let address = $(this).children().eq(2).text();
+            let mobile = $(this).children().eq(3).text();
+            let email = $(this).children().eq(4).text();
+
+            $("#cusIdText").val(id);
+            $("#cusNameText").val(name);
+            $("#cusAddressText").val(address);
+            $("#cusMobileText").val(mobile);
+            $("#cusEmailText").val(email);
+        });
+    }
+
+    function clearText() {
+        $("#cusIdText,#cusNameText,#cusAddressText,#cusMobileText,#cusEmailText").val("");
+        $("#cusIdText").val("").focus();
+    }
+
+
+    /*let customerDB = [];
     $("#saveCustomer").click(function () {
 
 
@@ -593,8 +671,7 @@
             }
             return true
         }
-    }
-
+    }*/
     /* $.each(customerDB, function () {
          $("#cusID").append(new Option(customerId))
      });*/
