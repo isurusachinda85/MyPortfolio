@@ -126,7 +126,7 @@
 
             <section>
                 <table class="table table-striped mt-4 table table-bordered table-hover text-center">
-                    <thead class="col-12 bg-info text-white">
+                    <thead class="col-12 col-sm-6 bg-info text-white">
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
@@ -385,35 +385,83 @@
 </script>
 
 <script>
+
+    let idPattern = /^(C00-)[0-9]{3}$/;
+
+    let namePattern = /^[A-Za-z ]{5,}$/;
+
+    let addressPattern = /^[A-Za-z0-9 ]{8,}$/;
+
+    let phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let vArray = [];
+    vArray.push([$("#cusIdText"), idPattern]);
+    vArray.push([$("#cusNameText"), namePattern]);
+    vArray.push([$("#cusAddressText"), addressPattern]);
+    vArray.push([$("#cusMobileText"), phonePattern]);
+    vArray.push([$("#cusEmailText"), emailPattern]);
+
     $("#saveCustomer").click(function () {
         saveCustomer();
-        clearText();
-        getAllCustomer();
-    })
+    });
 
+    $("#deleteCustomer").click(function () {
+        let id = $("#cusIdText").val();
+
+        let consent = confirm("Do you want to delete.?");
+
+        if (consent) {
+            let response = deleteCustomer(id);
+            if (response) {
+                alert("Customer Deleted");
+                clearText();
+                getAllCustomer();
+            } else {
+                alert("Customer Not Removed..!");
+            }
+        }
+    });
+
+    $("#updateCustomer").click(function () {
+        let id = $("#cusIdText").val();
+        updateCustomer(id);
+        clearText();
+    });
 
     let customerDB = [
-        // {id: "C001", name: "Isuru", address: "Galle", mobile: "0763880467",email:"isuru@gmail.com"},
-        // {id: "C002", name: "Sachinda", address: "Panadura", mobile: "0770580467",email:"sachinda@gmail.com"},
-        // {id: "C003", name: "Lakshan", address: "Galle", mobile: "0725880467",email:"lakshan@gmail.com"}
+        {id: "C001", name: "Isuru", address: "Galle", mobile: "0763880467", email: "isuru@gmail.com"},
+        {id: "C002", name: "Sachinda", address: "Panadura", mobile: "0770580467", email: "sachinda@gmail.com"},
+        {id: "C003", name: "Lakshan", address: "Galle", mobile: "0725880467", email: "lakshan@gmail.com"}
     ];
 
     getAllCustomer();
+
     function saveCustomer() {
         let customerId = $("#cusIdText").val();
-        let customerName = $("#cusNameText").val();
-        let customerAddress = $("#cusAddressText").val();
-        let customerMobile = $("#cusMobileText").val();
-        let customerEmail = $("#cusEmailText").val();
 
-        let customerOB = {
-            id: customerId,
-            name: customerName,
-            address: customerAddress,
-            mobile: customerMobile,
-            email: customerEmail
+        if (searchCustomer(customerId.trim()) == undefined) {
+            let customerName = $("#cusNameText").val();
+            let customerAddress = $("#cusAddressText").val();
+            let customerMobile = $("#cusMobileText").val();
+            let customerEmail = $("#cusEmailText").val();
+
+            let customerOB = {
+                id: customerId,
+                name: customerName,
+                address: customerAddress,
+                mobile: customerMobile,
+                email: customerEmail
+            }
+            customerDB.push(customerOB);
+            clearText();
+            getAllCustomer();
+        } else {
+            alert("Customer already exits.!");
+            clearText();
         }
-        customerDB.push(customerOB);
+
     }
 
     function getAllCustomer() {
@@ -440,6 +488,43 @@
         trTextAddTextCustomer();
     }
 
+    function searchCustomer(id) {
+        return customerDB.find(function (customer) {
+            return customer.id == id;
+        });
+    }
+
+    function deleteCustomer(id) {
+        for (let i = 0; i < customerDB.length; i++) {
+            if (customerDB[i].id == id) {
+                customerDB.splice(i, 1);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function updateCustomer(id) {
+        if (searchCustomer(id) == undefined) {
+            alert("No such Customer..please check the ID");
+        } else {
+            let consent = confirm("Do you really want to update this customer.?");
+            if (consent) {
+                let customer = searchCustomer(id);
+                let customerName = $("#cusNameText").val();
+                let customerAddress = $("#cusAddressText").val();
+                let customerMobile = $("#cusMobileText").val();
+                let customerEmail = $("#cusEmailText").val();
+
+                customer.name = customerName;
+                customer.address = customerAddress;
+                customer.mobile = customerMobile;
+                customer.email = customerEmail;
+
+                getAllCustomer();
+            }
+        }
+    }
 
     function trTextAddTextCustomer() {
         $("#tblCustomer>tr").click(function () {
@@ -462,6 +547,75 @@
         $("#cusIdText").val("").focus();
     }
 
+
+    function checkValidationsOfAll() {
+        for (let i = 0; i < vArray.length; i++) {
+            let field = vArray[i][0];
+            let regEx = vArray[i][1];
+            if (checkValidations(field, regEx)) {
+                field.css("border", "2px solid blue");
+            } else {
+                field.css("border", "2px solid red");
+                return;
+            }
+        }
+    }
+
+
+    function checkValidations(txt, regEx) {
+        if (regEx.test(txt.val())) {
+            return true;
+        }
+        return false;
+    }
+
+
+    $("#cusIdText,#cusNameText,#cusAddressText,#cusMobileText,#cusEmailText").keydown(function (e) {
+        if (e.key == "Tab") {
+            e.preventDefault();
+        }
+    });
+
+
+    $("#cusIdText,#cusNameText,#cusAddressText,#cusMobileText,#cusEmailText").keyup(function () {
+        checkValidationsOfAll();
+    });
+
+    $("#cusIdText").keydown(function (e) {
+        if (e.key == "Enter") {
+            if (checkValidations(vArray[0][0],vArray[0][1])){
+                $("#cusNameText").focus();
+            }
+        }
+    });
+    $("#cusNameText").keydown(function (e) {
+        if (e.key == "Enter") {
+            if (checkValidations(vArray[1][0],vArray[1][1])){
+                $("#cusAddressText").focus();
+            }
+        }
+    });
+    $("#cusAddressText").keydown(function (e) {
+        if (e.key == "Enter") {
+            if (checkValidations(vArray[2][0],vArray[2][1])){
+                $("#cusMobileText").focus();
+            }
+        }
+    });
+    $("#cusMobileText").keydown(function (e) {
+        if (e.key == "Enter") {
+            if (checkValidations(vArray[3][0],vArray[3][1])){
+                $("#cusEmailText").focus();
+            }
+        }
+    });
+    $("#cusEmailText").keydown(function (e) {
+        if (e.key == "Enter") {
+            if (checkValidations(vArray[4][0],vArray[4][1])){
+                $("#saveCustomer").focus();
+            }
+        }
+    });
 
     /*let customerDB = [];
     $("#saveCustomer").click(function () {
