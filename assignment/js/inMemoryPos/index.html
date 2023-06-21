@@ -838,6 +838,29 @@
         saveItem();
     });
 
+    $("#deleteItem").click(function () {
+        let id = $("#itemCodeText").val();
+
+        let consent = confirm("Do you want to delete.?");
+
+        if (consent) {
+            let response = deleteItem(id);
+            if (response) {
+                alert("Item Deleted");
+                clearTextItemText();
+                getAllItem();
+            } else {
+                alert("Item Not Removed..!");
+            }
+        }
+    });
+
+    $("#updateItem").click(function () {
+        let code = $("#itemCodeText").val();
+        updateItem(code);
+        clearTextItemText();
+    })
+
 
     let itemDB = [
         {code: "I001", name: "Samsung S7", price: 50000, qty: 10},
@@ -885,6 +908,44 @@
         trTextAddTextItem();
     }
 
+    function deleteItem(id) {
+        for (let i = 0; i < itemDB.length; i++) {
+            if (itemDB[i].code == id) {
+                itemDB.splice(i, 1);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function updateItem(code) {
+        if (searchItem(code) == undefined) {
+            alert("No such Item..please check the ID");
+        } else {
+            let consent = confirm("Do you really want to update this Item.?");
+            if (consent) {
+                let item = searchItem(code);
+                let itemCode = $("#itemCodeText").val();
+                let itemName = $("#itemNameText").val();
+                let unitPrice = $("#unitPriceText").val();
+                let qty = $("#qtyText").val();
+
+                item.code = itemCode;
+                item.name = itemName;
+                item.price = unitPrice;
+                item.qty = qty;
+
+                getAllItem();
+            }
+        }
+    }
+
+    function searchItem(code) {
+        return itemDB.find(function (item) {
+            return item.code == code;
+        });
+    }
+
     function clearTextItemText() {
         $("#itemCodeText,#itemNameText,#unitPriceText,#qtyText").val("");
         $("#itemCodeText").focus();
@@ -904,9 +965,6 @@
         });
 
     }
-
-
-
 
 
     /*$.each(itemDB, function () {
