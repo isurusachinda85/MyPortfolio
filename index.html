@@ -18,9 +18,38 @@
     <link href="asset/fonts-awesome/css/all.min.css" rel="stylesheet">
     <link href="asset/css-style/style.css" rel="stylesheet">
     <link href="asset/css-style/responsive.css" rel="stylesheet">
+    <style>
+        #loader {
+            transition: opacity 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: black;
+            z-index: 2;
+        }
+
+        #loader > div {
+            width: 290px;
+            height: 290px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: url("asset/img/loading7.gif");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 
 </head>
 <body>
+
+
+
 <header>
     <h1>My Portfolio</h1>
     <nav>
@@ -39,6 +68,7 @@
     </nav>
 </header>
 <main>
+
     <!--===============Home Section=====================-->
     <section>
         <dfn id="home">
@@ -228,8 +258,12 @@
             <button id="ass">View All Assignment</button>
         </a>
     </section>
-</main>
 
+
+</main>
+<div id="loader">
+    <div></div>
+</div>
 <footer>
     <dfn id="contact">
         <h1>Contact Me</h1>
@@ -289,5 +323,20 @@
 <footer id="foot">
     <p>Copyright &copy;2023 All Right Reserved . Website Developed Isuru Sachinda.</p>
 </footer>
+
+
+
+<script src="asset/js/jquery-3.7.0.min.js"></script>
+<script>
+
+    $(window).on('load',function(){
+        $("#loader").fadeOut(2500);
+    });
+
+
+    $(document).ready(function (){
+        $("body").prepend();
+    });
+</script>
 </body>
 </html>
