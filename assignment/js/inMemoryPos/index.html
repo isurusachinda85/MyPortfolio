@@ -416,7 +416,7 @@
             let response = deleteCustomer(id);
             if (response) {
                 alert("Customer Deleted");
-                clearText();
+                clearTextCustomerText();
                 getAllCustomer();
             } else {
                 alert("Customer Not Removed..!");
@@ -427,7 +427,7 @@
     $("#updateCustomer").click(function () {
         let id = $("#cusIdText").val();
         updateCustomer(id);
-        clearText();
+        clearTextCustomerText();
     });
 
     let customerDB = [
@@ -455,11 +455,11 @@
                 email: customerEmail
             }
             customerDB.push(customerOB);
-            clearText();
+            clearTextCustomerText();
             getAllCustomer();
         } else {
             alert("Customer already exits.!");
-            clearText();
+            clearTextCustomerText();
         }
 
     }
@@ -542,7 +542,7 @@
         });
     }
 
-    function clearText() {
+    function clearTextCustomerText() {
         $("#cusIdText,#cusNameText,#cusAddressText,#cusMobileText,#cusEmailText").val("");
         $("#cusIdText").val("").focus();
     }
@@ -583,35 +583,35 @@
 
     $("#cusIdText").keydown(function (e) {
         if (e.key == "Enter") {
-            if (checkValidations(vArray[0][0],vArray[0][1])){
+            if (checkValidations(vArray[0][0], vArray[0][1])) {
                 $("#cusNameText").focus();
             }
         }
     });
     $("#cusNameText").keydown(function (e) {
         if (e.key == "Enter") {
-            if (checkValidations(vArray[1][0],vArray[1][1])){
+            if (checkValidations(vArray[1][0], vArray[1][1])) {
                 $("#cusAddressText").focus();
             }
         }
     });
     $("#cusAddressText").keydown(function (e) {
         if (e.key == "Enter") {
-            if (checkValidations(vArray[2][0],vArray[2][1])){
+            if (checkValidations(vArray[2][0], vArray[2][1])) {
                 $("#cusMobileText").focus();
             }
         }
     });
     $("#cusMobileText").keydown(function (e) {
         if (e.key == "Enter") {
-            if (checkValidations(vArray[3][0],vArray[3][1])){
+            if (checkValidations(vArray[3][0], vArray[3][1])) {
                 $("#cusEmailText").focus();
             }
         }
     });
     $("#cusEmailText").keydown(function (e) {
         if (e.key == "Enter") {
-            if (checkValidations(vArray[4][0],vArray[4][1])){
+            if (checkValidations(vArray[4][0], vArray[4][1])) {
                 $("#saveCustomer").focus();
             }
         }
@@ -833,14 +833,25 @@
 
 
 <script>
-    let itemDB = [];
+
     $("#saveItem").click(function () {
+        saveItem();
+    });
+
+
+    let itemDB = [
+        {code: "I001", name: "Samsung S7", price: 50000, qty: 10},
+        {code: "I002", name: "Vivo Y19", price: 25000, qty: 20},
+        {code: "I003", name: "Samsung J7", price: 35000, qty: 5}
+    ];
+
+    getAllItem();
+
+    function saveItem() {
         let itemCode = $("#itemCodeText").val();
         let itemName = $("#itemNameText").val();
         let unitPrice = $("#unitPriceText").val();
         let qty = $("#qtyText").val();
-
-        // let item = [code,itemName,unitPrice,qty]
 
         let itemOB = {
             code: itemCode,
@@ -849,10 +860,13 @@
             qty: qty
         }
         itemDB.push(itemOB);
+        getAllItem();
+        clearTextItemText();
+    }
 
-        clearText();
-
+    function getAllItem() {
         $("#tblItem").empty();
+
         for (let i = 0; i < itemDB.length; i++) {
             let itemCode = itemDB[i].code;
             let name = itemDB[i].name;
@@ -867,22 +881,14 @@
                   </tr>`
 
             $("#tblItem").append(row);
-
-            trTextAddTextItem();
         }
+        trTextAddTextItem();
+    }
 
-        $.each(itemDB, function () {
-            $("#itemCode").append(new Option(itemCode))
-        });
-
-        function clearText() {
-            $("#itemCodeText").val("");
-            $("#itemNameText").val("");
-            $("#unitPriceText").val("");
-            $("#qtyText").val("");
-        }
-    });
-
+    function clearTextItemText() {
+        $("#itemCodeText,#itemNameText,#unitPriceText,#qtyText").val("");
+        $("#itemCodeText").focus();
+    }
 
     function trTextAddTextItem() {
         $("#tblItem>tr").click(function () {
@@ -896,8 +902,16 @@
             $("#unitPriceText").val(unitPrice);
             $("#qtyText").val(qty);
         });
+
     }
 
+
+
+
+
+    /*$.each(itemDB, function () {
+        $("#itemCode").append(new Option(itemCode))
+    });*/
 </script>
 
 <script src="../../../asset/js/bootstrap.js"></script>
