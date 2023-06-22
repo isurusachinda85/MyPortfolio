@@ -5,6 +5,7 @@
     <title>Pos System</title>
     <meta content="width=device-width initial-scale=1 user-scalable=no" name="viewport">
     <link href="../../../asset/css/bootstrap.css" rel="stylesheet">
+
 </head>
 <body>
 <header>
@@ -348,42 +349,7 @@
 </main>
 
 <script src="../../../asset/js/jquery-3.7.0.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("homeForm").style.display = 'inline-block';
-        document.getElementById("customerForm").style.display = 'none';
-        document.getElementById("itemForm").style.display = 'none';
-        document.getElementById("placeOrderForm").style.display = 'none';
-    });
-    document.getElementById("Home").addEventListener('click', function () {
-        document.getElementById("homeForm").style.display = 'inline-block';
-        document.getElementById("customerForm").style.display = 'none';
-        document.getElementById("itemForm").style.display = 'none';
-        document.getElementById("placeOrderForm").style.display = 'none';
-    });
-
-    document.getElementById("Customer").addEventListener('click', function () {
-        document.getElementById("homeForm").style.display = 'none';
-        document.getElementById("customerForm").style.display = 'inline-block';
-        document.getElementById("itemForm").style.display = 'none';
-        document.getElementById("placeOrderForm").style.display = 'none';
-    });
-
-    document.getElementById("Item").addEventListener('click', function () {
-        document.getElementById("homeForm").style.display = 'none';
-        document.getElementById("customerForm").style.display = 'none';
-        document.getElementById("itemForm").style.display = 'inline-block';
-        document.getElementById("placeOrderForm").style.display = 'none';
-    });
-    document.getElementById("PlaceOrder").addEventListener('click', function () {
-        document.getElementById("homeForm").style.display = 'none';
-        document.getElementById("customerForm").style.display = 'none';
-        document.getElementById("itemForm").style.display = 'none';
-        document.getElementById("placeOrderForm").style.display = 'inline-block';
-    });
-
-</script>
-
+<script src="controllers/DashBoardController.js"></script>
 <script>
 
     let idPattern = /^(C00-)[0-9]{3}$/;
