@@ -33,6 +33,7 @@ $("#updateCustomer").click(function () {
     updateCustomer(id);
     clearTextCustomerText();
 });
+
 /*search customer btn event*/
 $("#searchCustomer").click(function () {
     let id = $("#cusIdText").val();
@@ -49,6 +50,7 @@ $("#searchCustomer").click(function () {
     }
 });
 
+/*save customer*/
 function saveCustomer() {
     let customerId = $("#cusIdText").val();
 
@@ -74,6 +76,7 @@ function saveCustomer() {
     }
 }
 
+/*get all customer*/
 function getAllCustomer() {
 
     $("#tblCustomer").empty();
@@ -98,12 +101,14 @@ function getAllCustomer() {
     trTextAddTextCustomer();
 }
 
+/*search customer*/
 function searchCustomer(id) {
     return customerDB.find(function (customer) {
         return customer.id == id;
     });
 }
 
+/*delete customer*/
 function deleteCustomer(id) {
     for (let i = 0; i < customerDB.length; i++) {
         if (customerDB[i].id == id) {
@@ -114,6 +119,7 @@ function deleteCustomer(id) {
     return false;
 }
 
+/*update customer*/
 function updateCustomer(id) {
     if (searchCustomer(id) == undefined) {
         alert("No such Customer..please check the ID");

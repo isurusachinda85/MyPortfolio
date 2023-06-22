@@ -1,9 +1,11 @@
 getAllItem();
 
+/*save btn event*/
 $("#saveItem").click(function () {
     saveItem();
 });
 
+/*delete btn event*/
 $("#deleteItem").click(function () {
     let id = $("#itemCodeText").val();
 
@@ -21,6 +23,22 @@ $("#deleteItem").click(function () {
     }
 });
 
+/*search btn event*/
+$("#searchItem").click(function () {
+    let id = $("#itemCodeText").val();
+
+    let findItem = searchItem(id);
+    if (findItem){
+        $("#itemNameText").val(findItem.name);
+        $("#unitPriceText").val(findItem.price);
+        $("#qtyText").val(findItem.qty);
+    }else {
+        alert("No such Item..please check the ID");
+        clearTextItemText();
+    }
+});
+
+/*update btn event*/
 $("#updateItem").click(function () {
     let code = $("#itemCodeText").val();
     updateItem(code);
@@ -28,6 +46,7 @@ $("#updateItem").click(function () {
 });
 
 
+/*save item*/
 function saveItem() {
     let itemCode = $("#itemCodeText").val();
 
@@ -51,6 +70,7 @@ function saveItem() {
     }
 }
 
+/*get all item*/
 function getAllItem() {
     $("#tblItem").empty();
 
@@ -72,6 +92,7 @@ function getAllItem() {
     trTextAddTextItem();
 }
 
+/*delete item*/
 function deleteItem(id) {
     for (let i = 0; i < itemDB.length; i++) {
         if (itemDB[i].code == id) {
@@ -82,6 +103,7 @@ function deleteItem(id) {
     return false;
 }
 
+/*update item*/
 function updateItem(code) {
     if (searchItem(code) == undefined) {
         alert("No such Item..please check the ID");
@@ -104,6 +126,7 @@ function updateItem(code) {
     }
 }
 
+/*search item*/
 function searchItem(code) {
     return itemDB.find(function (item) {
         return item.code == code;
