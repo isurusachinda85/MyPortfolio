@@ -2,7 +2,11 @@ getAllCustomer();
 
 /*save customer btn event*/
 $("#saveCustomer").click(function () {
-    saveCustomer();
+    if (checkAll()){
+        saveCustomer();
+    }else{
+        alert("Error");
+    }
 });
 
 /*delete customer btn event*/
@@ -132,9 +136,4 @@ function trTextAddTextCustomer() {
         $("#cusMobileText").val(mobile);
         $("#cusEmailText").val(email);
     });
-}
-
-function clearTextCustomerText() {
-    $("#cusIdText,#cusNameText,#cusAddressText,#cusMobileText,#cusEmailText").val("");
-    $("#cusIdText").val("").focus();
 }
