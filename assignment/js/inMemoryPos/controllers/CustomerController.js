@@ -33,7 +33,21 @@ $("#updateCustomer").click(function () {
     updateCustomer(id);
     clearTextCustomerText();
 });
+/*search customer btn event*/
+$("#searchCustomer").click(function () {
+    let id = $("#cusIdText").val();
 
+    let findCustomer = searchCustomer(id);
+    if (findCustomer){
+        $("#cusNameText").val(findCustomer.name);
+        $("#cusAddressText").val(findCustomer.address);
+        $("#cusMobileText").val(findCustomer.mobile);
+        $("#cusEmailText").val(findCustomer.email);
+    }else {
+        alert("No such Customer..please check the ID");
+        clearTextCustomerText();
+    }
+});
 
 function saveCustomer() {
     let customerId = $("#cusIdText").val();
