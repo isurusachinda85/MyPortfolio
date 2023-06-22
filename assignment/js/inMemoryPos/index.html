@@ -249,31 +249,27 @@
             </form>
 
             <form class="row">
-                <div class="mb-3 col-6 col-md-3 col-lg-2">
+                <div class="mb-3 col-6 col-md-2 col-lg-2">
                     <label class="form-label" for="itemCode">Item Code</label>
                     <select class="form-control" id="itemCode"></select>
                 </div>
-                <div class="mb-3 col-6 col-md-3 col-lg-2">
+                <div class="mb-3 col-6 col-md-2 col-lg-2">
                     <label class="form-label" for="itemName">Item Name</label>
                     <input class="form-control" id="itemName" type="text">
                 </div>
-                <div class="mb-3 col-6 col-md-3 col-lg-2">
+                <div class="mb-3 col-6 col-md-2 col-lg-2">
                     <label class="form-label" for="unitPrice">Unit Price</label>
                     <input class="form-control" id="unitPrice" type="text">
                 </div>
-                <div class="mb-3 col-6 col-md-3 col-lg-1">
-                    <label class="form-label" for="category">Category</label>
-                    <input class="form-control" id="category" type="text">
-                </div>
-                <div class="mb-3 col-3 col-md-4 col-lg-1">
+                <div class="mb-3 col-3 col-md-2 col-lg-2">
                     <label class="form-label" for="qtyOnHand">QtyOnH</label>
                     <input class="form-control" id="qtyOnHand" type="number">
                 </div>
-                <div class="mb-3 col-3 col-md-4 col-lg-1">
+                <div class="mb-3 col-3 col-md-2 col-lg-2">
                     <label class="form-label" for="orderQty">QTY </label>
                     <input class="form-control" id="orderQty" type="number">
                 </div>
-                <div class=" col-6 col-md-4 col-lg-3">
+                <div class="col-12 col-md-2 col-lg-2">
                     <div class="offset-3 m-4 p-2">
                         <button class="btn btn-outline-primary" type="button">Add To Cart</button>
                     </div>
@@ -287,32 +283,12 @@
                         <th>Item Code</th>
                         <th>Item Name</th>
                         <th>Unit Price</th>
-                        <th>Category</th>
                         <th scope="col">Quantity</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th>2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th>3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                    </tr>
+
+
                     </tbody>
                 </table>
 
@@ -350,7 +326,11 @@
 
 <script src="../../../asset/js/jquery-3.7.0.min.js"></script>
 <script src="controllers/DashBoardController.js"></script>
-<script>
+<script src="db/DB.js"></script>
+<script src="models/Customer.js"></script>
+<script src="controllers/CustomerController.js"></script>
+
+<!--<script>
 
     let idPattern = /^(C00-)[0-9]{3}$/;
 
@@ -369,9 +349,9 @@
     vArray.push([$("#cusMobileText"), phonePattern]);
     vArray.push([$("#cusEmailText"), emailPattern]);
 
-    $("#saveCustomer").click(function () {
+    /*$("#saveCustomer").click(function () {
         saveCustomer();
-    });
+    });*/
 
     $("#deleteCustomer").click(function () {
         let id = $("#cusIdText").val();
@@ -396,15 +376,15 @@
         clearTextCustomerText();
     });
 
-    let customerDB = [
+    /*let customerDB = [
         {id: "C001", name: "Isuru", address: "Galle", mobile: "0763880467", email: "isuru@gmail.com"},
         {id: "C002", name: "Sachinda", address: "Panadura", mobile: "0770580467", email: "sachinda@gmail.com"},
         {id: "C003", name: "Lakshan", address: "Galle", mobile: "0725880467", email: "lakshan@gmail.com"}
-    ];
+    ];*/
 
     getAllCustomer();
 
-    function saveCustomer() {
+    /*function saveCustomer() {
         let customerId = $("#cusIdText").val();
 
         if (searchCustomer(customerId.trim()) == undefined) {
@@ -428,7 +408,7 @@
             clearTextCustomerText();
         }
 
-    }
+    }*/
 
     function getAllCustomer() {
 
@@ -795,7 +775,7 @@
     /* $.each(customerDB, function () {
          $("#cusID").append(new Option(customerId))
      });*/
-</script>
+</script>-->
 
 
 <script>
@@ -828,11 +808,11 @@
     })
 
 
-    let itemDB = [
+    /*let itemDB = [
         {code: "I001", name: "Samsung S7", price: 50000, qty: 10},
         {code: "I002", name: "Vivo Y19", price: 25000, qty: 20},
         {code: "I003", name: "Samsung J7", price: 35000, qty: 5}
-    ];
+    ];*/
 
     getAllItem();
 
