@@ -106,5 +106,4 @@ function setBtn() {
         $("#deleteCustomer").prop("disabled", false);
         $("#updateCustomer").prop("disabled", false);
     }
-
 }
