@@ -297,8 +297,12 @@
             <section class="col-12 col-md-5 col-lg-4">
                 <form class="row">
                     <div class="mb-3 col-12 col-lg-8">
-                        <label class="form-label" for="total">Sub Total</label>
+                        <label class="form-label" for="total">Total</label>
                         <input class="form-control" id="total" type="text">
+                    </div>
+                    <div class="mb-3 col-12 col-lg-8">
+                        <label class="form-label" for="subTotal">Sub Total</label>
+                        <input class="form-control" id="subTotal" type="text">
                     </div>
                     <div class="mb-3 col-6 ">
                         <label class="form-label" for="orderDate">Discount</label>
@@ -334,6 +338,8 @@
 <script src="models/Item.js"></script>
 <script src="controllers/ItemController.js"></script>
 <script src="controllers/validation/ItemValidation.js"></script>
+
+<script src="controllers/PlaceOrderController.js"></script>
 
 <script src="../../../asset/js/bootstrap.js"></script>
 </body>
