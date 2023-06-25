@@ -4,7 +4,7 @@ let namePattern = /^[A-Za-z ]{5,}$/;
 
 let addressPattern = /^[A-Za-z0-9 ]{8,}$/;
 
-let phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+let phonePattern = /^[0-9]{10}$/;
 
 let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -48,7 +48,7 @@ $("#cusIdText,#cusNameText,#cusAddressText,#cusMobileText,#cusEmailText").on("ke
             }
         } else {
             if (checkValidations(vArray[indexNo])) {
-                saveCustomer();
+                $("#saveCustomer").focus();
             }
         }
     }
