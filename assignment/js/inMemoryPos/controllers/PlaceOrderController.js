@@ -1,11 +1,2 @@
-setCurrentDate();
-function setCurrentDate() {
-    let orderDate = $("#orderDate");
-    let today = new Date();
-    let dd = String(today.getDate()).padStart(2, '0');
-    let mm = String(today.getMonth() + 1).padStart(2, '0');
-    let yyyy = today.getFullYear();
-    today = yyyy + '/' + mm + '/' + dd;
-    orderDate.val(today);
-    console.log(today)
-}
+//set date
+$('#orderDate').val(new Date().toISOString().slice(0, 10));
