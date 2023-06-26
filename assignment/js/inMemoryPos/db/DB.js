@@ -11,3 +11,6 @@ let itemDB = [
     {code: "I00-003", name: "Samsung J7", price: 35000, qty: 5}
 ];
 
+let orderDB=[];
+
+let orderDetailsDB=[];
