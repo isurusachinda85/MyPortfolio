@@ -24,8 +24,40 @@ function setCurrentDate() {
     today = dd + '/' + mm + '/' + yyyy;
     orderDate.val(today);
 }
+
 setCurrentDate();
+
+//load customer id
+loadCusId();
+
+function loadCusId() {
+    $("#cusID").empty();
+    for (let cus of customerDB) {
+        $("#cusID").append(`<option>${cus.id}</option>`);
+    }
+}
+
+//select cus id set content detail on customer
+$("#cusID").click(function () {
+    let id = $("#cusID").val();
+
+    let findCustomer = searchCustomer(id);
+    if (findCustomer) {
+        $("#cusName").val(findCustomer.name);
+        $("#cusAddress").val(findCustomer.address);
+        $("#cusMobile").val(findCustomer.mobile);
+    }
+})
+
+//load item code
+loadItemCode();
+function loadItemCode() {
+    $("#itemCode").empty();
+    for (let item of itemDB){
+        $("#itemCode").append(`<option>${item.code}</option>`);
+    }
+}
+
 $("#placeOrderBtn").click(function () {
     $("#orderId").val(generateOrderID());
-
 })

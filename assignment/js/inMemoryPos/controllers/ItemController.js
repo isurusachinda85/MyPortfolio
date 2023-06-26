@@ -64,6 +64,7 @@ function saveItem() {
         itemDB.push(newItem);
         getAllItem();
         clearTextItemText();
+        loadItemCode();
     }else {
         alert("Customer already exits.!");
         clearTextItemText();

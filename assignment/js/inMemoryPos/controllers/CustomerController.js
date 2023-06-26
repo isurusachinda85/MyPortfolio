@@ -70,6 +70,7 @@ function saveCustomer() {
         customerDB.push(newCustomer);
         clearTextCustomerText();
         getAllCustomer();
+        loadCusId();
     } else {
         alert("Customer already exits.!");
         clearTextCustomerText();
@@ -97,6 +98,7 @@ function getAllCustomer() {
            </tr>`
 
         $("#tblCustomer").append(row);
+
     }
     trTextAddTextCustomer();
 }
