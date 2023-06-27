@@ -73,7 +73,6 @@ $("#itemCode").click(function () {
 let itemCode;
 let itemName;
 let itemPrice;
-let itemQty;
 let itemOrderQty;
 
 let totalCost = 0;
@@ -252,4 +251,6 @@ $("#placeOrderBtn").click(function () {
     $("#orderId").val(generateOrderID());
     clearDetail();
     $("#cart").empty();
+    loadAllOrder();
+    loadOrderDetail();
 });
