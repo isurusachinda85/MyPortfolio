@@ -196,11 +196,60 @@ $(document).on("change keyup blur", "#orderQty", function () {
         $("#addToCart").attr('disabled', false);
     }
 });
+
+/*-------place order to array for table 01------------*/
+function placeOrder() {
+
+    let orderID = $("#orderId").val();
+    let customerId = $("#cusID").val();
+    let orderDate = $("#orderDate").val();
+    let subTotal = $("#subTotal").val();
+    let discount = $("#discount").val();
+
+    let newOrder = Object.assign({}, orderDB);
+    newOrder.oId = orderID;
+    newOrder.cId = customerId;
+    newOrder.oDate = orderDate;
+    newOrder.subTotal = subTotal;
+    newOrder.discount = discount;
+
+    orderDB.push(newOrder);
+
+}
+
+/*-------place order to array for table 02------------*/
+
+function placeOrderDetail() {
+    let orderId = $("#orderId").val();
+    let customerId = $("#cusID").val();
+    let itemCode = $("#itemCode").val();
+    let orderQty = $("#orderQty").val();
+    let total = $("#total").val();
+
+
+    let orderDetail = Object.assign({}, orderDetailsDB);
+    orderDetail.orderId = orderId;
+    orderDetail.cusId = customerId;
+    orderDetail.itemId = itemCode;
+    orderDetail.qty = orderQty;
+    orderDetail.total = total;
+
+    orderDetailsDB.push(orderDetail);
+
+}
+
 $("#addToCart").click(function () {
 });
 
+function clearDetail() {
+    $("#cusID,#cusName,#cusAddress,#cusMobile,#itemCode,#itemName,#unitPrice,#qtyOnHand,#orderQty,#total,#discount,#cash,#subTotal,#balance").val("");
+}
 
 $("#orderId").val(generateOrderID());
 $("#placeOrderBtn").click(function () {
+    placeOrder();
+    placeOrderDetail();
     $("#orderId").val(generateOrderID());
+    clearDetail();
+    $("#cart").empty();
 });
