@@ -1,5 +1,5 @@
-/*$("#addToCart").attr('disabled', true);
-$("#placeOrderBtn").attr('disabled', true);*/
+$("#addToCart").attr('disabled', true);
+$("#placeOrderBtn").attr('disabled', true);
 
 
 //order id generate
@@ -129,7 +129,7 @@ function reduceQty(orderQty) {
     $("#qtyOnHand").val(reduceQty);
 }
 
-/*------------Place holder generate total-------------*/
+/*------------generate total-------------*/
 
 function calcTotal(amount) {
     totalCost += amount;
@@ -137,7 +137,7 @@ function calcTotal(amount) {
     $("#subTotal").val(totalCost);
 }
 
-/*------------Place holder manage qty-------------*/
+/*------------manage qty-------------*/
 function manageQtyOnHand(preQty, nowQty) {
     var preQty = parseInt(preQty);
     var nowQty = parseInt(nowQty);
@@ -149,12 +149,15 @@ function manageQtyOnHand(preQty, nowQty) {
     $("#qtyOnHand").val(avaQty);
 }
 
+/*------------manage total-------------*/
 function manageTotal(preTotal, nowTotal) {
     totalCost -= preTotal;
     totalCost += nowTotal;
 
     $("#total").val(totalCost);
 }
+
+/*------------generate discount-------------*/
 $(document).on("change keyup blur", "#discount", function () {
 
     discount = $("#discount").val();
@@ -172,10 +175,25 @@ $(document).on("change keyup blur", "#cash", function () {
     $("#balance").val(balance);
     if (balance < 0) {
         $("#lblCheckSubtotal").parent().children('strong').text(balance + " : plz enter valid Balance");
-        $("#btnPurchase").attr('disabled', true);
+        $("#placeOrderBtn").attr('disabled', true);
     } else {
         $("#lblCheckSubtotal").parent().children('strong').text("");
-        $("#btnPurchase").attr('disabled', false);
+        $("#placeOrderBtn").attr('disabled', false);
+    }
+});
+
+/*------------Check qty allow------------*/
+
+$(document).on("change keyup blur", "#orderQty", function () {
+    let qtyOnHand = $("#qtyOnHand").val();
+    let buyQty = $("#orderQty").val();
+    let buyOnHand = qtyOnHand - buyQty;
+    if (buyOnHand < 0) {
+        $("#lblCheckQty").parent().children('strong').text(qtyOnHand + " : Empty On Stock..!!");
+        $("#addToCart").attr('disabled', true);
+    } else {
+        $("#lblCheckQty").parent().children('strong').text("");
+        $("#addToCart").attr('disabled', false);
     }
 });
 $("#addToCart").click(function () {

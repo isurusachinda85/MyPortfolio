@@ -31,6 +31,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#placeOrderForm" id="PlaceOrder">Place Order</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#orderDetailForm" id="OrderDetail">Order Detail</a>
+                    </li>
                 </ul>
                 <div class="gap-5 col-2" role="search">
                     <button class="btn btn-outline-success btn-sm col m-2 " type="submit">SignUp</button>
@@ -220,7 +223,7 @@
                 </div>
                 <div class="mb-3 col-12 col-md-3">
                     <label class="form-label" for="orderDate">Order Date</label>
-                    <input class="form-control" id="orderDate" type="text" disabled>
+                    <input class="form-control" disabled id="orderDate" type="text">
                 </div>
                 <div class="mb-3 col-12 col-md-3">
                     <label class="form-label" for="orderTime">Order Time</label>
@@ -236,15 +239,15 @@
                 </div>
                 <div class="mb-3 col-6 col-md-3">
                     <label class="form-label" for="cusName">Customer Name</label>
-                    <input class="form-control" id="cusName" type="text" disabled>
+                    <input class="form-control" disabled id="cusName" type="text">
                 </div>
                 <div class="mb-3 col-6 col-md-3">
                     <label class="form-label" for="cusAddress">Customer Address</label>
-                    <input class="form-control" id="cusAddress" type="text" disabled>
+                    <input class="form-control" disabled id="cusAddress" type="text">
                 </div>
                 <div class="mb-3 col-6 col-md-3">
                     <label class="form-label" for="cusMobile">Customer Mobile</label>
-                    <input class="form-control" id="cusMobile" type="tel" disabled>
+                    <input class="form-control" disabled id="cusMobile" type="tel">
                 </div>
             </form>
 
@@ -255,23 +258,24 @@
                 </div>
                 <div class="mb-3 col-6 col-md-2 col-lg-2">
                     <label class="form-label" for="itemName">Item Name</label>
-                    <input class="form-control" id="itemName" type="text" disabled>
+                    <input class="form-control" disabled id="itemName" type="text">
                 </div>
                 <div class="mb-3 col-6 col-md-2 col-lg-2">
                     <label class="form-label" for="unitPrice">Unit Price</label>
-                    <input class="form-control" id="unitPrice" type="text" disabled>
+                    <input class="form-control" disabled id="unitPrice" type="text">
                 </div>
                 <div class="mb-3 col-3 col-md-2 col-lg-2">
                     <label class="form-label" for="qtyOnHand">QtyOnH</label>
-                    <input class="form-control" id="qtyOnHand" type="number" disabled>
+                    <input class="form-control" disabled id="qtyOnHand" type="number">
                 </div>
                 <div class="mb-3 col-3 col-md-2 col-lg-2">
                     <label class="form-label" for="orderQty">QTY </label>
                     <input class="form-control" id="orderQty" type="number">
+                    <strong class="text-danger control-error" id="lblCheckQty"></strong>
                 </div>
                 <div class="col-12 col-md-2 col-lg-2">
                     <div class="offset-3 m-4 p-2">
-                        <button class="btn btn-outline-primary" type="button" id="addToCart">Add To Cart</button>
+                        <button class="btn btn-outline-primary" id="addToCart" type="button">Add To Cart</button>
                     </div>
                 </div>
             </form>
@@ -298,7 +302,7 @@
                 <form class="row">
                     <div class="mb-3 col-6 col-lg-7">
                         <label class="form-label" for="total">Total</label>
-                        <input class="form-control" id="total" type="text" disabled>
+                        <input class="form-control" disabled id="total" type="text">
                     </div>
 
                     <div class="mb-3 col-6 col-lg-5">
@@ -309,25 +313,65 @@
                     <div class="mb-3 col-6 col-lg-66 ">
                         <label class="form-label" for="cash">Cash</label>
                         <input class="form-control" id="cash" type="text">
+                        <strong class="text-danger control-error" id="lblCheckSubtotal"></strong>
                     </div>
                     <div class="mb-3 col-6 col-lg-6">
                         <label class="form-label" for="subTotal">Sub Total</label>
-                        <input class="form-control" id="subTotal" type="text" disabled>
+                        <input class="form-control" disabled id="subTotal" type="text">
                     </div>
 
                     <div class="mb-3 col-5 col-lg-6">
                         <label class="form-label" for="balance">Balance</label>
-                        <input class="form-control" id="balance" type="text" disabled>
+                        <input class="form-control" disabled id="balance" type="text">
                     </div>
                     <div class="col-7 mt-2 col-lg-6">
                         <div class="offset-3 mt-4 ">
-                            <button class="btn btn-outline-success" type="button" id="placeOrderBtn">Place Order</button>
+                            <button class="btn btn-outline-success" id="placeOrderBtn" type="button">Place Order
+                            </button>
                         </div>
                     </div>
                 </form>
             </section>
 
         </section>
+    </section>
+</main>
+
+<main class="container">
+    <section id="orderDetailForm">
+
+        <table class="table table-striped mt-3 table table-bordered table-hover text-center text-white">
+            <thead class="bg-success">
+            <tr>
+                <th scope="col">Order Id</th>
+                <th scope="col">Cus ID</th>
+                <th scope="col">Order_Date</th>
+                <th scope="col">Sub Total</th>
+                <th scope="col">Discount</th>
+
+            </tr>
+            </thead>
+            <tbody id="T_body_Place_Order_detail1">
+
+            </tbody>
+        </table>
+
+        <table class="table table-striped mt-5 table table-bordered table-hover text-center text-white"
+               style="position:relative;top: 200px">
+            <thead class="bg-success">
+            <tr>
+                <th scope="col">Order Id</th>
+                <th scope="col">Cus ID</th>
+                <th scope="col">Item Code</th>
+                <th scope="col">QTY</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody id="T_body_Place_Order_detail2">
+
+            </tbody>
+        </table>
+
     </section>
 </main>
 
