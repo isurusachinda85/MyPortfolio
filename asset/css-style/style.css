@@ -157,6 +157,9 @@ section {
 }
 
 /* ==================About Me============== */
+.about {
+  background-color: #1f242d;
+}
 .about-content {
   border: 1px solid blue(34, 0, 127);
   display: flex;
@@ -204,18 +207,17 @@ section {
   margin-top: 50px;
 }
 
-/*=========My Education=================*/
+/*=========My Education==================*/
 
 .education-content h1 {
   color: #0ef;
   text-align: center;
   padding: 10px;
-  margin: 20px;
 }
 
 .education-des {
   border-left: 5px solid #0ef;
-  margin: 60px;
+  margin-left: 60px;
 }
 .description {
   margin-left: 50px;
