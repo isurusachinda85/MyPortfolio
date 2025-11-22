@@ -205,94 +205,55 @@ section {
 }
 
 /*=========My Education=================*/
-/* main > section:nth-child(3) {
-  height: 550px;
-}
 
-main > section:nth-child(3) > dfn > h1 {
-  font-family: "Arial Black";
-  color: greenyellow;
-  font-size: 50px;
+.education-content h1 {
+  color: #0ef;
   text-align: center;
-  text-shadow: 2px 2px 8px #151313;
-}
-
-main > section:nth-child(3) > div {
-  display: inline-block;
-  width: 20%;
-}
-
-main > section:nth-child(3) > div > h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: "Arial Black";
-}
-
-main > section:nth-child(3) > div > h4 {
-  color: blue;
-  font-family: "Arial Black";
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  border: 2px solid;
-  border-radius: 50px;
-  box-shadow: 1px 1px 1px 1px #078cf6;
   padding: 10px;
+  margin: 20px;
 }
 
-main > section:nth-child(3) > div > p {
-  text-align: center;
+.education-des {
+  border-left: 5px solid #0ef;
+  margin: 60px;
+}
+.description {
+  margin-left: 50px;
 }
 
-main > section:nth-child(3) > #img1 {
+.numdiv {
+  padding-top: 4px;
   position: relative;
-  left: 110px;
-  bottom: 90px;
+}
+.number {
+  border: 3px solid #0ef;
+  background-color: #0ef;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: aliceblue;
+  font-weight: bold;
+  position: absolute;
+  left: 9px;
+  top: 16px;
 }
 
-main > section:nth-child(3) > div:nth-child(3) {
-  position: relative;
-  left: 150px;
-  bottom: 10px;
+.numdiv .description h2 {
+  color: white;
+  margin-left: 10px;
 }
-
-main > section:nth-child(3) > #img2 {
-  position: relative;
-  left: 410px;
-  bottom: 90px;
+.numdiv .description h3 {
+  color: rgb(201, 193, 193);
+  margin-left: 10px;
 }
-
-main > section:nth-child(3) > div:nth-child(5) {
-  position: relative;
-  left: 450px;
-  bottom: 20px;
+.numdiv .description h4 {
+  color: #0ef;
+  margin-left: 10px;
 }
-
-main > section:nth-child(3) > #img3 {
-  position: relative;
-  right: 590px;
-  top: 160px;
-}
-
-main > section:nth-child(3) > div:nth-child(7) {
-  position: relative;
-  right: 550px;
-  top: 230px;
-}
-
-main > section:nth-child(3) > #img4 {
-  position: relative;
-  right: 290px;
-  top: 160px;
-}
-
-main > section:nth-child(3) > div:nth-child(9) {
-  position: relative;
-  left: 870px;
-  top: 60px;
-}
- */
 
 /*=============Skills======================*/
 /* main > section:nth-child(4) > dfn > h1 {
