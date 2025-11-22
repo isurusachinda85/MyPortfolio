@@ -5,7 +5,7 @@
 }
 
 body {
-  /* background: #323946; */
+  background: #323946;
 }
 
 /*=================Header============================*/
@@ -19,7 +19,7 @@ header > nav > menu > ul > #icon {
   display: none;
 }
 header {
-  background: #323946;
+  background: #2f333e;
   width: 100%;
   position: fixed;
   /* box-shadow: 0 4px 5px #3a86ff; */
@@ -62,86 +62,85 @@ header > h1:hover {
 }
 
 /*===============All Section=============*/
-body > main > section {
+.home {
   width: 100%;
 
-  margin-top: 10px;
-  position: relative;
-
-  border: 1px solid black;
+  margin-top: 100px;
 }
 
 /*==========Home========================*/
-/* main > section:nth-child(1) > dfn > h1 {
-  font-weight: bold;
-  font-size: 50px;
-  margin-top: 60px;
+.home-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px;
 }
 
-main > section:nth-child(1) > dfn > h3 {
-  color: rgba(113, 104, 104, 0.85);
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: 40px;
-}
-
-#bttn1 {
-  border: none;
-  background-color: #0048ff;
-  padding: 14px 28px;
-  font-size: 30px;
-  cursor: pointer;
-  font-family: "Bell MT", sans-serif;
-  font-weight: bold;
-  border-radius: 25px;
-  position: relative;
-  left: 135px;
-  top: 41px;
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-#bttn1:hover {
+.home-title h1 {
   color: white;
-  opacity: 1;
-}
-
-main > section:nth-child(1) > dfn > div:nth-child(4) {
-  background: url("../img/frofileImg/IMG_20220523_000321_899.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 300px;
-  height: 400px;
-  position: relative;
-  left: 820px;
-  bottom: 80px;
-  box-shadow: 4px 2px 10px 2px #1362ad;
-  border-radius: 50px;
-}
-
-main > section:nth-child(1) > dfn > h2 {
-  position: absolute;
-  color: #095fc0;
-  font-family: "Arial Black";
-  text-shadow: 2px 2px 8px #4a5a74;
+  font-size: 50px;
   font-weight: bold;
-  bottom: 210px;
-  left: 74px;
+}
+.home-title h1 span {
+  color: #0ef;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-main > section:nth-child(1) > dfn > figure > div {
+.home-title h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.home-title p {
+  color: rgb(201, 193, 193);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#home-button {
+  padding: 1rem 2.8rem;
+  background: #0ef;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem #0ef;
+  border: 1px solid #0ef;
+  font-size: 1rem;
+  color: aliceblue;
+  font-weight: bold;
+  transition: 0.5s ease;
+  margin-bottom: 10px;
+}
+#home-button:hover {
+  box-shadow: none;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  display: inline-block;
-  margin: 10px;
-  border-radius: 100%;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  margin: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.social-media a:hover {
+  background: #0ef;
+  color: aliceblue;
+  box-shadow: 0 0 1rem #0ef;
 }
 
-main > section:nth-child(1) > dfn > figure:nth-child(6) {
-  position: absolute;
-  bottom: 100px;
-  left: 90px;
-} */
+.profile-image img {
+  width: 350px;
+  border-radius: 30px;
+  box-shadow: 0 1px 10px #0ef;
+}
 
 /* ==================About Me============== */
 /* main > section:nth-child(2) > dfn > h1 {

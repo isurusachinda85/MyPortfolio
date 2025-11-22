@@ -15,11 +15,16 @@
       content="width=device-width initial-scale=1 user-scalable=no"
       name="viewport"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <link href="asset/css-style/normalize.css" rel="stylesheet" />
     <link href="asset/fonts-awesome/css/all.min.css" rel="stylesheet" />
     <link href="asset/css-style/style.css" rel="stylesheet" />
     <!-- <link href="asset/css-style/responsive.css" rel="stylesheet" /> -->
-    <style>
+    <!-- <style>
       #loader {
         transition: opacity 1s;
         position: fixed;
@@ -44,7 +49,7 @@
         background-size: cover;
         background-position: center;
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <header>
@@ -66,66 +71,61 @@
     </header>
     <main>
       <!--===============Home Section=====================-->
-      <section>
+      <section class="home">
         <dfn id="home">
-          <h1>Hello I'm Isuru Sachinda</h1>
-          <h3>Full stack developer</h3>
-          <p>
-            Aspiring Software Engineer | Passionate about building modern,
-            scalable, and innovative applications. Dedicated to delivering
-            impactful solutions for businesses and people.
-          </p>
-          <button id="bttn1">Hire Me</button>
+          <div class="home-content">
+            <!-- Title div -->
+            <div class="home-title">
+              <div>
+                <h1>Hello I'm <span>Isuru Sachinda Lakshan</span></h1>
+                <h3>Full stack developer</h3>
+                <p>
+                  Aspiring Software Engineer | Passionate about building modern,
+                  scalable, and innovative applications. Dedicated to delivering
+                  impactful solutions for businesses and people.
+                </p>
+                <button id="home-button">Contact Me</button>
+              </div>
 
-          <div>
-            <a href="https://wa.me/+94763880467?" target="_blank"
-              ><img
-                alt="whatsapp img"
-                src="asset/img/frofileImg/whatsapp.png"
-                width="40"
-            /></a>
-          </div>
-          <div>
-            <a href="mailto:isurusachintha8@gmail.com"
-              ><img
-                alt="email img"
-                src="asset/img/frofileImg/email.png"
-                width="40"
-            /></a>
-          </div>
-          <div>
-            <a
-              href="https://web.facebook.com/lakshan.ranaweera.564"
-              target="_blank"
-              ><img
-                alt="facebook img"
-                src="asset/img/frofileImg/facebook%20.png"
-                width="38"
-            /></a>
-          </div>
-          <div>
-            <a href="https://www.linkedin.com/feed/" target="_blank"
-              ><img
-                alt="linklin img"
-                src="asset/img/frofileImg/linkedin.png"
-                width="38"
-            /></a>
-          </div>
-          <div>
-            <a
-              href="https://github.com/isurusachinda85?tab=repositories"
-              target="_blank"
-              ><img
-                alt="git hub img"
-                src="asset/img/frofileImg/github-logo.png"
-                width="38"
-            /></a>
+              <div class="social-media">
+                <a href="https://wa.me/+94763880467?" target="_blank">
+                  <i class="bx bxl-whatsapp"></i>
+                </a>
+
+                <a href="mailto:isurusachintha8@gmail.com">
+                  <i class="bx bxs-envelope"></i>
+                </a>
+
+                <a
+                  href="https://web.facebook.com/lakshan.ranaweera.564"
+                  target="_blank"
+                >
+                  <i class="bx bxl-facebook-circle"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                  <i class="bx bxl-linkedin-square"></i>
+                </a>
+
+                <a
+                  href="https://github.com/isurusachinda85?tab=repositories"
+                  target="_blank"
+                  ><i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- image se -->
+
+            <div class="profile-image">
+              <img src="asset/img/frofileImg/Profile.jpg" alt="profile" />
+            </div>
           </div>
         </dfn>
       </section>
 
       <!--===============About Section=====================-->
-      <!--  <section>
+      <!-- <section>
         <dfn id="aboutme">
           <h1>About Me</h1>
         </dfn>
