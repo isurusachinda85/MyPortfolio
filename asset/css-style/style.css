@@ -1,697 +1,702 @@
 * {
-    font-style: normal;
-    scroll-behavior: smooth;
+  font-style: normal;
+  scroll-behavior: smooth;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  /* background: #323946; */
 }
 
 /*=================Header============================*/
-header>nav>menu>ul>#icon{
-    font-size: 30px;
-    position: absolute;
-    top: 12px;
-    left: 0;
-    cursor: pointer;
-    display: none;
+
+header > nav > menu > ul > #icon {
+  font-size: 30px;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  cursor: pointer;
+  display: none;
 }
 header {
-    background: white;
-    width: 100%;
-    position: fixed;
-    box-shadow: 0 4px 5px #3A86FF;
-    top: 0;
-    z-index: 1;
+  background: #323946;
+  width: 100%;
+  position: fixed;
+  /* box-shadow: 0 4px 5px #3a86ff; */
+  top: 0;
+  z-index: 1;
 }
 
 header > nav {
-    position: absolute;
-    right: 0;
-    top: 15px;
+  position: absolute;
+  right: 0;
+  top: 15px;
 }
 
 header > nav > menu > ul > li {
-    display: inline-block;
-    padding-right: 20px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 2px;
-    margin-right: 16px;
+  display: inline-block;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 16px;
 }
 
 header > nav > menu > ul > li > a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
 
 header > nav > menu > ul > li > a:hover {
-    color: blue;
+  color: #0ef;
 }
 
 header > h1 {
-    margin-left: 25px;
-    color: blue;
+  margin-left: 60px;
+  color: rgb(255, 255, 255);
+  width: 300px;
+}
+header > h1:hover {
+  color: #0ef;
 }
 
 /*===============All Section=============*/
 body > main > section {
-    margin-top: 81px;
-    margin-left: 100px;
-    margin-right: 70px;
-    margin-bottom: 30px;
+  width: 100%;
 
-    /*border: 2px solid;*/
+  margin-top: 10px;
+  position: relative;
 
-    padding-top: 10px;
-    position: relative;
+  border: 1px solid black;
 }
 
 /*==========Home========================*/
-main > section:nth-child(1) > dfn > h1 {
-    font-family: "Arial Black";
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 60px;
+/* main > section:nth-child(1) > dfn > h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 60px;
 }
 
 main > section:nth-child(1) > dfn > h3 {
-    color: rgba(113, 104, 104, 0.85);
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 40px;
+  color: rgba(113, 104, 104, 0.85);
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 40px;
 }
 
-
 #bttn1 {
-    border: none;
-    background-color: #0048ff;
-    padding: 14px 28px;
-    font-size: 30px;
-    cursor: pointer;
-    font-family: "Bell MT", sans-serif;
-    font-weight: bold;
-    border-radius: 25px;
-    position: relative;
-    left: 135px;
-    top: 41px;
-    opacity: 0.8;
-    transition: 0.3s;
+  border: none;
+  background-color: #0048ff;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: "Bell MT", sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
+  position: relative;
+  left: 135px;
+  top: 41px;
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
 #bttn1:hover {
-    color: white;
-    opacity: 1;
+  color: white;
+  opacity: 1;
 }
 
 main > section:nth-child(1) > dfn > div:nth-child(4) {
-    background: url("../img/frofileImg/IMG_20220523_000321_899.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 400px;
-    position: relative;
-    left: 820px;
-    bottom: 80px;
-    box-shadow: 4px 2px 10px 2px #1362ad;
-    border-radius: 50px;
+  background: url("../img/frofileImg/IMG_20220523_000321_899.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  left: 820px;
+  bottom: 80px;
+  box-shadow: 4px 2px 10px 2px #1362ad;
+  border-radius: 50px;
 }
 
-
 main > section:nth-child(1) > dfn > h2 {
-    position: absolute;
-    color: #095fc0;
-    font-family: "Arial Black";
-    text-shadow: 2px 2px 8px #4a5a74;
-    font-weight: bold;
-    bottom: 210px;
-    left: 74px;
+  position: absolute;
+  color: #095fc0;
+  font-family: "Arial Black";
+  text-shadow: 2px 2px 8px #4a5a74;
+  font-weight: bold;
+  bottom: 210px;
+  left: 74px;
 }
 
 main > section:nth-child(1) > dfn > figure > div {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    margin: 10px;
-    border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 100%;
 }
 
 main > section:nth-child(1) > dfn > figure:nth-child(6) {
-    position: absolute;
-    bottom: 100px;
-    left: 90px;
-}
+  position: absolute;
+  bottom: 100px;
+  left: 90px;
+} */
 
-/*==================About Me==============*/
-main > section:nth-child(2) > dfn > h1 {
-    font-family: "Arial Black";
-    color: greenyellow;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px 8px #151313;
+/* ==================About Me============== */
+/* main > section:nth-child(2) > dfn > h1 {
+  font-family: "Arial Black";
+  color: greenyellow;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #151313;
 }
 
 main > section:nth-child(2) > div:nth-child(2) {
-    background: url("../img/frofileImg/about.jpg");
-    background-size: cover;
-    background-position: center;
-    box-shadow: 4px 2px 10px 2px #1362ad;
-    height: 497px;
-    width: 300px;
-    position: absolute;
-    top: 121px;
-    left: 70px;
-    border-radius: 20px;
+  background: url("../img/frofileImg/about.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 4px 2px 10px 2px #1362ad;
+  height: 497px;
+  width: 300px;
+  position: absolute;
+  top: 121px;
+  left: 70px;
+  border-radius: 20px;
 }
 
 main > section:nth-child(2) > div:nth-child(3) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 50%;
-    position: relative;
-    left: 460px;
-    bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  position: relative;
+  left: 460px;
+  bottom: 60px;
 }
 
 main > section:nth-child(2) > div:nth-child(3) > p:nth-child(1) {
-    padding-top: 50px;
-    color: black;
-    font-size: 26px;
-    font-weight: bold;
+  padding-top: 50px;
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 86%;
-    position: relative;
-    left: -4px;
-    bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 86%;
+  position: relative;
+  left: -4px;
+  bottom: 1px;
 }
 
 main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > h4 {
-    font-size: 17px;
-    margin: 7px;
+  font-size: 17px;
+  margin: 7px;
 }
 
 main > section:nth-child(2) > a > #bttn2 {
-    border: none;
-    background-color: #0048ff;
-    cursor: pointer;
-    font-family: "Bell MT", sans-serif;
-    font-weight: bold;
-    border-radius: 20px;
-    opacity: 0.8;
-    transition: 0.3s;
-    padding: 10px 20px;
-    font-size: 30px;
-    position: absolute;
-    right: 68px;
-    bottom: 28px;
-
+  border: none;
+  background-color: #0048ff;
+  cursor: pointer;
+  font-family: "Bell MT", sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+  opacity: 0.8;
+  transition: 0.3s;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: absolute;
+  right: 68px;
+  bottom: 28px;
 }
 
 main > section:nth-child(2) > a > #bttn2:hover {
-    color: white;
-    opacity: 1;
+  color: white;
+  opacity: 1;
 }
 
 #title {
-    text-decoration: none;
+  text-decoration: none;
 }
+ */
 
 /*=========My Education=================*/
-main > section:nth-child(3) {
-    height: 550px;
+/* main > section:nth-child(3) {
+  height: 550px;
 }
 
 main > section:nth-child(3) > dfn > h1 {
-    font-family: "Arial Black";
-    color: greenyellow;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px 8px #151313;
+  font-family: "Arial Black";
+  color: greenyellow;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #151313;
 }
 
 main > section:nth-child(3) > div {
-    display: inline-block;
-    width: 20%;
+  display: inline-block;
+  width: 20%;
 }
 
 main > section:nth-child(3) > div > h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "Arial Black";
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Arial Black";
 }
 
 main > section:nth-child(3) > div > h4 {
-    color: blue;
-    font-family: "Arial Black";
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    border: 2px solid;
-    border-radius: 50px;
-    box-shadow: 1px 1px 1px 1px #078cf6;
-    padding: 10px;
+  color: blue;
+  font-family: "Arial Black";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 50px;
+  box-shadow: 1px 1px 1px 1px #078cf6;
+  padding: 10px;
 }
 
 main > section:nth-child(3) > div > p {
-    text-align: center;
+  text-align: center;
 }
 
 main > section:nth-child(3) > #img1 {
-    position: relative;
-    left: 110px;
-    bottom: 90px;
+  position: relative;
+  left: 110px;
+  bottom: 90px;
 }
 
 main > section:nth-child(3) > div:nth-child(3) {
-    position: relative;
-    left: 150px;
-    bottom: 10px;
+  position: relative;
+  left: 150px;
+  bottom: 10px;
 }
 
 main > section:nth-child(3) > #img2 {
-    position: relative;
-    left: 410px;
-    bottom: 90px;
+  position: relative;
+  left: 410px;
+  bottom: 90px;
 }
 
 main > section:nth-child(3) > div:nth-child(5) {
-    position: relative;
-    left: 450px;
-    bottom: 20px;
+  position: relative;
+  left: 450px;
+  bottom: 20px;
 }
 
 main > section:nth-child(3) > #img3 {
-    position: relative;
-    right: 590px;
-    top: 160px;
-
+  position: relative;
+  right: 590px;
+  top: 160px;
 }
 
 main > section:nth-child(3) > div:nth-child(7) {
-    position: relative;
-    right: 550px;
-    top: 230px;
+  position: relative;
+  right: 550px;
+  top: 230px;
 }
 
 main > section:nth-child(3) > #img4 {
-    position: relative;
-    right: 290px;
-    top: 160px;
+  position: relative;
+  right: 290px;
+  top: 160px;
 }
 
 main > section:nth-child(3) > div:nth-child(9) {
-    position: relative;
-    left: 870px;
-    top: 60px;
+  position: relative;
+  left: 870px;
+  top: 60px;
 }
+ */
 
 /*=============Skills======================*/
-main > section:nth-child(4) > dfn > h1 {
-    font-family: "Arial Black";
-    color: greenyellow;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px 8px #151313;
+/* main > section:nth-child(4) > dfn > h1 {
+  font-family: "Arial Black";
+  color: greenyellow;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #151313;
 }
 
 main > section:nth-child(4) > h3 {
-    color: blue;
-    font-family: "Arial Black";
-    font-size: 20px;
-    position: relative;
-    width: 150px;
-    left: 100px;
+  color: blue;
+  font-family: "Arial Black";
+  font-size: 20px;
+  position: relative;
+  width: 150px;
+  left: 100px;
 }
 
 main > section:nth-child(4) > .lang {
-    height: 130px;
-    width: 130px;
-    box-shadow: 4px 2px 10px 2px #1362ad;
-    border-radius: 20px;
-    margin: 20px;
-    position: relative;
-    left: 220px;
-    cursor: pointer;
-    padding: 3px;
+  height: 130px;
+  width: 130px;
+  box-shadow: 4px 2px 10px 2px #1362ad;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  left: 220px;
+  cursor: pointer;
+  padding: 3px;
 }
 
 .lang:hover {
-    background-color: #4a5a74;
-    transition: 0.4s;
+  background-color: #4a5a74;
+  transition: 0.4s;
 }
 
 main > section:nth-child(4) > .tool {
-    height: 130px;
-    width: 130px;
-    box-shadow: 4px 2px 10px 2px #1362ad;
-    border-radius: 20px;
-    margin: 20px;
-    position: relative;
-    left: 50px;
-    cursor: pointer;
-    padding: 3px;
+  height: 130px;
+  width: 130px;
+  box-shadow: 4px 2px 10px 2px #1362ad;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  left: 50px;
+  cursor: pointer;
+  padding: 3px;
 }
 
 .tool:hover {
-    background-color: #4a5a74;
-    transition: 0.4s;
-}
+  background-color: #4a5a74;
+  transition: 0.4s;
+} */
 
 /*=============Project======================*/
-main > section:nth-child(5) > dfn > h1 {
-    font-family: "Arial Black";
-    color: greenyellow;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px 8px #151313;
+/* main > section:nth-child(5) > dfn > h1 {
+  font-family: "Arial Black";
+  color: greenyellow;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #151313;
 }
 
 main > section:nth-child(5) > figure > a > img {
-    box-shadow: 4px 2px 10px 2px #5d5f61;
-    border-radius: 25px;
+  box-shadow: 4px 2px 10px 2px #5d5f61;
+  border-radius: 25px;
 }
 
 main > section:nth-child(5) > figure > a > img:hover {
-    box-shadow: 4px 2px 10px 5px #1362ad;
+  box-shadow: 4px 2px 10px 5px #1362ad;
 }
 
 main > section:nth-child(5) > figure > a:nth-child(1) > img:nth-child(1) {
-    position: relative;
-    left: -10px;
-    top: 30px;
+  position: relative;
+  left: -10px;
+  top: 30px;
 }
 
 main > section:nth-child(5) > figure > a:nth-child(3) > img:nth-child(1) {
-    position: relative;
-    left: 430px;
-    bottom: 296px;
+  position: relative;
+  left: 430px;
+  bottom: 296px;
 }
 
 main > section:nth-child(5) > figure > a:nth-child(5) > img:nth-child(1) {
-    position: relative;
-    left: 870px;
-    bottom: 623px;
+  position: relative;
+  left: 870px;
+  bottom: 623px;
 }
 
 main > section:nth-child(5) > figure > figcaption:nth-child(2) {
-    position: relative;
-    top: 60px;
-    left: 60px;
-    width: 400px;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  width: 400px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 main > section:nth-child(5) > figure > figcaption:nth-child(4) {
-    position: relative;
-    bottom: 265px;
-    left: 480px;
-    width: 400px;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
+  position: relative;
+  bottom: 265px;
+  left: 480px;
+  width: 400px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 main > section:nth-child(5) > figure > figcaption:nth-child(6) {
-    position: relative;
-    bottom: 588px;
-    left: 950px;
-    width: 400px;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
+  position: relative;
+  bottom: 588px;
+  left: 950px;
+  width: 400px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 main > section:nth-child(5) > figure {
-    height: 500px;
+  height: 500px;
 }
 
 main > section:nth-child(5) > a > #pro {
-    position: absolute;
-    left: 1025px;
-    bottom: 30px;
-    border: 2px solid blue;
-    color: blue;
-    cursor: pointer;
-    font-family: "Bell MT", sans-serif;
-    font-weight: bold;
-    border-radius: 20px;
-    transition: 0.5s;
-    padding: 10px 20px;
-    font-size: 25px;
-    background: white;
+  position: absolute;
+  left: 1025px;
+  bottom: 30px;
+  border: 2px solid blue;
+  color: blue;
+  cursor: pointer;
+  font-family: "Bell MT", sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.5s;
+  padding: 10px 20px;
+  font-size: 25px;
+  background: white;
 }
 
 main > section:nth-child(5) > a > #pro:hover {
-    background: blue;
-    color: white;
-}
+  background: blue;
+  color: white;
+} */
 
 /*============Assignment==================*/
-
+/* 
 main > section:nth-child(6) > dfn > h1 {
-    font-family: "Arial Black";
-    color: greenyellow;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px 8px #151313;
+  font-family: "Arial Black";
+  color: greenyellow;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #151313;
 }
 
 main > section:nth-child(6) > a > img {
-    width: 400px;
-    height: 200px;
-    box-shadow: 4px 2px 10px 2px #1362ad;
-    margin: 20px;
+  width: 400px;
+  height: 200px;
+  box-shadow: 4px 2px 10px 2px #1362ad;
+  margin: 20px;
 }
 
 main > section:nth-child(6) > a > img:hover {
-    box-shadow: 4px 2px 10px 2px black;
-    transition: 0.5s;
+  box-shadow: 4px 2px 10px 2px black;
+  transition: 0.5s;
 }
 
 main > section:nth-child(6) > a > #cim1 {
-    position: relative;
-    top: 10px;
-    left: 10px;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 
 main > section:nth-child(6) > a > #tim2 {
-    position: relative;
-    bottom: 313px;
-    left: 450px;
+  position: relative;
+  bottom: 313px;
+  left: 450px;
 }
 
 main > section:nth-child(6) > a > #aim3 {
-    position: relative;
-    bottom: 637px;
-    left: 890px;
+  position: relative;
+  bottom: 637px;
+  left: 890px;
 }
 
 main > section:nth-child(6) > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 main > section:nth-child(6) > #css {
-    width: 100px;
-    position: relative;
-    left: 170px;
+  width: 100px;
+  position: relative;
+  left: 170px;
 }
 
 main > section:nth-child(6) > #tran {
-    width: 150px;
-    position: relative;
-    bottom: 325px;
-    left: 600px;
+  width: 150px;
+  position: relative;
+  bottom: 325px;
+  left: 600px;
 }
 
 main > section:nth-child(6) > #ani {
-    width: 150px;
-    position: relative;
-    bottom: 655px;
-    left: 1050px;
+  width: 150px;
+  position: relative;
+  bottom: 655px;
+  left: 1050px;
 }
 
 main > section:nth-child(6) > a > #ass {
-    position: absolute;
-    top: 500px;
-    right: 90px;
-    border: 2px solid blue;
-    color: blue;
-    cursor: pointer;
-    font-family: "Bell MT", sans-serif;
-    font-weight: bold;
-    border-radius: 15px;
-    transition: 0.5s;
-    padding: 10px 20px;
-    font-size: 25px;
-    background: white;
+  position: absolute;
+  top: 500px;
+  right: 90px;
+  border: 2px solid blue;
+  color: blue;
+  cursor: pointer;
+  font-family: "Bell MT", sans-serif;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: 0.5s;
+  padding: 10px 20px;
+  font-size: 25px;
+  background: white;
 }
 
 main > section:nth-child(6) > a > #ass:hover {
-    background: blue;
-    color: white;
+  background: blue;
+  color: white;
 }
 
 main > section:nth-child(6) {
-    height: 600px;
-    /*border: 2px solid;*/
+  height: 600px;
 }
+  /*border: 2px solid;*/
 
 /*============Contact==================*/
 
 footer > dfn > h1 {
-    font-family: "Arial Black";
-    color: greenyellow;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px 8px #151313;
+  font-family: "Arial Black";
+  color: greenyellow;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #151313;
 }
 
 footer > address > figure {
-    width: 600px;
-    height: 400px;
-    margin-left: 100px;
+  width: 600px;
+  height: 400px;
+  margin-left: 100px;
 }
 
 footer > address > figure > #user {
-    position: relative;
-    left: 50px;
-    top: 30px;
+  position: relative;
+  left: 50px;
+  top: 30px;
 }
 
 footer > address > figure > #uh2 {
-    position: relative;
-    left: 150px;
-    bottom: 33px;
-    width: 400px;
+  position: relative;
+  left: 150px;
+  bottom: 33px;
+  width: 400px;
 }
 
 footer > address > figure > #call {
-    position: relative;
-    left: 50px;
-    bottom: 20px;
+  position: relative;
+  left: 50px;
+  bottom: 20px;
 }
 
 footer > address > figure > #ch2 {
-    position: relative;
-    left: 150px;
-    bottom: 85px;
-    width: 400px;
+  position: relative;
+  left: 150px;
+  bottom: 85px;
+  width: 400px;
 }
 
 footer > address > figure > #mail {
-    position: relative;
-    left: 50px;
-    bottom: 70px;
+  position: relative;
+  left: 50px;
+  bottom: 70px;
 }
 
 footer > address > figure > #mh2 {
-    position: relative;
-    left: 150px;
-    bottom: 129px;
-    width: 400px;
+  position: relative;
+  left: 150px;
+  bottom: 129px;
+  width: 400px;
 }
 
 footer > address > figure > #loc {
-    position: relative;
-    left: 50px;
-    bottom: 120px;
+  position: relative;
+  left: 50px;
+  bottom: 120px;
 }
 
 footer > address > figure > #lh2 {
-    position: relative;
-    left: 150px;
-    bottom: 180px;
-    width: 100%;
+  position: relative;
+  left: 150px;
+  bottom: 180px;
+  width: 100%;
 }
 
 footer > address > form {
-    width: 600px;
-    height: 470px;
-    position: absolute;
-    top: 35px;
-    right: 150px;
+  width: 600px;
+  height: 470px;
+  position: absolute;
+  top: 35px;
+  right: 150px;
 }
 
 footer > address {
-    position: relative;
-    /*border: 2px solid;*/
+  position: relative;
+  /*border: 2px solid;*/
 }
 
 .text {
-    border: none;
-    width: 500px;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: 4px 2px 10px 2px #5d5f61;
-    font-weight: bold;
-    padding: 5px;
-    margin: 10px;
-    outline: none;
+  border: none;
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 4px 2px 10px 2px #5d5f61;
+  font-weight: bold;
+  padding: 5px;
+  margin: 10px;
+  outline: none;
 }
 
 #text {
-    border: none;
-    width: 500px;
-    border-radius: 10px;
-    box-shadow: 4px 2px 10px 2px #5d5f61;
-    resize: none;
-    padding: 5px;
-    margin: 10px;
-    font-weight: bold;
-    outline: none;
+  border: none;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 4px 2px 10px 2px #5d5f61;
+  resize: none;
+  padding: 5px;
+  margin: 10px;
+  font-weight: bold;
+  outline: none;
 }
 
 .text:hover {
-    box-shadow: 1px 1px 1px 1px #078cf6;
+  box-shadow: 1px 1px 1px 1px #078cf6;
 }
 
 #text:hover {
-    box-shadow: 1px 1px 1px 1px #078cf6;
+  box-shadow: 1px 1px 1px 1px #078cf6;
 }
 
 #send {
-    border: none;
-    background-color: #0048ff;
-    cursor: pointer;
-    font-family: "Bell MT", sans-serif;
-    font-weight: bold;
-    border-radius: 20px;
-    opacity: 0.8;
-    transition: 0.3s;
-    padding: 10px 20px;
-    font-size: 30px;
-    position: absolute;
-    right: 100px;
-    top: 400px;
+  border: none;
+  background-color: #0048ff;
+  cursor: pointer;
+  font-family: "Bell MT", sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+  opacity: 0.8;
+  transition: 0.3s;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: absolute;
+  right: 100px;
+  top: 400px;
 }
 
 #send:hover {
-    color: white;
-    opacity: 1;
+  color: white;
+  opacity: 1;
 }
 
 footer > address > aside > figure > div {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    margin: 10px;
-    border-radius: 100%;
-    position: relative;
-    left: 200px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 100%;
+  position: relative;
+  left: 200px;
 }
 
 #foot {
-    background-color: black;
-    height: 50px;
+  background-color: black;
+  height: 50px;
 }
 
 #foot > p {
-    color: white;
-    text-align: center;
-    padding: 15px;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
