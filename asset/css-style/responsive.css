@@ -1,15 +1,73 @@
+/*=================Responsive====================*/
+
 /*----------------------1440px-----------------*/
 @media all and (max-width: 1440px) {
 }
 
 /*-----------1024px-----------------------------*/
+
 @media all and (max-width: 1024px) {
 }
-
 /*-----------768px-----------------------------*/
 @media all and (max-width: 768px) {
-}
+  #menu-icon {
+    display: block;
+    margin-right: 60px;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: #1f242d;
+    display: none;
+  }
+  .navbar a {
+    display: block;
+    font-size: 15px;
+    margin: 35px 20px;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .home-content {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
 
+  .about-content {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-top: 0;
+    padding-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .skill-title h1 {
+    padding-top: 0;
+  }
+  .skill-content {
+    flex-direction: column;
+  }
+  .skill-content div {
+    margin-bottom: 50px;
+  }
+  .project-content {
+    flex-direction: column;
+  }
+  .project-content .imageproject {
+    width: 500px;
+    height: 380px;
+  }
+
+  .contact-content > .form-content {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
 /*-----------425px-----------------------------*/
 @media all and (max-width: 424px) {
 }
