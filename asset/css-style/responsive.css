@@ -1,13 +1,62 @@
 /*=================Responsive====================*/
 
-/*----------------------1440px-----------------*/
-@media all and (max-width: 1440px) {
+/*-----------375px-----------------------------*/
+@media all and (max-width: 376px) {
 }
 
-/*-----------1024px-----------------------------*/
-
-@media all and (max-width: 1024px) {
+/*-----------320px-----------------------------*/
+@media all and (max-width: 320px) {
 }
+
+/*-----------425px-----------------------------*/
+@media all and (max-width: 424px) {
+  .profile-image img {
+    width: 300px;
+  }
+  .home-title h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .home-title h3 {
+    font-size: 20px;
+  }
+  .home-title p {
+    font-size: 17px;
+  }
+  .about-title div p {
+    font-size: 18px;
+  }
+  .numdiv .description h2 {
+    font-size: 20px;
+  }
+  .home-title h1 span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .social-media a {
+    width: 38px;
+    height: 38px;
+  }
+  .education-des {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .skill-content div {
+    height: 218px;
+    width: 350px;
+  }
+  .skill-content > div > h2 {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .project-content .imageproject {
+    width: 400px;
+    height: 380px;
+  }
+}
+
 /*-----------768px-----------------------------*/
 @media all and (max-width: 768px) {
   #menu-icon {
@@ -56,10 +105,6 @@
   .project-content {
     flex-direction: column;
   }
-  .project-content .imageproject {
-    width: 500px;
-    height: 380px;
-  }
 
   .contact-content > .form-content {
     width: 100%;
@@ -67,15 +112,4 @@
   footer {
     flex-direction: column;
   }
-}
-/*-----------425px-----------------------------*/
-@media all and (max-width: 424px) {
-}
-
-/*-----------375px-----------------------------*/
-@media all and (max-width: 376px) {
-}
-
-/*-----------320px-----------------------------*/
-@media all and (max-width: 320px) {
 }

@@ -108,11 +108,14 @@ section {
 .contactbttn a:hover {
   box-shadow: none;
 }
-
-.social-media a {
-  display: inline-flex;
+.social-media {
+  display: flex;
+}
+.social-media > a {
+  display: flex;
   justify-content: center;
   align-items: center;
+
   width: 40px;
   height: 40px;
   background: transparent;
@@ -120,7 +123,7 @@ section {
   border-radius: 50%;
   font-size: 20px;
   color: #0ef;
-  margin: 5px;
+  margin: 8px;
   margin-top: 50px;
   text-decoration: none;
   transition: 0.5s ease;
@@ -314,16 +317,16 @@ section {
   align-items: center;
   justify-content: space-between;
 }
+.project-content .imageproject:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 10px #0ef;
+}
 .project-content .imageproject {
   border-radius: 40px;
   width: 580px;
   height: 380px;
   margin: 20px;
   transition: 0.7s ease;
-}
-.project-content .imageproject:hover {
-  transform: scale(1.05);
-  box-shadow: 0 1px 10px #0ef;
 }
 .project-content .imageproject div {
   width: 100%;
@@ -348,13 +351,16 @@ section {
 .des-con > h1 {
   color: #0ef;
   margin: 0;
-  font-size: 27px;
+  font-size: 21px;
 }
 .des-con > p {
   color: rgb(201, 193, 193);
   font-weight: bold;
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 .des-con > a {
   padding: 15px 50px 15px 50px;
