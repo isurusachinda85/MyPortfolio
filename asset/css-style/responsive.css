@@ -11,17 +11,28 @@
 /*-----------425px-----------------------------*/
 @media all and (max-width: 424px) {
   .profile-image img {
-    width: 300px;
+    width: 250px;
   }
   .home-title h1 {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
   }
   .home-title h3 {
     font-size: 20px;
+    text-align: center;
   }
   .home-title p {
     font-size: 17px;
+    text-align: center;
+  }
+  .contactbttn {
+    display: flex;
+    justify-content: center;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
   }
   .about-title div p {
     font-size: 18px;
@@ -58,7 +69,7 @@
 }
 
 /*-----------768px-----------------------------*/
-@media all and (max-width: 768px) {
+@media all and (max-width: 788px) {
   #menu-icon {
     display: block;
     margin-right: 60px;
