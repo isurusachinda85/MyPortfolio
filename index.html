@@ -130,7 +130,7 @@
     </section>
 
     <!--===============Education Section=====================-->
-    <section id="education" class="education">
+    <!-- <section id="education" class="education">
       <div class="education-content">
         <h1>Education</h1>
 
@@ -172,10 +172,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!--===============Skills Section=====================-->
-    <section id="skills" class="skill">
+    <!-- <section id="skills" class="skill">
       <div class="skill-title">
         <h1>Skills</h1>
       </div>
@@ -213,12 +213,12 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!--===============Project Section=====================-->
-    <section id="project" class="project">
-      <div><h1>My Project</h1></div>
-      <div class="project-content">
+    <!-- <section id="project" class="project"> -->
+      <!-- <div><h1>My Project</h1></div> -->
+      <!-- <div class="project-content">
         <div class="imageproject">
           <div class="img-con">
             <img src="asset/img/frofileImg/noteapp.jpg" alt="" />
@@ -272,7 +272,7 @@
             >
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- <div class="morbttn">
         <a
           href="https://github.com/isurusachinda85?tab=repositories"
@@ -280,10 +280,10 @@
           >More Project</a
         >
       </div> -->
-    </section>
+    <!-- </section> -->
 
     <!--===============Contact Section=====================-->
-    <section id="contact" class="footer">
+    <!-- <section id="contact" class="footer">
       <div class="contact-title"><h1>Contact Me</h1></div>
 
       <section class="contact-content">
@@ -312,11 +312,11 @@
           </div>
         </form>
       </section>
-    </section>
+    </section> -->
 
 
 
-    <footer>
+    <!-- <footer>
       <p>
         Copyright &copy;2025 All Right Reserved . Website Developed Isuru
         Sachinda.
@@ -347,19 +347,23 @@
           ><i class="bx bxl-github"></i>
         </a>
       </div>
-    </footer>
+    </footer> -->
 
-    <script>
-      let menuIcon = document.querySelector("#menu-icon");
-      let navbar = document.querySelector(".navbar");
+      <script>
+        let menuIcon = document.querySelector("#menu-icon");
+        let navbar = document.querySelector(".navbar");
 
-      menuIcon.onclick = () => {
-        menuIcon.classList.toggle("bx-x");
-        navbar.classList.toggle("active");
-      };
+        menuIcon.onclick = () => {
+          menuIcon.classList.toggle("bx-x");
+          navbar.classList.toggle("active");
+        };
 
-      menuIcon.classList.remove("bx-x");
-      navbar.classList.remove("active");
+        document.querySelectorAll(".navbar a").forEach(link => {
+          link.onclick = () => {
+            menuIcon.classList.remove("bx-x");
+            navbar.classList.remove("active");
+          };
+      });
     </script>
   </body>
 </html>
