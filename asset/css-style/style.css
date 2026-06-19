@@ -138,9 +138,16 @@ section {
 .profile-image img {
   width: 350px;
   border-radius: 30px;
-  box-shadow: 0 1px 10px #0ef;
+  box-shadow: 0 1px 10px #0ef; 
   
+  transition: 0.4s ease;
 }
+
+.profile-image img:hover {
+  transform: scale(1.05);
+}
+
+
 
 /* ==================About Me============== */
 .about {
@@ -165,6 +172,11 @@ section {
   border-radius: 30px;
   box-shadow: 0 1px 10px #0ef;
   
+  transition: 0.4s ease;
+}
+
+.about .image-content img:hover {
+   transform: scale(1.05);
 }
 .about-title div h1 {
   color: white;
@@ -208,18 +220,25 @@ section {
   font-size: 35px;
 }
 
+.education-content{
+  /* border: 1px solid white; */
+}
+
 .education-des {
   border-left: 5px solid #0ef;
   margin-left: 60px;
   margin-right: 60px;
+  /* border: 1px solid white; */
 }
 .description {
   margin-left: 50px;
+  /* border: 1px solid white; */
 }
 
 .numdiv {
   padding-top: 4px;
   position: relative;
+  /* border: 1px solid white; */
 }
 
 .number {
@@ -237,6 +256,7 @@ section {
   position: absolute;
   left: 9px;
   top: 16px;
+  
 }
 
 .numdiv .description h2 {
