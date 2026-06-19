@@ -144,7 +144,7 @@ section {
 }
 
 .profile-image img:hover {
-  transform: scale(1.05);
+   transform: scale(1.05);
 }
 
 
@@ -220,25 +220,18 @@ section {
   font-size: 35px;
 }
 
-.education-content{
-  /* border: 1px solid white; */
-}
-
 .education-des {
   border-left: 5px solid #0ef;
-  margin-left: 60px;
-  margin-right: 60px;
-  /* border: 1px solid white; */
+  padding-left: 20px;
 }
 .description {
   margin-left: 50px;
-  /* border: 1px solid white; */
 }
 
 .numdiv {
   padding-top: 4px;
   position: relative;
-  /* border: 1px solid white; */
+
 }
 
 .number {
@@ -284,45 +277,40 @@ section {
 }
 
 .skill-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 80px;
-  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 50px;
 }
 .skill-content > div > h2 {
   color: white;
 }
 
 .skill-content div {
-  border-radius: 20px;
-  height: 224px;
-  width: 400px;
+  border-radius: 20px; 
   background: #323946;
-  margin-bottom: 100px;
-  transition: 0.7s ease;
+  padding: 30px 15px;
+  
+  /* transition: 0.9s ease; */
 }
 .skill-content div:hover {
   box-shadow: 0 1px 10px #0ef;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 .skill-content div h2 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .skill-content div h2 i {
   color: #0ef;
-  font-size: 30px;
+  font-size: 20px;
   padding-right: 15px;
 }
 .skill-content div ul {
   list-style: none;
-  padding-left: 70px;
-  margin: 0;
 }
 
 .skill-content div ul li {
-  padding-top: 10px;
+  padding-top: 5px;
   color: rgb(201, 193, 193);
   font-weight: bold;
 }

@@ -60,15 +60,16 @@
     font-size: 20px;
   }
   .education-des {
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
   }
-  .skill-content div {
-    height: 218px;
-    width: 350px;
-  }
+  
   .skill-content > div > h2 {
     font-size: 18px;
+  }
+
+  .skill-content div {
+    padding: 12px 10px;
   }
 }
 
@@ -118,22 +119,15 @@
   }
 
   .about-content {
-    flex-direction: column;
     flex-direction: column-reverse;
     padding-top: 0;
-    padding-bottom: 50px;
     margin-top: 0;
   }
 
-  .skill-title h1 {
-    padding-top: 0;
-  }
   .skill-content {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
-  .skill-content div {
-    margin-bottom: 50px;
-  }
+
   .project-content {
     flex-direction: column;
   }

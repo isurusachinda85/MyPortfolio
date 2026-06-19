@@ -183,20 +183,27 @@
         <div>
           <h2><i class="fa-solid fa-code"></i>Programming & Databases</h2>
           <ul>
-            <li><i class="bx bx-checkbox-square"></i>JavaScript ,TypeScript</li>
-            <li><i class="bx bx-checkbox-square"></i>HTML , CSS</li>
+            <li><i class="bx bx-checkbox-square"></i>JavaScript</li>
+            <li><i class="bx bx-checkbox-square"></i>TypeScript</li>
+            <li><i class="bx bx-checkbox-square"></i>HTML</li>
+            <li><i class="bx bx-checkbox-square"></i>CSS</li>
             <li><i class="bx bx-checkbox-square"></i>Java</li>
-            <li><i class="bx bx-checkbox-square"></i>MySQL , MongoDB</li>
+            <li><i class="bx bx-checkbox-square"></i>MySQL</li>
+            <li><i class="bx bx-checkbox-square"></i>MongoDB</li>
           </ul>
         </div>
 
         <div>
           <h2><i class="fa-solid fa-laptop-code"></i>Frameworks & Libraries</h2>
           <ul>
-            <li><i class="bx bx-checkbox-square"></i>React , React Native</li>
-            <li><i class="bx bx-checkbox-square"></i>Node JS , Express JS</li>
-            <li><i class="bx bx-checkbox-square"></i>Spring , Spring Boot</li>
+            <li><i class="bx bx-checkbox-square"></i>React</li>
+            <li><i class="bx bx-checkbox-square"></i>React Native</li>
+            <li><i class="bx bx-checkbox-square"></i>Node JS</li>
+            <li><i class="bx bx-checkbox-square"></i>Express JS</li>
+            <li><i class="bx bx-checkbox-square"></i>Spring</li>
+            <li><i class="bx bx-checkbox-square"></i>Spring Boot</li>
             <li><i class="bx bx-checkbox-square"></i>Tailwind CSS</li>
+            <li><i class="bx bx-checkbox-square"></i>Ajax</li>
             <li><i class="bx bx-checkbox-square"></i>Hibernate</li>
           </ul>
         </div>
@@ -206,10 +213,11 @@
             <i class="fa-solid fa-screwdriver-wrench"></i>Tools & Architectures
           </h2>
           <ul>
-            <li><i class="bx bx-checkbox-square"></i>Git , Github</li>
+            <li><i class="bx bx-checkbox-square"></i> Github</li>
             <li><i class="bx bx-checkbox-square"></i>Postman</li>
-            <li><i class="bx bx-checkbox-square"></i>Ajax , jQuery</li>
-            <li><i class="bx bx-checkbox-square"></i>MVC , Layerd</li>
+            <li><i class="bx bx-checkbox-square"></i>jQuery</li>
+            <li><i class="bx bx-checkbox-square"></i>MVC</li>
+            <li><i class="bx bx-checkbox-square"></i>Layerd</li>
           </ul>
         </div>
       </div>
@@ -350,19 +358,19 @@
     </footer>
 
     <script>
-        let menuIcon = document.querySelector("#menu-icon");
-        let navbar = document.querySelector(".navbar");
+      let navbar = document.querySelector(".navbar");
+      let menuIcon = document.querySelector("#menu-icon");
 
-        menuIcon.onclick = () => {
-          menuIcon.classList.toggle("bx-x");
-          navbar.classList.toggle("active");
+      menuIcon.onclick = () => {
+        menuIcon.classList.toggle("bx-x");
+        navbar.classList.toggle("active");
+      };
+
+      document.querySelectorAll(".navbar a").forEach(link => {
+        link.onclick = () => {
+          menuIcon.classList.remove("bx-x");
+          navbar.classList.remove("active");
         };
-
-        document.querySelectorAll(".navbar a").forEach(link => {
-          link.onclick = () => {
-            menuIcon.classList.remove("bx-x");
-            navbar.classList.remove("active");
-          };
       });
     </script>
   </body>
