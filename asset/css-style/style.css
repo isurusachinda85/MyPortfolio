@@ -176,7 +176,7 @@ section {
 }
 
 .about .image-content img:hover {
-   transform: scale(1.05);
+  transform: scale(1.05);
 }
 .about-title div h1 {
   color: white;
@@ -265,10 +265,113 @@ section {
   margin-left: 10px;
 }
 
-/*=============Skills======================*/
-.skill {
-  background-color: #1f242d;
+/* =========Experience================== */
+.experience{
+   background-color: #1f242d;
 }
+
+
+.experience-section h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 35px;
+}
+
+.experience-content{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-card{
+  background: #323946;
+  border-radius: 20px; 
+  padding: 30px 40px;
+  max-width: 500px;
+  
+}
+
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.card-title h2{
+  color: #0ef;
+  margin: 0;
+}
+.card-title h3{
+  border-radius: 20px;
+  padding: 12px 15px;
+  background: #1f242d;
+  color: white;
+}
+
+.experience-card h3{
+  margin: 0;
+}
+#company-name{
+  color: white;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+#compani-loc{
+  color: white;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.experience-card h3 i{
+  color: #0ef;
+  padding-right: 10px;
+}
+
+.experience-card p{
+  color: silver;
+  font-weight: normal;
+  padding-top: 15px;
+}
+
+.experience-card h4{
+  color:white;
+  font-weight: bold;
+}
+#respon{
+  padding-left: 5px;
+}
+
+#respon li i{
+  color: #0ef;
+  padding-right: 10px;
+}
+#respon li{
+  color: silver;
+  list-style: none;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+#tech{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 8px;
+}
+#tech li{
+  list-style: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  background: #1f242d;
+  color: white;
+  font-size: 15px;
+}
+
+
+/*=============Skills======================*/
 .skill-title h1 {
   color: white;
   font-size: 35px;
@@ -281,6 +384,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin-top: 50px;
+  padding-bottom: 20px;
 }
 .skill-content > div > h2 {
   color: white;
@@ -288,9 +392,9 @@ section {
 
 .skill-content div {
   border-radius: 20px; 
-  background: #323946;
+  background-color: #1f242d;
   padding: 30px 15px;
-  
+
   transition: 0.9s ease;
 }
 .skill-content div:hover {
