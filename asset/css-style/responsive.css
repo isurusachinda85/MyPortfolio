@@ -52,18 +52,43 @@
     justify-content: center;
   }
 
+  .about-title div h1{
+    font-size: 25px;
+  }
+
   .about .image-content img {
     width: 250px;
   }
   
-   .numdiv .description h2 {
-    font-size: 20px;
+  .numdiv .description h2 {
+    font-size: 18px;
   }
-  .education-des {
-    /* margin-left: 10px;
-    margin-right: 10px; */
+
+  .education-content h1{
+    font-size: 25px;
   }
-  
+  .card-title{
+    display: block; 
+  }
+  .experience-section h1{
+    font-size: 25px;
+  }
+  .card-title h3{
+    border-radius: 0;
+    padding: 0px;
+    background: none;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .experience-card{
+    padding: 30px 20px;
+  }
+  .skill-title h1{
+      font-size: 25px;
+  }
   .skill-content > div > h2 {
     font-size: 18px;
   }
@@ -74,10 +99,7 @@
 }
 
 @media all and (max-width: 600px) {
-  .project-content .imageproject {
-    width: 400px;
-    height: 380px;
-  }
+  
 }
 
 /*-----------768px-----------------------------*/
@@ -124,12 +146,11 @@
     margin-top: 0;
   }
 
+  .experience-card{
+    max-width:100%;
+  }
   .skill-content {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .project-content {
-    flex-direction: column;
   }
 
   .contact-content > .form-content {

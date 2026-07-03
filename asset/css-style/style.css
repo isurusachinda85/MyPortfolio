@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 10;
 }
 .header h1 {
   color: white;
@@ -278,7 +278,7 @@ section {
 }
 
 .experience-content{
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -288,14 +288,19 @@ section {
   border-radius: 20px; 
   padding: 30px 40px;
   max-width: 500px;
-  
+  margin-bottom: 50px;
+  transition: 0.9s ease;
+}
+
+.experience-card:hover{
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  transform: scale(1.05);
 }
 
 .card-title{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 .card-title h2{
@@ -373,10 +378,9 @@ section {
 
 /*=============Skills======================*/
 .skill-title h1 {
-  color: white;
+  color: #0ef;
   font-size: 35px;
   text-align: center;
-  padding-top: 40px;
 }
 
 .skill-content {
@@ -423,97 +427,57 @@ section {
   padding-right: 10px;
 }
 /*=============Project======================*/
+.project {
+  background-color: #1f242d;
+  /* border: 1px solid white; */
+}
 
 .project > div > h1 {
-  color: #0ef;
-  padding: 10px;
+  color: white;
   text-align: center;
   font-size: 35px;
+  margin-bottom: 20px;
 }
-.project-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.project-content .imageproject:hover {
-  transform: scale(1.05);
-  box-shadow: 0 1px 10px #0ef;
-}
-.project-content .imageproject {
-  border-radius: 40px;
-  width: 580px;
-  height: 380px;
-  margin: 20px;
-  transition: 0.7s ease;
-}
-.project-content .imageproject div {
-  width: 100%;
-  height: 50%;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-}
-.project-content .imageproject div img {
-  width: 100%;
-  height: 100%;
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-}
-.des-con {
-  background-color: #1f242d;
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+.project-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  border: 1px solid white;
 }
-.des-con > h1 {
+.img-con{
+  /* border: 1px solid white; */
+  width: 100%;  
+}
+.img-con img{
+  /* border: 1px solid white; */
+  width: 100%;  
+}
+
+.des-con{
+  background: #323946;
+}
+
+.des-con h1 {
   color: #0ef;
-  margin: 0;
-  font-size: 21px;
-}
-.des-con > p {
-  color: rgb(201, 193, 193);
-  font-weight: bold;
-  margin: 0;
-  font-size: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
-.des-con > a {
-  padding: 15px 50px 15px 50px;
-  border-radius: 15px;
-  box-shadow: 0 0 1rem #0ef;
-  font-size: 1rem;
-  color: aliceblue;
-  font-weight: bold;
-  text-decoration: none;
-  background: #0ef;
-  transition: 0.5s ease;
-}
-.des-con > a:hover {
-  box-shadow: none;
-}
-/* .morbttn {
-  padding: 15px;
-  display: flex;
-  justify-content: end;
+  font-size: 20px;
+  display: inline;
 }
 
-.morbttn a {
-  padding: 1rem 2.8rem;
-  border-radius: 20px;
-  box-shadow: 0 0 1rem rgb(30, 171, 20);
-  font-size: 1rem;
-  color: aliceblue;
-  font-weight: bold;
-  text-decoration: none;
-  background: rgb(30, 171, 20);
-  transition: 0.5s ease;
+.des-con p {
+  color: #ccc;
+  font-size: 14px;
 }
-.morbttn a:hover {
-  box-shadow: none;
-} */
+
+.des-con a {
+  margin-top: 10px;
+  padding: 10px 30px;
+  background: #0ef;
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /*============Contact==================*/
 .footer {
