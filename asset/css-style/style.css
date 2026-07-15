@@ -96,7 +96,7 @@ section {
   padding: 1rem 2.8rem;
 
   border-radius: 20px;
-  box-shadow: 0 0 1rem #0ef;
+  /* box-shadow: 0 0 1rem #0ef; */
   border: 1px solid #0ef;
   font-size: 1rem;
   color: aliceblue;
@@ -198,7 +198,7 @@ section {
   padding: 1rem 2.8rem;
 
   border-radius: 20px;
-  box-shadow: 0 0 1rem #0ef;
+  /* box-shadow: 0 0 1rem #0ef; */
   border: 1px solid #0ef;
   font-size: 1rem;
   color: aliceblue;
@@ -510,7 +510,7 @@ section {
   margin-top: auto;
   padding: 10px 30px;
   background:#0ef;
-  color:#000;
+  color:white;
   border-radius:10px;
   text-decoration:none;
   font-weight:bold;
@@ -528,12 +528,11 @@ section {
   align-items: center;
   justify-content: center;
 
-  color: #000;
+  color: white;
   transition: 0.3s ease;
 }
 
 
-/* Arrow icon size */
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 16px;
@@ -541,7 +540,6 @@ section {
 }
 
 
-/* Hover effect */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background: #0ef;
@@ -557,27 +555,105 @@ section {
 }
 
 /*============Contact==================*/
-.footer {
-  background-color: #1f242d;
-}
-.footer > .contact-title > h1 {
-  color: white;
+
+.contact-section > .contact-title > h1 {
+  color: #0ef;
   text-align: center;
   font-size: 35px;
   padding-bottom: 10px;
 }
 
-.footer > .contact-content {
-  padding: 0;
+.contact-section > .contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.detail-card{
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+
+.contact-content .detail-card i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background: #0ef;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #1f242d;
+}
+
+.contact-social h2{
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding-top: 15px;
+}
+
+.contact-social .contact-social-media {
   display: flex;
   justify-content: center;
 }
+.contact-social .contact-social-media  a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  margin: 8px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.contact-social .contact-social-media a:hover {
+  background: #0ef;
+  color: aliceblue;
+  box-shadow: 0 0 1rem #0ef;
+}
+
+.detail-card div h3{
+  font-size: 25px;
+  color: white;
+}
+
+.detail-card div h4{
+  color:#bdbdbd;
+  font-size:16px;
+  font-weight:400;
+}
+
+.detail-title{
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.detail-des{
+  font-size: 18px;
+  color: rgb(201, 193, 193);
+}
+
 
 .contact-content > .form-content {
-  width: 50%;
+  /* border: 1px solid white; */
+  background: #1f242d;
+  border-radius: 15px;
 }
+
 .form-content .input-box {
-  border: 1ox solid red;
   display: flex;
 }
 .form-content .input-box input {
@@ -602,7 +678,7 @@ section {
 #send {
   padding: 15px 50px 15px 50px;
   border-radius: 15px;
-  box-shadow: 0 0 1rem #0ef;
+  /* box-shadow: 0 0 1rem #0ef; */
   font-size: 1rem;
   color: aliceblue;
   font-weight: bold;
@@ -618,6 +694,9 @@ section {
   padding: 5px;
   text-align: end;
 }
+
+
+/* ========Footer============= */
 footer {
   padding: 20px;
   color: white;

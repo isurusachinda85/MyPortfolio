@@ -158,4 +158,8 @@
   footer {
     flex-direction: column;
   }
+
+  .contact-section > .contact-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
