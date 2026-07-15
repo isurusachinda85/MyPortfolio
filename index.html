@@ -22,8 +22,13 @@
 
     <link href="asset/css-style/normalize.css" rel="stylesheet" />
     <link href="asset/fonts-awesome/css/all.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link href="asset/css-style/style.css" rel="stylesheet" />
     <link href="asset/css-style/responsive.css" rel="stylesheet" />
+    
 
   </head>
   <body>
@@ -269,69 +274,111 @@
     </section>
 
     <!--===============Project Section=====================-->
-    <!-- <section id="project" class="project">
-      <div><h1>Project</h1></div>
-      <div class="project-content">
-        
-        <div class="imageproject">
-          <div class="img-con">
-            <img src="asset/img/frofileImg/noteapp.jpg" alt="" />
-          </div>
-          <div class="des-con">
-            <h1>Note Application</h1>
-            <p>
-              This Note App is a simple and user-friendly tool for creating,
-              updating, and deleting notes.
-            </p>
-            <a
-              href="https://github.com/isurusachinda85/Note-App.git"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </div>
-
-        <div class="imageproject">
-          <div class="img-con">
-            <img src="asset/img/frofileImg/20944167.jpg" alt="" />
-          </div>
-          <div class="des-con">
-            <h1>Hostel Management System</h1>
-            <p>
-              This application is designed for student's hostel.This enables
-              student registration,room registration and room reservation
-            </p>
-            <a
-              href="https://github.com/isurusachinda85/Hostel-Management-System-Hibernate.git"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </div>
-
-        <div class="imageproject">
-          <div class="img-con">
-            <img src="asset/img/frofileImg/phone.jpg" alt="" />
-          </div>
-          <div class="des-con">
-            <h1>Phone Shop Management System</h1>
-            <p>
-              This application is designed for phone shop.to manage crud
-              operation
-            </p>
-            <a
-              href="https://github.com/isurusachinda85/Phone-Shop-Leyard.git"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </div>
+    <section id="project" class="project">
+      <div>
+        <h1>Project</h1>
       </div>
-    </section> -->
+
+      <div class="project-content swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="imageproject swiper-slide">
+            <div class="img-con">
+              <img src="asset/img/frofileImg/noteapp.jpg" alt="" />
+            </div>
+
+            <div class="des-con">
+              <h1>Note Application</h1>
+              <p>
+                This Note App is a simple and user-friendly tool for creating,
+                updating, and deleting notes.
+              </p>
+
+              <div class="view-button">
+                <a href="https://github.com/isurusachinda85/Note-App.git" target="_blank">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="imageproject swiper-slide">
+            <div class="img-con">
+              <img src="asset/img/frofileImg/20944167.jpg" alt="" />
+            </div>
+
+            <div class="des-con">
+              <h1>Hostel Management System</h1>
+              <p>
+                This application is designed for student's hostel.
+                This enables student registration, room registration and reservation.
+              </p>
+
+              <div class="view-button">
+                <a href="https://github.com/isurusachinda85/Hostel-Management-System-Hibernate.git" target="_blank">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="imageproject swiper-slide">
+            <div class="img-con">
+              <img src="asset/img/frofileImg/phone.jpg" alt="" />
+            </div>
+
+            <div class="des-con">
+              <h1>Phone Shop Management System</h1>
+              <p>
+                This application is designed for phone shop to manage CRUD operation.
+              </p>
+
+              <div class="view-button">
+                <a href="https://github.com/isurusachinda85/Phone-Shop-Leyard.git" target="_blank">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="imageproject swiper-slide">
+            <div class="img-con">
+              <img src="asset/img/frofileImg/phone.jpg" alt="" />
+            </div>
+
+            <div class="des-con">
+              <h1>Phone Shop Management System</h1>
+              <p>
+                This application is designed for phone shop to manage CRUD operation.
+              </p>
+
+              <div class="view-button">
+                <a href="https://github.com/isurusachinda85/Phone-Shop-Leyard.git" target="_blank">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Add navigation if needed -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+
+    </section>
 
    
 
-    <!--===============Contact Section=====================-->
+    <!-- ===============Contact Section=====================-->
     <section id="contact" class="footer">
       <div class="contact-title"><h1>Contact Me</h1></div>
 
@@ -395,6 +442,10 @@
         </a>
       </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- navbar -->
     <script>
       let navbar = document.querySelector(".navbar");
       let menuIcon = document.querySelector("#menu-icon");
@@ -410,6 +461,50 @@
           navbar.classList.remove("active");
         };
       });
+    </script>
+
+    <!-- Project Slider -->
+    <script>
+
+      const swiper = new Swiper(".swiper", {
+
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        // autoHeight:false,
+
+        loop:true,
+
+        autoplay:{
+          delay:3000,
+          disableOnInteraction:false,
+        },
+
+        pagination:{
+          el:".swiper-pagination",
+          clickable:true,
+        },
+
+        navigation:{
+          nextEl:".swiper-button-next",
+          prevEl:".swiper-button-prev",
+        },
+
+
+        breakpoints:{
+
+          768:{
+            slidesPerView:2,
+          },
+
+          1024:{
+            slidesPerView:3,
+          }
+
+        }
+
+      });
+
     </script>
   </body>
 </html>
