@@ -91,24 +91,21 @@ section {
 
 .contactbttn {
   margin-top: 55px;
+  
 }
 .contactbttn a {
   padding: 1rem 2.8rem;
 
   border-radius: 20px;
-  /* box-shadow: 0 0 1rem #0ef; */
   border: 1px solid #0ef;
   font-size: 1rem;
   color: aliceblue;
   font-weight: bold;
-  transition: 0.5s ease;
+  
   text-decoration: none;
   background: #0ef;
 }
 
-.contactbttn a:hover {
-  box-shadow: none;
-}
 .social-media {
   display: flex;
 }
@@ -133,6 +130,7 @@ section {
   background: #0ef;
   color: aliceblue;
   box-shadow: 0 0 1rem #0ef;
+  
 }
 
 .profile-image img {
@@ -651,19 +649,26 @@ section {
   /* border: 1px solid white; */
   background: #1f242d;
   border-radius: 15px;
+  padding: 50px 35px;
 }
 
 .form-content .input-box {
   display: flex;
+  /* border: 1px solid black; */
+  padding-top: 15px;
+  gap: 10px;
 }
+
+
 .form-content .input-box input {
-  width: 50%;
+  width: 87%;
   padding: 20px;
   border-radius: 20px;
-  margin: 7px;
+  /* margin: 7px; */
   background: #323946;
   color: white;
   border: none;
+  outline: none;
 }
 .form-content textarea {
   width: 100%;
@@ -671,9 +676,10 @@ section {
   background: #323946;
   color: white;
   padding: 20px;
-  margin: 7px;
+  /* margin: 7px; */
   resize: none;
   border: none;
+  outline: none;
 }
 #send {
   padding: 15px 50px 15px 50px;
@@ -685,6 +691,7 @@ section {
   text-decoration: none;
   background: #0ef;
   border: none;
+  margin-top: 20px;
   transition: 0.5s ease;
 }
 #send:hover {

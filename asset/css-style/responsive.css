@@ -95,6 +95,14 @@
   .des-con p{
     font-size:12px;
   }
+
+ .form-content .input-box:nth-child(1){
+    flex-direction: column;
+  }
+
+ .form-content .input-box:nth-child(2){
+    flex-direction: column;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -153,7 +161,7 @@
   }
 
   .contact-content > .form-content {
-    width: 100%;
+    padding: 25px;
   }
   footer {
     flex-direction: column;
